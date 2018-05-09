@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/YamamotoOnly/Clickergame.unity
+=======
+- path: Assets/taniguchi.unity
+>>>>>>> origin/taniguti
   isLoaded: 1
   isActive: 1
