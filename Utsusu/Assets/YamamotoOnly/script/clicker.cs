@@ -8,13 +8,13 @@ public class clicker : MonoBehaviour {
 
     public static float page=0;
 
-    float famiport=1,famiport_yen=100,famicount=1;
+    public float famiport=0,famiport_yen=100,famicount=1;
 
     private void Start()
     {    }
     private void Update()
     {
-        page +=(famicount-1) *Time.deltaTime;
+        page +=(famiport) *Time.deltaTime;
     }
 
     private void Awake()
@@ -32,8 +32,8 @@ public class clicker : MonoBehaviour {
         if (page >= famiport_yen)
         {
             page -= famiport_yen;
-            famicount++;
-            famiport_yen = (famiport_yen * 1.1f);
+            famiport++; famicount++;
+            famiport_yen = (famiport_yen + (famicount/0.5f));
         }
     }
 
