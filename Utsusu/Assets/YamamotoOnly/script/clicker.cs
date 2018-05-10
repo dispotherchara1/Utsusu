@@ -6,15 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class clicker : MonoBehaviour {
 
-    public static float page=0;
-
-    public float famiport=0,famiport_yen=100,famicount=1;
+    int[] evolition = { 0, 0, 0 };//new int[3];            //進化素材用1/0配布
+    public static float page=0;     //クリックされた回数(スコア)
+    float clicked=1;                  //クリック用変数
+    float famiport = 0, famiport_yen = 10, famicount = 1;//ファミポート用変数
 
     private void Start()
     {    }
     private void Update()
     {
-        page +=(famiport) *Time.deltaTime;
+        page +=(famiport) *Time.deltaTime;//一秒ごとにファミポートの数1万円増えるよ！
     }
 
     private void Awake()
@@ -39,6 +40,23 @@ public class clicker : MonoBehaviour {
 
     public void Page_masu()
     {
-            page += 1;        
+            page += clicked;
+    }
+    public float Getfamiport_yen()
+    {
+        return famiport_yen;
+    }
+    public void SetCliced()
+    {
+        if (evolition[0] == 0&&page>=100)
+        {
+            page -= 100;
+            clicked=10;
+            evolition[0] = 1;
+        }
+    }
+    public int Getevo()
+    {
+        return evolition[0];
     }
 }
