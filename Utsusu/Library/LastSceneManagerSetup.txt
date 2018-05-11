@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/YamamotoOnly/Clickergame.unity
+- path: Assets/YamamotoOnly/yamamoto.unity
   isLoaded: 1
   isActive: 1
