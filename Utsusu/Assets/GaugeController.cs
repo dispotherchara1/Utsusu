@@ -2,21 +2,27 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class Gauge : MonoBehaviour
+public class GaugeController : MonoBehaviour
 {
     Slider gaugeSlider;
     bool gauge = false;
     float timeCount = 0.0f;
-    /*
-    public float GetTimeCount()
+
+    public bool GetGauge()
+    {
+        return gauge;
+    }
+
+    public float GetTime()
     {
         return timeCount;
-    }*/
-
-    public void GetTimeCount(float setTime)
-    {
-        getTime = timeCount;
     }
+
+    public void GetResetTime()//timeCountをリセット
+    {
+        timeCount = 0.0f;
+    }
+
     // Use this for initialization
     void Start()
     {
@@ -26,7 +32,7 @@ public class Gauge : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if (Input.GetKey(KeyCode.B))//Bボタンを押している間ゲージがtrue(ゲージが動く)
+        if (Input.GetKey(KeyCode.Space))//Bボタンを押している間ゲージがtrue(ゲージが動く)
         {
             gauge = true;
         }
@@ -42,11 +48,6 @@ public class Gauge : MonoBehaviour
             {
                 timeCount = 0.0f;//ゼロに戻る
             }
-        }
-        else      //Bボタンを離したときplayerが動く
-        {
-            Debug.Log(timeCount);
-            timeCount = 0.0f;                                 //falseに戻したときに初期化する
         }
         gaugeSlider.value = timeCount;
     }
