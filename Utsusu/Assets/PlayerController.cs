@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 
     void Button() // ボタンで移動距離が違う
     {
-        Vector2 pos = transform.position;                            // 現在位置をposに代入
+        Vector2 pos = transform.position;  // 現在位置をposに代入
 
         if (Input.GetKeyDown(KeyCode.B))
         {
@@ -23,19 +23,19 @@ public class PlayerController : MonoBehaviour
         {
             pos += teleportation * 3 * Time.deltaTime;
         }
-        transform.position = pos;                      //現在の位置にteleportationの移動距離を加算
+        transform.position = pos; //現在の位置にteleportationの移動距離を加算
     }
 
     void Gauge()
     {
-        Vector2 pos = transform.position;                            // 現在位置をposに代入
+        Vector2 pos = transform.position; //現在位置をposに代入
 
         if (!gaugeController.GetGauge())
         {
             pos += teleportation * gaugeController.GetTime() * Time.deltaTime;//移動計算式
             gaugeController.GetResetTime();
         }
-        transform.position = pos;                      //現在の位置にteleportationの移動距離を加算
+        transform.position = pos; //現在の位置にteleportationの移動距離を加算
     }
     // Update is called once per frame
     void Update ()
