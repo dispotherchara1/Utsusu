@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class clicker : MonoBehaviour {
 
     int[] evolition = { 0, 0, 0 };//new int[3];            //進化素材用1/0配布
-    public static float page=100;     //クリックされた回数(スコア)
+    public static float page=0;     //クリックされた回数(スコア)
     float clicked=1;                  //クリック用変数
     float famiport = 0, famiport_yen = 10, famicount = 1;//ファミポート用変数
 

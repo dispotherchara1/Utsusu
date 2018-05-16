@@ -78,8 +78,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GaugeController.cs" />
     <Compile Include="Assets\PlayerController.cs" />
     <Compile Include="Assets\Tutorial.cs" />
+    <Compile Include="Assets\YamamotoOnly\script\bajirisk.cs" />
     <Compile Include="Assets\YamamotoOnly\script\clicker.cs" />
     <Compile Include="Assets\YamamotoOnly\script\counter.cs" />
     <Compile Include="Assets\YamamotoOnly\script\timer.cs" />
