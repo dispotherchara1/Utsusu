@@ -8,10 +8,11 @@ public class wana : MonoBehaviour
     private Vector3 vec;
 
     //オブジェクトが衝突したとき
-    void OnTriggerEnter(Collision other)
-    {
-    }
-        void Start()
+    //void OnCollisionEnter(Collision collision)
+   // {
+    //}
+
+    void Start()
     {
             //target = GameObject.Find("対象").transform; インスペクタから登録するのでいらない
         }
