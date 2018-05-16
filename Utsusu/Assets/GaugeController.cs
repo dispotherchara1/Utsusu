@@ -43,8 +43,8 @@ public class GaugeController : MonoBehaviour
 
         if (gauge)
         {
-            timeCount += 3 * Time.deltaTime;
-            if (timeCount >= 5.0f)//ゲージの最大値
+            timeCount += 10 * Time.deltaTime;
+            if (timeCount >= 10.0f)//ゲージの最大値
             {
                 timeCount = 0.0f;//ゼロに戻る
             }
