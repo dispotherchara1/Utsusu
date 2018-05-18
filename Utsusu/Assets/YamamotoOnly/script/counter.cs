@@ -25,7 +25,7 @@ public class counter : MonoBehaviour {
             evotxt.enabled = false;
             vaji.enabled = true;
             vajitext.enabled = true;}
-        if (clicker.Getvaji() != 0)
+        if (clicker.Getevo() != 1)
         {
             vaji.enabled = false;
             vajitext.enabled = false;

@@ -5,12 +5,12 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class clicker : MonoBehaviour {
-
-    int[] evolition = { 0, 0, 0 };//new int[3];            //進化素材用1/0配布
-    public static float page=0;     //クリックされた回数(スコア)
-    float clicked=1;                  //クリック用変数
+    
+    int evolition = 0;//new int[3];            //進化素材用1/0配布
+    public static float page=1000;     //クリックされた回数(スコア)
+    float clicked = 1;                  //クリック用変数
     float famiport = 0, famiport_yen = 10, famicount = 1;//ファミポート用変数
-
+    int i = 0,minaspage=100,Maxclicke=10;
     private void Start()
     {    }
     private void Update()
@@ -48,29 +48,18 @@ public class clicker : MonoBehaviour {
     }
     public void SetCliced()
     {
-        if (evolition[0] == 0&&page>=100)
+        if (evolition == i&&page>=minaspage)
         {
-            page -= 100;
-            clicked=10;
-            evolition[0] = 1;
+            page -= minaspage;
+            clicked = Maxclicke;
+            evolition ++;
+            i++;
+            minaspage *= 10;
+            Maxclicke *= 10;
         }
     }
     public int Getevo()
     {
-        return evolition[0];
-    }
-    public void setvaji()
-    {
-        if (evolition[0] != 0 && page >= 1000)
-        {
-            page -= 1000;
-            clicked = 100;
-            evolition[1] = 1;
-        }
-
-    }
-    public int Getvaji()
-    {
-        return evolition[1];
+        return evolition;
     }
 }
