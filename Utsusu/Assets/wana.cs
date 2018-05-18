@@ -8,9 +8,9 @@ public class wana : MonoBehaviour
     private Vector3 vec;
 
     //オブジェクトが衝突したとき
-    //void OnCollisionEnter(Collision collision)
-   // {
-    //}
+    void OnCollisionEnter(Collision collision)
+    {
+    }
 
     void Start()
     {
