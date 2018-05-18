@@ -7,7 +7,7 @@ public class GaugeController : MonoBehaviour
     Slider gaugeSlider;
     bool gauge = false;
     float timeCount = 0.0f;
-    const float MAXGAUGE = 10.0f;
+    const float MAXVALUE = 10.0f;
     const float GAUGESPEED = 10.0f;
 
     public bool GetGauge()
@@ -46,7 +46,7 @@ public class GaugeController : MonoBehaviour
         if (gauge)
         {
             timeCount += GAUGESPEED * Time.deltaTime;
-            if (timeCount >= MAXGAUGE)//ゲージの最大値
+            if (timeCount >= MAXVALUE)//ゲージの最大値
             {
                 timeCount = 0.0f;//ゼロに戻る
             }
