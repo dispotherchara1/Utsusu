@@ -11,7 +11,6 @@ using System.Collections;
 //}
 
 public class bajirisk : MonoBehaviour {
-    
     public GameObject[] bajirisks;//バジリスクの数を好きな数だけ入れる
     public float bajirun =0.05f ;
     //public BAJI one;//物体Xに速度を突っ込むパブリック
@@ -31,7 +30,6 @@ public class bajirisk : MonoBehaviour {
             //総てのバジリスクたちは進みだす
             bajirisk.transform.position += new Vector3(bajirun, 0, 0);
         }
-
         //one.Move(new Vector3(0.2f, 0, 0));//物体Xの速さはx軸に+0.2/
     }
 
