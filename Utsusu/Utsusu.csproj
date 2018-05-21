@@ -79,8 +79,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\GaugeController.cs" />
+    <Compile Include="Assets\Null.cs" />
     <Compile Include="Assets\PlayerController.cs" />
+    <Compile Include="Assets\SceneManager.cs" />
     <Compile Include="Assets\Tutorial.cs" />
+    <Compile Include="Assets\YamamotoOnly\script\Deathzone.cs" />
     <Compile Include="Assets\YamamotoOnly\script\bajirisk.cs" />
     <Compile Include="Assets\YamamotoOnly\script\clicker.cs" />
     <Compile Include="Assets\YamamotoOnly\script\counter.cs" />
