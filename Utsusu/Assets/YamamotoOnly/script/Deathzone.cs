@@ -12,4 +12,8 @@ public class Deathzone : MonoBehaviour {
 	void Update () {
 	
 	}
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        collision.collider.tag = "DeathZone";
+    }
 }
