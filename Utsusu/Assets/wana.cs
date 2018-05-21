@@ -22,7 +22,7 @@ public class wana : MonoBehaviour
             //targetの方に少しずつ向きが変わる
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(target.position - transform.position), 0.3f);
 
-            //targetに向かって進む
-            transform.position += transform.forward * speed;
+        //targetに向かって進む
+        transform.position += transform.forward * speed;
         }
     }
