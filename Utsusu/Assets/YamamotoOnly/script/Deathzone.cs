@@ -13,7 +13,7 @@ public class Deathzone : MonoBehaviour {
     }
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "DeathZone")
+        if (col.gameObject.tag == "Player")
         {
             gameover.SetGameOver();
         }

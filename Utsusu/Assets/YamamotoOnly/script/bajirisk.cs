@@ -11,6 +11,7 @@ using System.Collections;
 //}
 
 public class bajirisk : MonoBehaviour {
+    public GameOver gameover;
     public GameObject[] bajirisks;//バジリスクの数を好きな数だけ入れる
     public float bajirun =0.05f ;
     //public BAJI one;//物体Xに速度を突っ込むパブリック
@@ -33,10 +34,18 @@ public class bajirisk : MonoBehaviour {
         //one.Move(new Vector3(0.2f, 0, 0));//物体Xの速さはx軸に+0.2/
     }
 
-   /*Vector3 bajibaji()
+    /*Vector3 bajibaji()
+     {
+         return 
+             transform.position += new Vector3(0.7f, 0, 0);
+         ;
+     }*/
+
+    void OnCollisionEnter2D(Collision2D col)
     {
-        return 
-            transform.position += new Vector3(0.7f, 0, 0);
-        ;
-    }*/
+        if (bajirisks[1].tag == "Player")
+        {
+            gameover.SetGameOver();
+        }
+    }
 }
