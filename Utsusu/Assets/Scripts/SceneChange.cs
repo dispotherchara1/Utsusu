@@ -2,10 +2,10 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class SceneManager : MonoBehaviour
+public class SceneChange : MonoBehaviour
 {
     public void Honjo()
     {
-        //SceneManager.LoadScene("honjo");
+        SceneManager.LoadScene("honjo");
     }
 }
