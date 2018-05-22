@@ -9,7 +9,7 @@ public class Deathzone : MonoBehaviour {
 	void Start (){}	
 	// Update is called once per frame
 	void Update (){
-        if (gameover.GetGameOver() == true) { Debug.Log("GameOver"); }
+
     }
     private void OnCollisionEnter2D(Collision2D col)
     {

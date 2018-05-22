@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/YamamotoOnly/yamamoto.unity
+- path: Assets/YamamotoOnly/result.unity
   isLoaded: 1
   isActive: 1

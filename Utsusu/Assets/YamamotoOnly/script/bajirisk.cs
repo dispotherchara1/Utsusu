@@ -25,11 +25,13 @@ public class bajirisk : MonoBehaviour {
     {
         //baji_one.bajabaji;
         //baji_two.transform.position+=bajibaji();
-
-        foreach (GameObject bajirisk in bajirisks)
+        if (gameover.GetGameOver() == false)
         {
-            //総てのバジリスクたちは進みだす
-            bajirisk.transform.position += new Vector3(bajirun, 0, 0);
+            foreach (GameObject bajirisk in bajirisks)
+            {
+                //総てのバジリスクたちは進みだす
+                bajirisk.transform.position += new Vector3(bajirun, 0, 0);
+            }
         }
         //one.Move(new Vector3(0.2f, 0, 0));//物体Xの速さはx軸に+0.2/
     }
@@ -40,12 +42,5 @@ public class bajirisk : MonoBehaviour {
              transform.position += new Vector3(0.7f, 0, 0);
          ;
      }*/
-
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        if (bajirisks[1].tag == "Player")
-        {
-            gameover.SetGameOver();
-        }
-    }
+     
 }
