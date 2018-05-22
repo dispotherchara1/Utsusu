@@ -8,5 +8,4 @@ public class SceneManager : MonoBehaviour
     {
         //SceneManager.LoadScene("honjo");
     }
-
 }
