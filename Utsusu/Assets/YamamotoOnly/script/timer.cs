@@ -4,31 +4,25 @@ using UnityEngine.UI;
 
 public class timer : MonoBehaviour {
     public Text time;
-    bool timeover = false;
     float timecounter=30;
-    
+    public GameOver gameover;
 	// Use this for initialization
-	void Start () {
-	
-	}
-	
+	void Start (){}
 	// Update is called once per frame
-	void Update () {
+	void Update (){
         time.text = timecounter.ToString("F0");
         if (timecounter>=0) { Encounttimer(-Time.deltaTime); }
-
-        if (timeover == true) { Debug.Log("trueになっちゃったよ"); }
 	}
 
-    public void Encounttimer (float timer){
+    public void Encounttimer(float timer)
+    {
 
-        if (timecounter>=0)
+        if (timecounter >= 0 && gameover.GetGameOver() == false)
         {
-            timecounter+=timer;
-        }
+            timecounter += timer;
 
-        else { timeover = true; }
         }
-
+        else { gameover.SetGameOver(); }
+    }
 
 }

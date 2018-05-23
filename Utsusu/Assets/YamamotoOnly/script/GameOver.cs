@@ -3,12 +3,8 @@ using System.Collections;
 
 public class GameOver : MonoBehaviour {
 
-    bool Gameover = false;
+    bool Gameover = false,Clear=false;
 	
-    // Use this for initialization
-	void Start (){}
-	// Update is called once per frame
-	void Update (){}
 
     public bool GetGameOver()
     {
@@ -24,4 +20,23 @@ public class GameOver : MonoBehaviour {
     {
         Gameover = false;
     }
+
+
+    public bool GetClear()
+    {
+        return Clear;
+    }
+
+    public void SetClear()
+    {
+        Clear = true;
+    }
+
+    public void ReSetClear()
+    {
+        Clear = false;
+    }
+
+
+
 }
