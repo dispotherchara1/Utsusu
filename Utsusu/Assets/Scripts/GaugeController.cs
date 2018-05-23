@@ -8,7 +8,7 @@ public class GaugeController : MonoBehaviour
     bool gauge = false;
     float timeCount = 0.0f;
     const float MAXVALUE = 1.0f;
-    const float GAUGESPEED = 20.0f;
+    const float MOVE = 20.0f;
 
     public bool GetGauge()
     {
@@ -17,24 +17,23 @@ public class GaugeController : MonoBehaviour
 
     public float GetTime()
     {
-        return timeCount * GAUGESPEED;
+        return timeCount * MOVE;
     }
 
     public void GetResetTime()//timeCountをリセット
     {
         timeCount = 0.0f;
     }
-
     // Use this for initialization
     void Start()
     {
         gaugeSlider = GameObject.Find("Slider").GetComponent<Slider>();
     }
-	
-	// Update is called once per frame
-	void Update ()
+    // Update is called once per frame
+    void Update()
     {
-        if (Input.GetKey(KeyCode.Space))//Bボタンを押している間ゲージがtrue(ゲージが動く)
+        //スペースボタンを押している間ゲージがtrue(ゲージが動く)
+        if (Input.GetKey(KeyCode.Space))
         {
             gauge = true;
         }
