@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/YamamotoOnly/result.unity
-=======
-- path: Assets/title.unity
->>>>>>> origin/honjo
+- path: Assets/YamamotoOnly/yamamoto.unity
   isLoaded: 1
   isActive: 1

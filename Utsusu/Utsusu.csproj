@@ -80,6 +80,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\GaugeController.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\SceneChange.cs" />
     <Compile Include="Assets\Scripts\Tutorial.cs" />
     <Compile Include="Assets\YamamotoOnly\script\Deathzone.cs" />
     <Compile Include="Assets\YamamotoOnly\script\GameOver.cs" />
