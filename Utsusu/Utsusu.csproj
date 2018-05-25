@@ -89,6 +89,7 @@
     <Compile Include="Assets\YamamotoOnly\script\counter.cs" />
     <Compile Include="Assets\YamamotoOnly\script\timer.cs" />
     <Compile Include="Assets\wana.cs" />
+    <Compile Include="Assets\wana2.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
