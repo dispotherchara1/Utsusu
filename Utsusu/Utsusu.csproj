@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\SceneChange.cs" />
     <Compile Include="Assets\Scripts\Tutorial.cs" />
     <Compile Include="Assets\YamamotoOnly\script\GameOver.cs" />
+    <Compile Include="Assets\YamamotoOnly\script\Loadingnow.cs" />
     <Compile Include="Assets\YamamotoOnly\script\Result.cs" />
     <Compile Include="Assets\YamamotoOnly\script\bajirisk.cs" />
     <Compile Include="Assets\YamamotoOnly\script\clicker.cs" />
