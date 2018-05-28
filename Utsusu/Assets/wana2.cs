@@ -9,9 +9,9 @@ public class wana2 : MonoBehaviour
 
     void OnCollisionStay(Collision other)
     {
-        if (other.gameObject.tag == "Cube(1))")
+        if (other.gameObject.tag == "Cube(2)")
         {
-            Destroy(other.gameObject);
+            Destroy(other.gameObject); 
         }
     }
 
