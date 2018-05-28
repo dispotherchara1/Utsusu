@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class stagecriateTest : MonoBehaviour {
+    Loadingnow loading;
     public GameObject block,Clearzone;
     public int startX=3, startY=3, massWidth=3, massHeighth=3;
     string[] stage = {" b b  bb",
@@ -28,6 +29,10 @@ public class stagecriateTest : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-	
+	switch (loading.Getload())
+        {
+            case 0:
+                break;
+        }
 	}
 }
