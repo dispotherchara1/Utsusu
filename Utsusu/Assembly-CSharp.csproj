@@ -55,6 +55,7 @@
      <Compile Include="Assets\YamamotoOnly\script\bajirisk.cs" />
      <Compile Include="Assets\YamamotoOnly\script\clicker.cs" />
      <Compile Include="Assets\YamamotoOnly\script\counter.cs" />
+     <Compile Include="Assets\YamamotoOnly\script\stagecriate.cs" />
      <Compile Include="Assets\YamamotoOnly\script\timer.cs" />
      <Compile Include="Assets\wana.cs" />
      <Compile Include="Assets\wana2.cs" />
