@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scene/stage2.unity
+=======
+- path: Assets/YamamotoOnly/LoadingScene.unity
+>>>>>>> origin/Yamamotorikiya
   isLoaded: 1
   isActive: 1
