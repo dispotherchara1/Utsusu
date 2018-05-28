@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scene/honjo.unity
+=======
+- path: Assets/YamamotoOnly/stageTest.unity
+>>>>>>> origin/Yamamotorikiya
   isLoaded: 1
   isActive: 1
