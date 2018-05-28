@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/YamamotoOnly/StageCreateTest.unity
+- path: Assets/Scene/honjo.unity
   isLoaded: 1
   isActive: 1

@@ -2,43 +2,34 @@
 using System.Collections;
 
 public class stagecriate : MonoBehaviour {
-    public GameObject block;
-    public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
-    static int stageNum = 1;
 
-    public static void GetStageNum(int a)//staticをつけてシーンを移動しても保存できる
-    {
-        stageNum = a;
-    }
+    public GameObject block,ClearZone;
+
+    public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
+
+    static int stageNum = 1;
 
     string[] stage1 = {
                         "b          ",
-                        "bbbbbbbbbbb" };
-
+                        "bbbbbbbbbbbccccc" };
     string[] stage2 = {
                         " b         ",
                         "bbbbbbbbbbb" };
-
     string[] stage3 = {
                         "  b        ",
                         "bbbbbbbbbbb" };
-
     string[] stage4 = {
                         "   bbb     ",
                         "bbbbbbbbbbb" };
-
     string[] stage5 = {
                         "   bbb     ",
                         "bbbbbbbbbbb" };
-
     string[] stage6 = {
                         "     bbbbbb",
                         "bbbbbbbbbbb" };
-
     string[] stage7 = {
                         "      bbbbb",
                         "bbbbbbbbbbb" };
-
     string[] stage8 = {
                         "       bbbb",
                         "bbbbbbbbbbb" };
@@ -48,7 +39,7 @@ public class stagecriate : MonoBehaviour {
 
     void Start()
     {
-        switch (stageNum)//stageを判別
+        switch (stageNum)//stageを判別、ステージ番と同じコードのStringをStageCopyにコピペする。
         {
             case 1:
                 stageCopy = stage1;
@@ -77,20 +68,23 @@ public class stagecriate : MonoBehaviour {
 
         }
 
-        for (int i = 0; i < stageCopy.GetLength(0); i++)
+        for (int i = 0; i < stageCopy.GetLength(0); i++)//stageCopyの文字数をカウントしその分だけ回す
         {
-            for (int j = 0; j < stageCopy[i].Length; j++)
+            for (int j = 0; j < stageCopy[i].Length; j++)//横？
             {
                 if (stageCopy[i].Substring(j, 1) == "b")
                 {
                     Instantiate(block, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity);
                 }
+                if (stageCopy[i].Substring(j, 1) == "c")
+                {
+                    Instantiate(ClearZone, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity);
+                }
             }
         }
     }
-
-    // Update is called once per frame
-    void Update () {
-	
-	}
+    public static void GetStageNum(int a)//staticをつけてシーンを移動しても保存できる
+    {
+        stageNum = a;
+    }
 }
