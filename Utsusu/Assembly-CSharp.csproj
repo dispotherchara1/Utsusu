@@ -49,6 +49,15 @@
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\SceneChange.cs" />
      <Compile Include="Assets\Scripts\Tutorial.cs" />
+     <Compile Include="Assets\YamamotoOnly\script\GameOver.cs" />
+     <Compile Include="Assets\YamamotoOnly\script\Loadingnow.cs" />
+     <Compile Include="Assets\YamamotoOnly\script\Result.cs" />
+     <Compile Include="Assets\YamamotoOnly\script\bajirisk.cs" />
+     <Compile Include="Assets\YamamotoOnly\script\clicker.cs" />
+     <Compile Include="Assets\YamamotoOnly\script\counter.cs" />
+     <Compile Include="Assets\YamamotoOnly\script\timer.cs" />
+     <Compile Include="Assets\wana.cs" />
+     <Compile Include="Assets\wana2.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
