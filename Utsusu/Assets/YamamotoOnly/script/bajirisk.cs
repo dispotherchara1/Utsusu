@@ -25,7 +25,7 @@ public class bajirisk : MonoBehaviour {
     {
         //baji_one.bajabaji;
         //baji_two.transform.position+=bajibaji();
-        if (gameover.GetGameOver() == false)
+        if (gameover.GetGameOver() == false && gameover.GetClear() == false)
         {
             foreach (GameObject bajirisk in bajirisks)
             {

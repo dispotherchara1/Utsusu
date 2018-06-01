@@ -41,9 +41,8 @@ public class PlayerController : MonoBehaviour
         transform.position = pos; //現在の位置にteleportationの移動距離を加算
     }
     // Update is called once per frame
-    void Update ()
-    {
-        if (gameover.GetGameOver() == false) { 
+    void Update () {
+        if (gameover.GetGameOver() == false && gameover.GetClear() == false) { 
         Button();//ボタンで移動距離が変わるメソッド
         GoGauge();//ゲージ式
         }
