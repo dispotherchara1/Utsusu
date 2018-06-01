@@ -1,16 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-<<<<<<< HEAD
 public class stagecriate : MonoBehaviour {
 
     public GameObject block,ClearZone,deathzone;
-
-=======
-public class stagecriate : MonoBehaviour
-{
-    public GameObject block;
->>>>>>> origin/honjo
     public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
 
     static int stageNum = 1;
@@ -88,12 +81,8 @@ public class stagecriate : MonoBehaviour
             }
         }
     }
-<<<<<<< HEAD
     public static void GetStageNum(int a)//staticをつけてシーンを移動しても保存できる
     {
         stageNum = a;
     }
-=======
-
->>>>>>> origin/honjo
 }
