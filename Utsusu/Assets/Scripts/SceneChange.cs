@@ -4,10 +4,6 @@ using UnityEngine.SceneManagement;
 public class SceneChange : MonoBehaviour
 {
     stagecriate stagecriate;
-    public void Honjo()
-    {
-        SceneManager.LoadScene("honjo");
-    }
 
     public void Select()
     {
@@ -66,6 +62,5 @@ public class SceneChange : MonoBehaviour
         SceneManager.LoadScene("honjo");
         stagecriate.GetStageNum(8);
     }
-
 
 }

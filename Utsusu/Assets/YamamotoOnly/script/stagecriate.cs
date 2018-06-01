@@ -1,10 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+<<<<<<< HEAD
 public class stagecriate : MonoBehaviour {
 
     public GameObject block,ClearZone,deathzone;
 
+=======
+public class stagecriate : MonoBehaviour
+{
+    public GameObject block;
+>>>>>>> origin/honjo
     public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
 
     static int stageNum = 1;
@@ -36,7 +42,6 @@ public class stagecriate : MonoBehaviour {
 
     string[] stageCopy ={""};
 
-
     void Start()
     {
         switch (stageNum)//stageを判別、ステージ番と同じコードのStringをStageCopyにコピペする。
@@ -65,7 +70,6 @@ public class stagecriate : MonoBehaviour {
             case 8:
                 stageCopy = stage8;
                 break;
-
         }
 
         for (int i = 0; i < stageCopy.GetLength(0); i++)//stageCopyの文字数をカウントしその分だけ回す
@@ -74,7 +78,8 @@ public class stagecriate : MonoBehaviour {
             {
                 if (stageCopy[i].Substring(j, 1) == "b")
                 {
-                    Instantiate(block, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity);
+                    Instantiate(block, new Vector3(startX + j * massWidth, 
+                    startY - i * massHeighth, 0.0f), Quaternion.identity);
                 }
                 if (stageCopy[i].Substring(j, 1) == "c")
                 {
@@ -83,8 +88,12 @@ public class stagecriate : MonoBehaviour {
             }
         }
     }
+<<<<<<< HEAD
     public static void GetStageNum(int a)//staticをつけてシーンを移動しても保存できる
     {
         stageNum = a;
     }
+=======
+
+>>>>>>> origin/honjo
 }
