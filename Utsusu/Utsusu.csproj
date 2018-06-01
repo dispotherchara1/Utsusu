@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.3.4f1</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -65,8 +63,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\wana.cs" />
-    <Compile Include="Assets\wana2.cs" />
+    <Compile Include="Assets\Scripts\GaugeController.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\SceneChange.cs" />
+    <Compile Include="Assets\Scripts\Tutorial.cs" />
+    <Compile Include="Assets\Scripts\wana.cs" />
+    <Compile Include="Assets\Scripts\wana2.cs" />
+    <Compile Include="Assets\YamamotoOnly\script\GameOver.cs" />
+    <Compile Include="Assets\YamamotoOnly\script\Loadingnow.cs" />
+    <Compile Include="Assets\YamamotoOnly\script\Result.cs" />
+    <Compile Include="Assets\YamamotoOnly\script\bajirisk.cs" />
+    <Compile Include="Assets\YamamotoOnly\script\clicker.cs" />
+    <Compile Include="Assets\YamamotoOnly\script\counter.cs" />
+    <Compile Include="Assets\YamamotoOnly\script\stagecriate.cs" />
+    <Compile Include="Assets\YamamotoOnly\script\timer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/taniguchi.unity
+- path: Assets/Scene/stage.unity
   isLoaded: 1
   isActive: 1
