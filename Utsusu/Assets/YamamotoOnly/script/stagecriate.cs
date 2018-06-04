@@ -4,18 +4,14 @@ using System.Collections;
 public class stagecriate : MonoBehaviour
 {
 
-    public GameObject block, ClearZone, deathzone, neadle;
+    public GameObject block, ClearZone, deathzone, neadle,warp,warpout;
     public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
-
-<<<<<<< HEAD
-    public static void GetStageNum(int num)
+    int warpcount=0, warpoutcount=0;
+    public static void StageNum(int num)
     { //staticをつけてシーンを移動しても保存できる
             stageNum = num;
     }
-=======
     static int stageNum = 1;
->>>>>>> origin/Yamamotorikiya
-
     string[] stage1 = { " b     b          ddddddd",
                         "b   b    b        ddddddd",
                         "bbbbbbbbbbbcccccddddddd",
@@ -30,19 +26,19 @@ public class stagecriate : MonoBehaviour
                         "bbbb   bbbbbb  b  bbbbcccccdddddd",
                         "     dd      dd dd         dddddd" };
 
-    string[] stage4 = { "                                 dddd",
-                        " b     b     b b b  b      bbbbdddd",
+    string[] stage4 = { " b     b     b b b  b      bbbbdddd",
                         "b   b    b         bb      bbbbdddd",
-                        "bbbbbb  bbbbbbb   b bbbbbb      bbbdddd",
+                        "bbbbbb  bbbbbbb   b bbbbbbw     bbbdddd",
                         "      dd       b   b      ddddddddddddd",
                         "              bb   bb   bb   bbbb",
                         "                           b   bb                   dddddd",
-                        "                bbb   bb            b               dddddd",
+                        "               Wbbb   bb            b               dddddd",
                         "             ddd   bb bbbbbbbbbb bbb bbbb bbbcccccdddddd",
                         "          ddd        d          d   d    d        dddddd"};
 
-    string[] stage5 = { "   bbb     ",
-                        "bbbbbbbbbbb" };
+    string[] stage5 = { "   bbb       bbb        bbbb           dddddd",
+                        "bbbbbbbbbbbw       bbb      Wbbbbbcccccdddddd",
+                        "           dddddddddddddddddd          dddddd"};
 
     string[] stage6 = { "     bbbbbb",
                         "bbbbbbbbbbb" };
@@ -102,7 +98,18 @@ public class stagecriate : MonoBehaviour
                 {
                     Instantiate(deathzone, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity);
                 }
-
+                if (stageCopy[i].Substring(j, 1) == "w")
+                {
+                    var obj = Instantiate(warp, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity)as GameObject;
+                    obj.name = warp.name+warpcount;
+                    warpcount++;
+                }
+                if (stageCopy[i].Substring(j, 1) == "W")
+                {
+                    var obj = Instantiate(warpout, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity)as GameObject;
+                    obj.name = warpout.name+warpoutcount;
+                    warpoutcount++;
+                }
             }
         }
     }
@@ -110,7 +117,7 @@ public class stagecriate : MonoBehaviour
     {
         stageNum = a;
     }
-    public static int RequestStageNum()//staticをつけてシーンを移動しても保存できる
+    public static int RequestStageNum()
     {
         return stageNum;
     }

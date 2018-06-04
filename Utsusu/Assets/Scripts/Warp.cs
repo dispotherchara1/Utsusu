@@ -3,17 +3,26 @@ using System.Collections;
 
 public class Warp : MonoBehaviour
 {
-    public GameObject player;
-    public GameObject blockNext;
+    //GameObject player = GameObject.Find("Player");
 
-    void OnTriggerStay2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
+        //Debug.Log("当たりました");
         if (other.gameObject.tag == "Player")
-        {
-            Vector3 pos = player.transform.position;
-            player.transform.position = blockNext.transform.position
-             + new Vector3(0.0f, 2.0f, 0.0f);
-            Debug.Log("当たりました");
-        }
+        {   
+            //このwarpBlockが生成された時点ではwarpoutが生成されていない可能性があるので
+            //この中に入れておきます
+            GameObject warpout =GameObject.Find("warpoutBlock0");
+            //Vector3 pos = player.transform.position;
+
+            //他のgameobjectがこのgameobjectと当たって、そのgameobjectのタグがPlayerだった場合
+            //otherとし条件式に当てはめ、位置を与える。
+            other.gameObject.transform.position = warpout.transform.position
+            + new Vector3(0.0f, 2.0f, 0.0f);
+           
+            //↓対応させました
+            /*現在このコードは複数のワープエリアに対応しておりません。
+            入口が複数あり出口がひとつというパターンは対応されています。*/
+        } 
     }
 }
