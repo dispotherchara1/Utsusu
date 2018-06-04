@@ -36,7 +36,4 @@ public class GameOver : MonoBehaviour {
     {
         Clear = false;
     }
-
-
-
 }
