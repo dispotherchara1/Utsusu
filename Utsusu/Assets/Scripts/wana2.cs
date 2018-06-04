@@ -26,13 +26,13 @@ public class wana2 : MonoBehaviour
 
     void Update()
     {
-        if (hit)
-        {
-            Debug.Log("当たりました");
-        }
-        else
-        {
-            Debug.Log("当たっていません");
-        }
+    //    if (hit)
+    //    {
+    //        Debug.Log("当たりました");
+    //    }
+    //    else
+    //    {
+    //        Debug.Log("当たっていません");
+    //    }
     }
 }
