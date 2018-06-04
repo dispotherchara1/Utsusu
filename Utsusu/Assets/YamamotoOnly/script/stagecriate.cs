@@ -7,9 +7,9 @@ public class stagecriate : MonoBehaviour
     public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
     static int stageNum = 1;
 
-    public static void GetStageNum(int a)//staticをつけてシーンを移動しても保存できる
-    {
-        stageNum = a;
+    public static void GetStageNum(int num)
+    { //staticをつけてシーンを移動しても保存できる
+            stageNum = num;
     }
 
     string[] stage1 = {
