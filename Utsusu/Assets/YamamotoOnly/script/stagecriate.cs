@@ -7,7 +7,14 @@ public class stagecriate : MonoBehaviour
     public GameObject block, ClearZone, deathzone, neadle;
     public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
 
+<<<<<<< HEAD
+    public static void GetStageNum(int num)
+    { //staticをつけてシーンを移動しても保存できる
+            stageNum = num;
+    }
+=======
     static int stageNum = 1;
+>>>>>>> origin/Yamamotorikiya
 
     string[] stage1 = { " b     b          ddddddd",
                         "b   b    b        ddddddd",

@@ -3,36 +3,42 @@ using System.Collections;
 
 public class wana2 : MonoBehaviour
 {
-    //public Transform target;//追いかける対象-オブジェクトをインスペクタから登録できるように
-    bool hit = false;
+    public Transform target;//追いかける対象-オブジェクトをインスペクタから登録できるように
+    public float speed = 0.1f;//移動スピード
+    bool playerHit = false;
+    private Vector3 vec;
 
-    public bool GetHit()
+
+    public bool GetPlayerHit()
     {
-        return hit;
+        return playerHit;
     }
 
-    //オブジェクトが衝突したとき
-    void OnTriggerStay2D(Collider2D other)
+    void OnCollisionStay2D(Collision2D other)
     {
         if (other.gameObject.tag == "Player")
         {
-            hit = true;
+            Debug.Log("範囲に入りました");
+            //targetに向かって進む
+            playerHit = true;
         }
-        else 
+        else
         {
-            hit = false;
+            playerHit = false;
         }
+    }
+
+    void Start()
+    {
+        //target = GameObject.Find("対象").transform; インスペクタから登録するのでいらない
     }
 
     void Update()
     {
-    //    if (hit)
-    //    {
-    //        Debug.Log("当たりました");
-    //    }
-    //    else
-    //    {
-    //        Debug.Log("当たっていません");
-    //    }
+        //targetの方に少しずつ向きが変わる
+        //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(target.position - transform.position), 0.3f);
+
+        //targetに向かって進む
+        //transform.position += transform.forward * speed;
     }
 }
