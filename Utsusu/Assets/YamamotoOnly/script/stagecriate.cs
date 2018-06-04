@@ -8,29 +8,40 @@ public class stagecriate : MonoBehaviour {
 
     static int stageNum = 1;
 
-    string[] stage1 = {
-                        "b          ",
-                        "bbbbbbbbbbbccccc" };
+    string[] stage1 = { " b     b ",
+                        "b   b    b    ",
+                        "bbbbbbbbbbbccccc",
+                        "                ddddddd" };
+
     string[] stage2 = {
-                        " b         ",
+                        "  b    b b   ",
+                        "bbb bb  bbbb  b bbbbbccccc",
+                        "   d  dd    dd d          dddddd"};
+
+    string[] stage3 = { " b     b    bb",
+                        "b   b    b b  b bb",
+                        "bbbb   bbbbbb  b  bbbbccccc",
+                        "     dd      dd dd          dddddd" };
+
+    string[] stage4 = {  " b     b     b b b  b       bbbb",
+                        "b   b    b         bb      bbbb",
+                        "bbbbbb  bbbbbbb   b bbbbbb      bbb",
+                        "      dd       b   b      dddddddddd",
+                        "              bb   bb   bb   bbbb",
+                        "                           b   bb   ",
+                        "               bbbbbbbbbb bbb bbbb bbbccccc",
+                        "                         d   d    d        dddddd"};
+
+    string[] stage5 = { "   bbb     ",
                         "bbbbbbbbbbb" };
-    string[] stage3 = {
-                        "  b        ",
+
+    string[] stage6 = { "     bbbbbb",
                         "bbbbbbbbbbb" };
-    string[] stage4 = {
-                        "   bbb     ",
+
+    string[] stage7 = { "      bbbbb",
                         "bbbbbbbbbbb" };
-    string[] stage5 = {
-                        "   bbb     ",
-                        "bbbbbbbbbbb" };
-    string[] stage6 = {
-                        "     bbbbbb",
-                        "bbbbbbbbbbb" };
-    string[] stage7 = {
-                        "      bbbbb",
-                        "bbbbbbbbbbb" };
-    string[] stage8 = {
-                        "       bbbb",
+
+    string[] stage8 = { "       bbbb",
                         "bbbbbbbbbbb" };
 
     string[] stageCopy ={""};
@@ -78,6 +89,11 @@ public class stagecriate : MonoBehaviour {
                 {
                     Instantiate(ClearZone, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity);
                 }
+                if (stageCopy[i].Substring(j, 1) == "d")
+                {
+                    Instantiate(deathzone, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity);
+                }
+
             }
         }
     }

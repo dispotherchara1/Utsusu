@@ -13,7 +13,7 @@ using System.Collections;
 public class bajirisk : MonoBehaviour {
     public GameOver gameover;
     public GameObject[] bajirisks;//バジリスクの数を好きな数だけ入れる
-    public float bajirun =0.05f ;
+    public float bajirun =0.1f ;
     //public BAJI one;//物体Xに速度を突っ込むパブリック
     // Use this for initialization
     void Start () {
