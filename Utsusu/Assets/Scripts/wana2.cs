@@ -5,13 +5,26 @@ public class wana2 : MonoBehaviour
 {
     public Transform target;//追いかける対象-オブジェクトをインスペクタから登録できるように
     public float speed = 0.1f;//移動スピード
+    bool playerHit = false;
     private Vector3 vec;
 
-    void OnCollisionStay(Collision other)
+
+    public bool GetPlayerHit()
     {
-        if (other.gameObject.tag == "Cube(2)")
+        return playerHit;
+    }
+
+    void OnCollisionStay2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Player")
         {
-            Destroy(other.gameObject); 
+            Debug.Log("範囲に入りました");
+            //targetに向かって進む
+            playerHit = true;
+        }
+        else
+        {
+            playerHit = false;
         }
     }
 
@@ -23,9 +36,9 @@ public class wana2 : MonoBehaviour
     void Update()
     {
         //targetの方に少しずつ向きが変わる
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(target.position - transform.position), 0.3f);
+        //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(target.position - transform.position), 0.3f);
 
         //targetに向かって進む
-        transform.position += transform.forward * speed;
+        //transform.position += transform.forward * speed;
     }
 }
