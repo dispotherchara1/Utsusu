@@ -18,6 +18,7 @@ public class GameOver : MonoBehaviour {
             gameobera.enabled = true;
         }
     }
+    //////////////////////////////////////////////////////////////////////
 
     public bool GetGameOver()//ゲームオーバーかどうかを調べます
     {

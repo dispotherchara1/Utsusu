@@ -7,6 +7,40 @@ public class PlayerController : MonoBehaviour
     Vector2 teleportation = new Vector2(50.0f, 0.0f);
     //Vector2 jamp = new Vector2(0.0f,200.0f);
 
+
+    //重力加速度.
+    private const float gravitationalAcceleration = -9.81f;
+
+    /// <summary>
+    /// 重力方向を変更する.
+    /// </summary>
+    /// <param name="direction">重力の向き.</param>
+    private void Change(Vector2 direction)
+    {
+        //引数のVecotr2を単位ベクトルに正規化し重力加速度を掛ける.
+        Physics2D.gravity = direction.normalized * gravitationalAcceleration;
+        Debug.Log(Physics2D.gravity);
+    }
+    void Update()
+    {
+        /*if (Input.GetButtonDown(KeyCode.D))
+        {
+            gravitationalAcceleration * (-1);
+        }*/
+
+        if (gameover.GetGameOver() == false && gameover.GetClear() == false)
+        {
+            Button();//ボタンで移動距離が変わるメソッド
+            GoGauge();//ゲージ式
+        }
+    }
+    private void Awake()
+    {
+        //Startが実行される前に初期重力を設定する.(Startないけど)
+        Physics2D.gravity = Vector3.up * gravitationalAcceleration;
+    }
+
+
     void Button() // ボタンで移動距離が違う
     {
         Vector2 pos = transform.position;  // 現在位置をposに代入
@@ -39,13 +73,6 @@ public class PlayerController : MonoBehaviour
             gaugeController.GetResetTime();
         }
         transform.position = pos; //現在の位置にteleportationの移動距離を加算
-    }
-    // Update is called once per frame
-    void Update () {
-        if (gameover.GetGameOver() == false && gameover.GetClear() == false) { 
-        Button();//ボタンで移動距離が変わるメソッド
-        GoGauge();//ゲージ式
-        }
     }
     private void OnCollisionEnter2D(Collision2D col)
     {

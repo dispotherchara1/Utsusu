@@ -3,7 +3,7 @@ using System.Collections;
 
 public class stagecriate : MonoBehaviour {
 
-    public GameObject block,ClearZone,deathzone;
+    public GameObject block,ClearZone,deathzone,neadle;
     public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
 
     static int stageNum = 1;

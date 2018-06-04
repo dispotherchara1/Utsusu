@@ -7,11 +7,11 @@ public class Re_sult : MonoBehaviour {
     
     public void turn()
     {
-        SceneManager.LoadScene("title");
+        SceneManager.LoadScene(3);//titleシーンに戻る
     }
 
     public void reload()
     {
-        SceneManager.LoadScene(1); // シーン読み込みの際に破棄されなくなる
+        SceneManager.LoadScene(4);//GameSceneシーンを再度呼び込む
     }
 }
