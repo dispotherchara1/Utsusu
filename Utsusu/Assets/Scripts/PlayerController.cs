@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
         {
             gameover.SetGameOver();
         }
-        else if (col.gameObject.tag == "ClearZone")
+        if (col.gameObject.tag == "ClearZone")
         {
             gameover.SetClear();
         }

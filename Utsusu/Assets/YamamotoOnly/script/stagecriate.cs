@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class stagecriate : MonoBehaviour {
+public class stagecriate : MonoBehaviour
+{
 
-    public GameObject block,ClearZone,deathzone,neadle;
+    public GameObject block, ClearZone, deathzone, neadle;
     public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
 
     static int stageNum = 1;
@@ -13,8 +14,7 @@ public class stagecriate : MonoBehaviour {
                         "bbbbbbbbbbbcccccddddddd",
                         "                ddddddd" };
 
-    string[] stage2 = {
-                        "  b    b b                  dddddd",
+    string[] stage2 = { "  b    b b                  dddddd",
                         "bbb bb  bbbb  b bbbbbcccccdddddd",
                         "   d  dd    dd d          dddddd"};
 
@@ -46,7 +46,7 @@ public class stagecriate : MonoBehaviour {
     string[] stage8 = { "       bbbb",
                         "bbbbbbbbbbb" };
 
-    string[] stageCopy ={""};
+    string[] stageCopy = { "" };
 
     void Start()
     {
@@ -84,7 +84,7 @@ public class stagecriate : MonoBehaviour {
             {
                 if (stageCopy[i].Substring(j, 1) == "b")
                 {
-                    Instantiate(block, new Vector3(startX + j * massWidth, 
+                    Instantiate(block, new Vector3(startX + j * massWidth,
                     startY - i * massHeighth, 0.0f), Quaternion.identity);
                 }
                 if (stageCopy[i].Substring(j, 1) == "c")
@@ -102,5 +102,9 @@ public class stagecriate : MonoBehaviour {
     public static void GetStageNum(int a)//staticをつけてシーンを移動しても保存できる
     {
         stageNum = a;
+    }
+    public static int RequestStageNum()//staticをつけてシーンを移動しても保存できる
+    {
+        return stageNum;
     }
 }
