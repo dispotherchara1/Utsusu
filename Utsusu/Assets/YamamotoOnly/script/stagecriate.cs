@@ -3,10 +3,10 @@ using System.Collections;
 
 public class stagecriate : MonoBehaviour
 {
-
-    public GameObject block, ClearZone, deathzone, neadle,warp,warpout;
+    Warp warp;
+    public GameObject block, ClearZone, deathzone, neadle,warpin,warpout;
     public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
-    int warpcount=0, warpoutcount=0;
+    int warpincount=0, warpoutcount=0;
     public static void StageNum(int num)
     { //staticをつけてシーンを移動しても保存できる
             stageNum = num;
@@ -36,7 +36,7 @@ public class stagecriate : MonoBehaviour
                         "             ddd   bb bbbbbbbbbb bbb bbbb bbbcccccdddddd",
                         "          ddd        d          d   d    d        dddddd"};
 
-    string[] stage5 = { "   bbb       bbb        bbbb           dddddd",
+    string[] stage5 = { "   bbb       bbbw      Wbbbb           dddddd",
                         "bbbbbbbbbbbw       bbb      Wbbbbbcccccdddddd",
                         "           dddddddddddddddddd          dddddd"};
 
@@ -100,14 +100,15 @@ public class stagecriate : MonoBehaviour
                 }
                 if (stageCopy[i].Substring(j, 1) == "w")
                 {
-                    var obj = Instantiate(warp, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity)as GameObject;
-                    obj.name = warp.name+warpcount;
-                    warpcount++;
+                    var obj = Instantiate(warpin, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity)as GameObject;
+                    obj.name = warpin.name+warpincount;
+                    //warp.setwarpNo(warpincount--);
+                    warpincount++;
                 }
                 if (stageCopy[i].Substring(j, 1) == "W")
                 {
                     var obj = Instantiate(warpout, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity)as GameObject;
-                    obj.name = warpout.name+warpoutcount;
+                    obj.name = warpout.name+warpin.name+warpoutcount;
                     warpoutcount++;
                 }
             }
