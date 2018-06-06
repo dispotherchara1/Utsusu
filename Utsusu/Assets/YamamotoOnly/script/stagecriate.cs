@@ -3,39 +3,25 @@ using System.Collections;
 
 public class stagecriate : MonoBehaviour
 {
-<<<<<<< HEAD
-    public GameObject block, ClearZone, deathzone, neadle;
-    public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
-    
-    public static void GetStageNum(int num)
-=======
     Warp warp;
     public GameObject block, ClearZone, deathzone, neadle,warpin,warpout;
     public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
     int warpincount=0, warpoutcount=0;
-    public static void StageNum(int num)
->>>>>>> origin/Yamamotorikiya
-    { //staticをつけてシーンを移動しても保存できる
-            stageNum = num;
-    }
     static int stageNum = 1;
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/Yamamotorikiya
     string[] stage1 = { " b     b          ddddddd",
                         "b   b    b        ddddddd",
                         "bbbbbbbbbbbcccccddddddd",
-                        "                ddddddd" };
+                        "ddddddddddddddddddddddd" };
 
-    string[] stage2 = { "  b    b b                  dddddd",
-                        "bbb bb  bbbb  b bbbbbcccccdddddd",
-                        "   d  dd    dd d          dddddd"};
+    string[] stage2 = { "          ",
+                        "  bb  bbdb  b b               dddddd",
+                        "bdb dbbbbdb  b  bbbbbcccccdddddd",
+                        "dddddddddddddddddddddddddddddddd"};
 
     string[] stage3 = { " b     b    bb               dddddd",
                         "b   b    b b  b bb           dddddd",
                         "bbbb   bbbbbb  b  bbbbcccccdddddd",
-                        "     dd      dd dd         dddddd" };
+                        "ddddddddddddddddddddddddddddddddd" };
 
     string[] stage4 = { " b     b     b b b  b      bbbbdddd",
                         "b   b    b         bb      bbbbdddd",
@@ -49,24 +35,34 @@ public class stagecriate : MonoBehaviour
 
     string[] stage5 = { "   bbb       bbbw      Wbbbb           dddddd",
                         "bbbbbbbbbbbw       bbb      Wbbbbbcccccdddddd",
-                        "           dddddddddddddddddd          dddddd"};
+                        "ddddddddddddddddddddddddddddddddddddddddddddd"};
 
     string[] stage6 = {" bW    b     b b bdddd",
                         "b   b    b      bbdddd",
-                        "bbbbbbbbbbbbbb bdddd",
-                        "          dddd ddddd",
-                        "          dddd ddddd",
-                        "          dddd ddddd",
-                        "          dddd ddddd",
-                        "          dddd ddddd",
-                        "            dd dddd",
+                        "bbbbbbbbbbbbbb  bdddd",
+                        "          dddd  ddddd",
+                        "          dddd  ddddd",
+                        "          dddd  ddddd",
+                        "          dddd  ddddd",
+                        "          dddd  ddddd",
+                        "            dd  dddd",
                         "",
-                        "               d d      dddddd",
-                        "             bb w ccccccdddddd",
+                        "                d        dddddd",
+                        "           W  bb wwccccccdddddd",
                         "dddddddddddddddddddddddddddddd"};
 
-    string[] stage7 = { "      bbbbb",
-                        "bbbbbbbbbbb" };
+    string[] stage7 = { "        ddddddddddddddddddddddddddddddddddd",
+                        "            dddddbbbb   bb     db           ddddddddd",
+                        "bbbbbbbw w wdddddbbbbbb        bb           ddddddddd",
+                        "dddddddddddddddddbbbbbbWbbbbbbbbbbbbbbbbbbbbddddddddd",
+                        "ddddddddddddddddddddddddddddddddddddddddddd",
+                        "d ddddddddddddddd",
+                        "dWddddddddddddddd",
+                        "",
+                        "",
+                        "           dddddd",
+                        "Wbbbbbccccccdddddd",
+                        "dddddddddddddddddd"};
 
     string[] stage8 = { "       bbbb",
                         "bbbbbbbbbbb" };
@@ -151,15 +147,11 @@ public class stagecriate : MonoBehaviour
             }
         }
     }
-<<<<<<< HEAD
-    public static int RequestStageNum()//staticをつけてシーンを移動しても保存できる
-=======
     public static void GetStageNum(int a)//staticをつけてシーンを移動しても保存できる
     {
         stageNum = a;
     }
     public static int RequestStageNum()
->>>>>>> origin/Yamamotorikiya
     {
         return stageNum;
     }
