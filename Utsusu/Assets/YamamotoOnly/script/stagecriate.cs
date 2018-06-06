@@ -41,7 +41,8 @@ public class stagecriate : MonoBehaviour
                         "           dddddddddddddddddd          dddddd"};
 
     string[] stage6 = { "     bbbbbb",
-                        "bbbbbbbbbbb" };
+                        "bbbbbbbbbbbbbb",
+                        };
 
     string[] stage7 = { "      bbbbb",
                         "bbbbbbbbbbb" };
@@ -85,32 +86,47 @@ public class stagecriate : MonoBehaviour
         {
             for (int j = 0; j < stageCopy[i].Length; j++)//横？
             {
-                if (stageCopy[i].Substring(j, 1) == "b")
-                {
-                    Instantiate(block, new Vector3(startX + j * massWidth,
+                switch (stageCopy[i].Substring(j, 1)) {
+                    case "b": Instantiate(block, new Vector3(startX + j * massWidth,
                     startY - i * massHeighth, 0.0f), Quaternion.identity);
+                        break;
+
+                    case "c":
+                        Instantiate(ClearZone, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity);
+                        break;
+
+                    case "d":
+                        Instantiate(deathzone, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity);
+                        break;
+
+                    case "w":
+                        var iw = Instantiate(warpin, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity)as GameObject;
+                    iw.name = warpin.name+warpincount;
+                    warpincount++;
+                        break;
+
+                    case "W":
+                    var ow = Instantiate(warpout, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity)as GameObject;
+                    ow.name = warpout.name+warpin.name+warpoutcount;
+                    warpoutcount++;
+                        break;
+                }
+                /*if (stageCopy[i].Substring(j, 1) == "b")
+                {
                 }
                 if (stageCopy[i].Substring(j, 1) == "c")
                 {
-                    Instantiate(ClearZone, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity);
                 }
                 if (stageCopy[i].Substring(j, 1) == "d")
                 {
-                    Instantiate(deathzone, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity);
                 }
                 if (stageCopy[i].Substring(j, 1) == "w")
                 {
-                    var obj = Instantiate(warpin, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity)as GameObject;
-                    obj.name = warpin.name+warpincount;
-                    //warp.setwarpNo(warpincount--);
-                    warpincount++;
+                    
                 }
                 if (stageCopy[i].Substring(j, 1) == "W")
                 {
-                    var obj = Instantiate(warpout, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity)as GameObject;
-                    obj.name = warpout.name+warpin.name+warpoutcount;
-                    warpoutcount++;
-                }
+                }*/
             }
         }
     }
