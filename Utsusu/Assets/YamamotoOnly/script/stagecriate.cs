@@ -40,9 +40,19 @@ public class stagecriate : MonoBehaviour
                         "bbbbbbbbbbbw       bbb      Wbbbbbcccccdddddd",
                         "           dddddddddddddddddd          dddddd"};
 
-    string[] stage6 = { "     bbbbbb",
-                        "bbbbbbbbbbbbbb",
-                        };
+    string[] stage6 = {" bW    b     b b bdddd",
+                        "b   b    b      bbdddd",
+                        "bbbbbbbbbbbbbb bdddd",
+                        "          dddd ddddd",
+                        "          dddd ddddd",
+                        "          dddd ddddd",
+                        "          dddd ddddd",
+                        "          dddd ddddd",
+                        "            dd dddd",
+                        "",
+                        "               d d      dddddd",
+                        "             bb w ccccccdddddd",
+                        "dddddddddddddddddddddddddddddd"};
 
     string[] stage7 = { "      bbbbb",
                         "bbbbbbbbbbb" };
