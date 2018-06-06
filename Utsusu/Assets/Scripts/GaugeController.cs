@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class GaugeController : MonoBehaviour
 {
+    public GameOver gameover;
     Slider gaugeSlider;
     bool gauge = false;
     float timeCount = 0.0f;
@@ -32,24 +33,27 @@ public class GaugeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //スペースボタンを押している間ゲージがtrue(ゲージが動く)
-        if (Input.GetKey(KeyCode.Space))
+        if (gameover.GetGameOver() == false && gameover.GetClear() == false)
         {
-            gauge = true;
-        }
-        else
-        {
-            gauge = false;//押してないときfalse
-        }
-
-        if (gauge)
-        {
-            timeCount += Time.deltaTime;
-            if (timeCount >= MAXVALUE)//ゲージの最大値
+            //スペースボタンを押している間ゲージがtrue(ゲージが動く)
+            if (Input.GetKey(KeyCode.Space))
             {
-                timeCount = 0.0f;//ゼロに戻る
+                gauge = true;
             }
+            else
+            {
+                gauge = false;//押してないときfalse
+            }
+
+            if (gauge)
+            {
+                timeCount += Time.deltaTime;
+                if (timeCount >= MAXVALUE)//ゲージの最大値
+                {
+                    timeCount = 0.0f;//ゼロに戻る
+                }
+            }
+            gaugeSlider.value = timeCount;
         }
-        gaugeSlider.value = timeCount;
     }
 }
