@@ -3,43 +3,25 @@ using System.Collections;
 
 public class stagecriate : MonoBehaviour
 {
-<<<<<<< HEAD
     Warp warp;
+
     public GameObject block, ClearZone, deathzone, neadle,warpin,warpout;
     public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
     int warpincount=0, warpoutcount=0;
     static int stageNum = 1;
-=======
-    public GameObject block, ClearZone, deathzone, neadle
-                      ,warpin, warpout;
-    public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
-    Warp warp;
-    int warpincount = 0, warpoutcount = 0;
-    static int stageNum = 1;
 
-    public static void GetStageNum(int num)
-    { //staticをつけてシーンを移動しても保存できる
-        stageNum = num;
-    }
-
-    public static int RequestStageNum()
-    {
-        return stageNum;
-    }
-
->>>>>>> origin/honjo
     string[] stage1 = { " b     b          ddddddd",
                         "b   b    b        ddddddd",
                         "bbbbbbbbbbbcccccddddddd",
                         "ddddddddddddddddddddddd" };
 
     string[] stage2 = { "          ",
-                        "  bb  bbdb  b b               dddddd",
+                        "  bb  bbdb  b b           dddddd",
                         "bdb dbbbbdb  b  bbbbbcccccdddddd",
                         "dddddddddddddddddddddddddddddddd"};
 
-    string[] stage3 = { " b     b    bb               dddddd",
-                        "b   b    b b  b bb           dddddd",
+    string[] stage3 = { " b     b    bb             dddddd",
+                        "b   b    b b  b bb         dddddd",
                         "bbbb   bbbbbb  b  bbbbcccccdddddd",
                         "ddddddddddddddddddddddddddddddddd" };
 
@@ -72,12 +54,15 @@ public class stagecriate : MonoBehaviour
                         "dddddddddddddddddddddddddddddd"};
 
     string[] stage7 = { "        ddddddddddddddddddddddddddddddddddd",
-                        "            dddddbbbb   bb     db           ddddddddd",
-                        "bbbbbbbw w wdddddbbbbbb        bb           ddddddddd",
+                        "              dddddbbbb   bb     db           ddddddddd",
+                        "bbbbbbbwbbwbbwdddddbbbbbb        bb           ddddddddd",
                         "dddddddddddddddddbbbbbbWbbbbbbbbbbbbbbbbbbbbddddddddd",
+                        "ddddddddddddddddddddddddddddddddddddddddddd",
                         "ddddddddddddddddddddddddddddddddddddddddddd",
                         "d ddddddddddddddd",
                         "dWddddddddddddddd",
+                        "",
+                        "",
                         "",
                         "",
                         "           dddddd",
@@ -167,7 +152,6 @@ public class stagecriate : MonoBehaviour
             }
         }
     }
-<<<<<<< HEAD
     public static void GetStageNum(int a)//staticをつけてシーンを移動しても保存できる
     {
         stageNum = a;
@@ -176,6 +160,4 @@ public class stagecriate : MonoBehaviour
     {
         return stageNum;
     }
-=======
->>>>>>> origin/honjo
 }

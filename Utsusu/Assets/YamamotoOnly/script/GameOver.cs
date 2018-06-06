@@ -6,10 +6,12 @@ public class GameOver : MonoBehaviour {
     //ゲームオーバーか、ゲームクリアーかどうかのBool変数
     bool Gameover = false, Clear = false;
     public Canvas gameobera;
-
+    public Image Clearimg, GameOverimg;
     private void Start()
     {
         gameobera.enabled = false;
+        Clearimg.enabled = false;
+        GameOverimg.enabled = false;
     }
     private void Update()
     {
@@ -28,6 +30,7 @@ public class GameOver : MonoBehaviour {
     public void SetGameOver()//ゲームオーバーをオンにします
     {
         Gameover = true;
+        GameOverimg.enabled = true;
     }
 
     public void SetGameStert()//ゲームボーバーをオフにします
@@ -44,6 +47,7 @@ public class GameOver : MonoBehaviour {
     public void SetClear()//ゲームクリアーをオンにします
     {
         Clear = true;
+        Clearimg.enabled = true;
     }
 
     public void ReSetClear()//ゲームクリアーをオフにします
