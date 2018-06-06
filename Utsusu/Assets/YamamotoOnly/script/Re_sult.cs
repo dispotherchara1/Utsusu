@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
-
-
 public class Re_sult : MonoBehaviour {
 
     int a = stagecriate.RequestStageNum();

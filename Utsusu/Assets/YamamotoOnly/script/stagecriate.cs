@@ -3,26 +3,23 @@ using System.Collections;
 
 public class stagecriate : MonoBehaviour
 {
-<<<<<<< HEAD
-    public GameObject block, ClearZone, deathzone, neadle;
+    public GameObject block, ClearZone, deathzone, neadle
+                      ,warpin, warpout;
     public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
-    
-    public static void GetStageNum(int num)
-=======
     Warp warp;
-    public GameObject block, ClearZone, deathzone, neadle,warpin,warpout;
-    public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
-    int warpincount=0, warpoutcount=0;
-    public static void StageNum(int num)
->>>>>>> origin/Yamamotorikiya
-    { //staticをつけてシーンを移動しても保存できる
-            stageNum = num;
-    }
+    int warpincount = 0, warpoutcount = 0;
     static int stageNum = 1;
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/Yamamotorikiya
+    public static void GetStageNum(int num)
+    { //staticをつけてシーンを移動しても保存できる
+        stageNum = num;
+    }
+
+    public static int RequestStageNum()
+    {
+        return stageNum;
+    }
+
     string[] stage1 = { " b     b          ddddddd",
                         "b   b    b        ddddddd",
                         "bbbbbbbbbbbcccccddddddd",
@@ -121,15 +118,15 @@ public class stagecriate : MonoBehaviour
                         break;
 
                     case "w":
-                        var iw = Instantiate(warpin, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity)as GameObject;
-                    iw.name = warpin.name+warpincount;
-                    warpincount++;
+                        var iw = Instantiate(warpin, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity) as GameObject;
+                        iw.name = warpin.name + warpincount;
+                        warpincount++;
                         break;
 
                     case "W":
-                    var ow = Instantiate(warpout, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity)as GameObject;
-                    ow.name = warpout.name+warpin.name+warpoutcount;
-                    warpoutcount++;
+                        var ow = Instantiate(warpout, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity) as GameObject;
+                        ow.name = warpout.name + warpin.name + warpoutcount;
+                        warpoutcount++;
                         break;
                 }
                 /*if (stageCopy[i].Substring(j, 1) == "b")
@@ -150,17 +147,5 @@ public class stagecriate : MonoBehaviour
                 }*/
             }
         }
-    }
-<<<<<<< HEAD
-    public static int RequestStageNum()//staticをつけてシーンを移動しても保存できる
-=======
-    public static void GetStageNum(int a)//staticをつけてシーンを移動しても保存できる
-    {
-        stageNum = a;
-    }
-    public static int RequestStageNum()
->>>>>>> origin/Yamamotorikiya
-    {
-        return stageNum;
     }
 }
