@@ -3,15 +3,26 @@ using System.Collections;
 
 public class stagecriate : MonoBehaviour
 {
+<<<<<<< HEAD
     public GameObject block, ClearZone, deathzone, neadle;
     public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
     
     public static void GetStageNum(int num)
+=======
+    Warp warp;
+    public GameObject block, ClearZone, deathzone, neadle,warpin,warpout;
+    public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
+    int warpincount=0, warpoutcount=0;
+    public static void StageNum(int num)
+>>>>>>> origin/Yamamotorikiya
     { //staticをつけてシーンを移動しても保存できる
             stageNum = num;
     }
     static int stageNum = 1;
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/Yamamotorikiya
     string[] stage1 = { " b     b          ddddddd",
                         "b   b    b        ddddddd",
                         "bbbbbbbbbbbcccccddddddd",
@@ -26,22 +37,33 @@ public class stagecriate : MonoBehaviour
                         "bbbb   bbbbbb  b  bbbbcccccdddddd",
                         "     dd      dd dd         dddddd" };
 
-    string[] stage4 = { "                                 dddd",
-                        " b     b     b b b  b      bbbbdddd",
+    string[] stage4 = { " b     b     b b b  b      bbbbdddd",
                         "b   b    b         bb      bbbbdddd",
-                        "bbbbbb  bbbbbbb   b bbbbbb      bbbdddd",
+                        "bbbbbb  bbbbbbb   b bbbbbbw     bbbdddd",
                         "      dd       b   b      ddddddddddddd",
                         "              bb   bb   bb   bbbb",
                         "                           b   bb                   dddddd",
-                        "                bbb   bb            b               dddddd",
+                        "               Wbbb   bb            b               dddddd",
                         "             ddd   bb bbbbbbbbbb bbb bbbb bbbcccccdddddd",
                         "          ddd        d          d   d    d        dddddd"};
 
-    string[] stage5 = { "   bbb     ",
-                        "bbbbbbbbbbb" };
+    string[] stage5 = { "   bbb       bbbw      Wbbbb           dddddd",
+                        "bbbbbbbbbbbw       bbb      Wbbbbbcccccdddddd",
+                        "           dddddddddddddddddd          dddddd"};
 
-    string[] stage6 = { "     bbbbbb",
-                        "bbbbbbbbbbb" };
+    string[] stage6 = {" bW    b     b b bdddd",
+                        "b   b    b      bbdddd",
+                        "bbbbbbbbbbbbbb bdddd",
+                        "          dddd ddddd",
+                        "          dddd ddddd",
+                        "          dddd ddddd",
+                        "          dddd ddddd",
+                        "          dddd ddddd",
+                        "            dd dddd",
+                        "",
+                        "               d d      dddddd",
+                        "             bb w ccccccdddddd",
+                        "dddddddddddddddddddddddddddddd"};
 
     string[] stage7 = { "      bbbbb",
                         "bbbbbbbbbbb" };
@@ -85,24 +107,59 @@ public class stagecriate : MonoBehaviour
         {
             for (int j = 0; j < stageCopy[i].Length; j++)//横？
             {
-                if (stageCopy[i].Substring(j, 1) == "b")
-                {
-                    Instantiate(block, new Vector3(startX + j * massWidth,
+                switch (stageCopy[i].Substring(j, 1)) {
+                    case "b": Instantiate(block, new Vector3(startX + j * massWidth,
                     startY - i * massHeighth, 0.0f), Quaternion.identity);
+                        break;
+
+                    case "c":
+                        Instantiate(ClearZone, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity);
+                        break;
+
+                    case "d":
+                        Instantiate(deathzone, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity);
+                        break;
+
+                    case "w":
+                        var iw = Instantiate(warpin, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity)as GameObject;
+                    iw.name = warpin.name+warpincount;
+                    warpincount++;
+                        break;
+
+                    case "W":
+                    var ow = Instantiate(warpout, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity)as GameObject;
+                    ow.name = warpout.name+warpin.name+warpoutcount;
+                    warpoutcount++;
+                        break;
+                }
+                /*if (stageCopy[i].Substring(j, 1) == "b")
+                {
                 }
                 if (stageCopy[i].Substring(j, 1) == "c")
                 {
-                    Instantiate(ClearZone, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity);
                 }
                 if (stageCopy[i].Substring(j, 1) == "d")
                 {
-                    Instantiate(deathzone, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity);
                 }
-
+                if (stageCopy[i].Substring(j, 1) == "w")
+                {
+                    
+                }
+                if (stageCopy[i].Substring(j, 1) == "W")
+                {
+                }*/
             }
         }
     }
+<<<<<<< HEAD
     public static int RequestStageNum()//staticをつけてシーンを移動しても保存できる
+=======
+    public static void GetStageNum(int a)//staticをつけてシーンを移動しても保存できる
+    {
+        stageNum = a;
+    }
+    public static int RequestStageNum()
+>>>>>>> origin/Yamamotorikiya
     {
         return stageNum;
     }

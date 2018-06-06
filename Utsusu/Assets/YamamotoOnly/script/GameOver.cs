@@ -7,10 +7,10 @@ public class GameOver : MonoBehaviour {
     bool Gameover = false, Clear = false;
     public Canvas gameobera;
 
-    //private void Start()
-    //{
-    //    gameobera.enabled = false;
-    //}
+    private void Start()
+    {
+        gameobera.enabled = false;
+    }
     private void Update()
     {
         if (Gameover == true||Clear==true)

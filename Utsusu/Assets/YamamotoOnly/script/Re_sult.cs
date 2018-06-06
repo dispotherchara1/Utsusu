@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 
 public class Re_sult : MonoBehaviour {
+
     int a = stagecriate.RequestStageNum();
     public void turn()
     {
