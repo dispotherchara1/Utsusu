@@ -4,20 +4,21 @@ using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour {
     //ゲームオーバーか、ゲームクリアーかどうかのBool変数
-    bool Gameover = false,Clear=false;
+    bool Gameover = false, Clear = false;
     public Canvas gameobera;
 
-    private void Start()
-    {
-        gameobera.enabled = false;
-    }
+    //private void Start()
+    //{
+    //    gameobera.enabled = false;
+    //}
     private void Update()
     {
-        if (Gameover == true)
+        if (Gameover == true||Clear==true)
         {
             gameobera.enabled = true;
         }
     }
+    //////////////////////////////////////////////////////////////////////
 
     public bool GetGameOver()//ゲームオーバーかどうかを調べます
     {
