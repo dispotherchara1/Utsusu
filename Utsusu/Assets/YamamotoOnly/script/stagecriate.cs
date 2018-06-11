@@ -5,20 +5,33 @@ public class stagecriate : MonoBehaviour
 {
     Warp warp;
 
-    public GameObject block, ClearZone, deathzone, neadle,warpin,warpout;
+    public GameObject block, ClearZone, deathzone, neadle,warpin,warpout,BB;
     public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
     int warpincount=0, warpoutcount=0;
     static int stageNum = 1;
 
-    string[] stage1 = { " b     b          ddddddd",
-                        "b   b    b        ddddddd",
+    string[] stage1 = { " b     b        ddddddd",
+                        "b   b    b      ddddddd",
                         "bbbbbbbbbbbcccccddddddd",
                         "ddddddddddddddddddddddd" };
 
     string[] stage2 = { "          ",
-                        "  bb  bbdb  b b           dddddd",
-                        "bdb dbbbbdb  b  bbbbbcccccdddddd",
-                        "dddddddddddddddddddddddddddddddd"};
+                        "  bb  bbdb  b b            dddddd",
+                        "bdb dbbbbdb  b  bbb  bbbbbbdddddd",
+                        "dddddddddddddddddddwwdddddddddddd",
+                        "",
+                        "",
+                        "",
+                        "      d                                         ddd",
+                        "WWbbbb     dd                                W  ddd",
+                        "      bbbbbb      d                             ddd",
+                        "            bbbbbb     dd                       ddd",
+                        "                  bbbbbb      d                 ddd",
+                        "                        bbbbbb     dd           ddd",
+                        "                              bbbbbb B          ddd",
+                        "dddddddddddddddddddddddddddddddddddd    w       ddd",
+                        "                                    ddddddddddccddd"
+                        };
 
     string[] stage3 = { " b     b    bb             dddddd",
                         "b   b    b b  b bb         dddddd",
@@ -32,8 +45,11 @@ public class stagecriate : MonoBehaviour
                         "              bb   bb   bb   bbbb",
                         "                           b   bb                   dddddd",
                         "               Wbbb   bb            b               dddddd",
-                        "             ddd   bb bbbbbbbbbb bbb bbbb bbbcccccdddddd",
-                        "          ddd        d          d   d    d        dddddd"};
+                        "WBB          ddd   bb bbbbbbbbbb bbb bbbb bbbwdddddddddddd",
+                        "   BB      ddd       ddddddddddddddddddddddddddddddddddddd",
+                        "     BBB             dddddd",
+                        "        BBBBBBBccccccdddddd",
+                        "ddddddddddddddddddddddddddd"};
 
     string[] stage5 = { "   bbb       bbbw      Wbbbb           dddddd",
                         "bbbbbbbbbbbw       bbb      Wbbbbbcccccdddddd",
@@ -56,7 +72,7 @@ public class stagecriate : MonoBehaviour
     string[] stage7 = { "        ddddddddddddddddddddddddddddddddddd",
                         "              dddddbbbb   bb     db           ddddddddd",
                         "bbbbbbbwbbwbbwdddddbbbbbb        bb           ddddddddd",
-                        "dddddddddddddddddbbbbbbWbbbbbbbbbbbbbbbbbbbbddddddddd",
+                        "dddddddddddddddddbbbbbbbbWbbbbbbbbbbbbbbbbbbbbddddddddd",
                         "ddddddddddddddddddddddddddddddddddddddddddd",
                         "ddddddddddddddddddddddddddddddddddddddddddd",
                         "d ddddddddddddddd",
@@ -69,9 +85,21 @@ public class stagecriate : MonoBehaviour
                         "Wbbbbbccccccdddddd",
                         "dddddddddddddddddd"};
 
-    string[] stage8 = { "       bbbb",
-                        "bbbbbbbbbbb" };
-
+    string[] stage8 = { "       dd    d    d  d   dddd         dd  W    dd",
+                        "bbbbbbbbbbbBBBWBBBBbbbwbbdddd         dd    w  dd",
+                        "bbbbbbbbbbbddddddddbbbbbbdddd         dd      wdd",
+                        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbb         ddddddddddd",
+                        "d    dd                               ddddddddddd",
+                        "dWBBBddbw                                   ",
+                        "ddd  dd                                   ",
+                        "ddd  dd",
+                        "ddd  dd",
+                        "ddd  dd",
+                        "ddd  dd",
+                        "ddd",
+                        "dddBWBBBBBBBBBBBBBBB  BB  BB  BB  BB  Wccccccdddddd",
+                        "dddddddddddddddddddddddddddddddddddddddddddddddddd"};
+        
     string[] stageCopy = { "" };
 
     void Start()
@@ -109,26 +137,36 @@ public class stagecriate : MonoBehaviour
             for (int j = 0; j < stageCopy[i].Length; j++)//横？
             {
                 switch (stageCopy[i].Substring(j, 1)) {
+
                     case "b": Instantiate(block, new Vector3(startX + j * massWidth,
                     startY - i * massHeighth, 0.0f), Quaternion.identity);
                         break;
 
+                    case "B":
+                        Instantiate(BB, new Vector3(startX + j * massWidth,
+                            startY - i * massHeighth, 0.0f), Quaternion.identity);
+                        break;
+
                     case "c":
-                        Instantiate(ClearZone, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity);
+                        Instantiate(ClearZone, new Vector3(startX + j * massWidth,
+                            startY - i * massHeighth, 0.0f), Quaternion.identity);
                         break;
 
                     case "d":
-                        Instantiate(deathzone, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity);
+                        Instantiate(deathzone, new Vector3(startX + j * massWidth,
+                            startY - i * massHeighth, 0.0f), Quaternion.identity);
                         break;
 
                     case "w":
-                        var iw = Instantiate(warpin, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity) as GameObject;
+                        var iw = Instantiate(warpin, new Vector3(startX + j * massWidth,
+                            startY - i * massHeighth, 0.0f), Quaternion.identity) as GameObject;
                         iw.name = warpin.name + warpincount;
                         warpincount++;
                         break;
 
                     case "W":
-                        var ow = Instantiate(warpout, new Vector3(startX + j * massWidth, startY - i * massHeighth, 0.0f), Quaternion.identity) as GameObject;
+                        var ow = Instantiate(warpout, new Vector3(startX + j * massWidth,
+                            startY - i * massHeighth, 0.0f), Quaternion.identity) as GameObject;
                         ow.name = warpout.name + warpin.name + warpoutcount;
                         warpoutcount++;
                         break;

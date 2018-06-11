@@ -11,18 +11,16 @@ public class timer : MonoBehaviour {
 	// Update is called once per frame
 	void Update (){
         time.text = timecounter.ToString("F0");
-        if (timecounter>=0) { Encounttimer(-Time.deltaTime); }
+        if (gameover.GetClear()==false&&gameover.GetGameOver()==false&&timecounter>=0)
+        { Encounttimer(-Time.deltaTime); }
 	}
 
     public void Encounttimer(float timer)
     {
 
-        if (timecounter >= 0 && gameover.GetGameOver() == false)
-        {
+        //if (timecounter >= 0 && gameover.GetGameOver() == false)
             timecounter += timer;
-
-        }
-        else { gameover.SetGameOver(); }
+        if (timecounter<=0) { gameover.SetGameOver(); }
     }
 
 }
