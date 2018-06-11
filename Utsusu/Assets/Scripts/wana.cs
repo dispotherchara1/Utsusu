@@ -20,4 +20,4 @@ public class wana : MonoBehaviour
             transform.position += transform.forward * speed;
         }
     }
-}　
+}
