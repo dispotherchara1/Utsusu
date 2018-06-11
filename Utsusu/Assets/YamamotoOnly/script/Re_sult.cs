@@ -7,7 +7,7 @@ public class Re_sult : MonoBehaviour {
     int Stagenum = stagecriate.RequestStageNum();
     public void turn()
     {
-        SceneManager.LoadScene(3);//titleシーンに戻る
+        SceneManager.LoadScene(0);//titleシーンに戻る
     }
 
     public void reload()

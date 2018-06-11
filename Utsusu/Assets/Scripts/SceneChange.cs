@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class SceneChange : MonoBehaviour
 {
+    public Canvas select, title;
+    bool onselect;
     stagecriate stagecriate;//LoadScene(4)はゲームシーンに飛ぶよ。
     int selectNum = 0;
     public Text text1, text2, text3, text4,
@@ -15,9 +17,18 @@ public class SceneChange : MonoBehaviour
         Hard,
     };
     StageSelectType stageselectType;
-
+    private void Start()
+    {
+        //title.enabled = false;
+        select.enabled = false;
+        onselect = false;
+    }
     void Update()
     {
+        if (onselect == true)
+        { select.enabled = true; title.enabled = false; }
+        //セレクトがtrueの時セレクト用のボタンが出ます
+
         switch (stageselectType)
         {
             case StageSelectType.Easy:
@@ -60,12 +71,12 @@ public class SceneChange : MonoBehaviour
 
     public void Select()
     {
-        SceneManager.LoadScene("select");
+        onselect = true;//セレクトをtrueに
     }
 
     public void Title()
     {
-        SceneManager.LoadScene("title");
+        SceneManager.LoadScene(0);//セレクトを再読み込み
     }
 
     public void Stage()
