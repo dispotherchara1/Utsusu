@@ -11,10 +11,38 @@ public class stagecriate : MonoBehaviour
     int warpincount = 0, warpoutcount = 0, bajicount = 0;
     static int stageNum = 1;
 
-    string[] stage1 = { " b     b        ddddddd",
-                        "b   b    b      ddddddd",
-                        "bbbbbbbbbbbcccccddddddd",
-                        "ddddddddddddddddddddddd" };
+    //string[] stage1 = { " b     b        ddddddd",
+    //"b   b    b      ddddddd",
+    //"bbbbbbbbbbbcccccddddddd",
+    //"ddddddddddddddddddddddd" };
+
+    string[] stage1 = { "        ddd                                       ",
+                        "BBBBBBwwddd                                       ",
+                        "dddddddddddddddddddddddddddddddddddddddddddddddddd",
+                        "        b     b     b     b     b     d       bbbb",
+                        "        b     b     b     b     d     d       bbbb",
+                        "       bdb   bdb   ddd   ddd   ddd   ddd      bbbb",
+                        "        b     d     b     d     d     d       bbbb",
+                        "                                              dbbb",
+                        " bWWbbb   bbb   bbb   bbb   bbb   bbb   bbb   dbbb",
+                        "      b   b b   b b   b b   b b   b b   b b   dbbd",
+                        "      b   b b   b b   b b   b b   b b   b b   dbbd", 
+                        "      b   b b   b b   b b   b b   b b   b b   bddb",
+                        "      b   b b   b b   b b   b b   b b   b b   bbbb",
+                        "      ddddd b   b ddddd b   b ddddd b   b dddddddd",
+                        "            b   b       b   b       b   b         ",
+                        "            b   b       b   b       b   b         ",
+                        "            b   b       b   b       b   b         ",
+                        "            b   b       b   b       b   b         ",
+                        "            b   b       b   b       b   b         ",
+                        "            b   b       b   b       b   b         ",
+                        "            ddddd       b   b       ddddd         ", 
+                        "                        b   b                     ",
+                        "                        b   b                     ",
+                        "                        b   b                     ",
+                        "                        b   b                     ",
+                        "                        ccccc                     ",
+                       };
 
     string[] stage2 = { "          ",
                         "  bb  bbdb  b b            dddddd",
