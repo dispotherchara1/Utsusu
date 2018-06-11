@@ -109,13 +109,9 @@ public class stagecriate : MonoBehaviour
                         "bbBBdddBbBbBB  d d d",
                         "dBBbbbbdBdBbddbdBbbB"};
 
-    string[] stage10 ={  "  dd  dB d   bdddb b",
-                        "d bBd B bbbbdb b dbB",
-                        "ddbb B  Bbddb d BBB ",
-                        "bbdBbdddb d  bBBBBBB",
-                        "Bdb dd dB dbdbd  b b",
-                        "bbBBdddBbBbBB  d d d",
-                        "dBBbbbbdBdBbddbdBbbB"};
+    string[] stage10 ={ "E   ",
+                        "   ebbbbbbcccdddd",
+                        "ddddddddddddddddd" };
 
     string[] stage11 ={  "  dd  dB d   bdddb b",
                         "d bBd B bbbbdb b dbB",
@@ -349,15 +345,15 @@ public class stagecriate : MonoBehaviour
                         break;
 
                     case "e":
-                        Instantiate(BajiBlock, new Vector3(startX + j * massWidth,
+                        var bajib = Instantiate(BajiBlock, new Vector3(startX + j * massWidth,
                             startY - i * massHeighth, 0.0f), Quaternion.identity);
-                        name = ""+bajicount;
+                        bajib.name = ""+bajicount;
                         break;
 
                     case "E":
-                        Instantiate(bajilisk, new Vector3(startX + j * massWidth,
+                        var baji= Instantiate(bajilisk, new Vector3(startX + j * massWidth,
                             startY - i * massHeighth, 0.0f), Quaternion.identity);
-                        name = "bajirisk";
+                        baji.name = "bajirisk"+bajicount;
                         break;
                 }
                 /*if (stageCopy[i].Substring(j, 1) == "b")

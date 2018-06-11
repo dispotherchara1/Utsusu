@@ -11,9 +11,9 @@ using System.Collections;
 //}
 
 public class bajirisk : MonoBehaviour {
-    public GameOver gameover;
-    public GameObject/*[]*/ bajirisks;//バジリスクの数を好きな数だけ入れる
-    public float bajirun =0.1f ;
+    //public GameOver gameover;
+    public GameObject[] bajis;//バジリスクの数を好きな数だけ入れる
+    float bajirun =0.2f ;
     //public BAJI one;//物体Xに速度を突っ込むパブリック
     // Use this for initialization
     void Start () {
@@ -47,6 +47,16 @@ public class bajirisk : MonoBehaviour {
         if (col.gameObject.tag == "Player")
         {
 
+            //このwarpBlockが生成された時点ではwarpoutが生成されていない可能性があるので
+            //この中に入れておきます
+            bajis[0]= GameObject.Find("bajirisk" + (gameObject.name));
+            //Vector3 pos = player.transform.position;
+
+            foreach (GameObject bajirisk in bajis)
+            {
+                //バジリスクは進みだす
+                bajis[0].gameObject.transform.position += new Vector3(bajirun, 0, 0);
+            }
         }
     }
 }
