@@ -27,10 +27,6 @@ public class GameOver : MonoBehaviour {
         GameOverCv.enabled = true;
         GameOverimg.enabled = true;
     }
-    //public void SetGameStert()//ゲームボーバーをオフにします
-    //{
-    //    Gameover = false;
-    //}
     public bool GetClear()//ゲームクリアーしたかどうか調べます
     {
         return Clear;
@@ -42,8 +38,4 @@ public class GameOver : MonoBehaviour {
         ClearButton.enabled = true;
         Clearimg.enabled = true;
     }
-    //public void ReSetClear()//ゲームクリアーをオフにします
-    //{
-    //    Clear = false;
-    //}
 }
