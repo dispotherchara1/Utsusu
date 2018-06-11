@@ -62,6 +62,7 @@
      <Compile Include="Assets\YamamotoOnly\script\stagecriate.cs" />
      <Compile Include="Assets\YamamotoOnly\script\stagecriateTest.cs" />
      <Compile Include="Assets\YamamotoOnly\script\timer.cs" />
+     <Compile Include="Assets\pic\destroyblock.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
