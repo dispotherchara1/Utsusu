@@ -9,7 +9,7 @@ public class GameOver : MonoBehaviour {
 
     private void Start()
     {
-        gameobera.enabled = false;
+        //gameobera.enabled = false;
     }
     private void Update()
     {
