@@ -1,4 +1,16 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scene/select.unity
+=======
+<<<<<<< HEAD
+- path: Assets/GameScene.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scene/title.unity
+=======
+- path: Assets/Scene/select.unity
+>>>>>>> origin/Yamamotorikiya
+>>>>>>> origin/taniguti
+>>>>>>> origin/Yamamotorikiya
   isLoaded: 1
   isActive: 1

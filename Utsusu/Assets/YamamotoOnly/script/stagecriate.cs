@@ -5,9 +5,10 @@ public class stagecriate : MonoBehaviour
 {
     Warp warp;
 
-    public GameObject block, ClearZone, deathzone, neadle,warpin,warpout,BB;
-    public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
-    int warpincount=0, warpoutcount=0;
+    public GameObject block, ClearZone, deathzone, neadle,warpin,warpout,BB,
+        BajiBlock,bajilisk;
+    int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
+    int warpincount = 0, warpoutcount = 0, bajicount = 0;
     static int stageNum = 1;
 
     string[] stage1 = { " b     b        ddddddd",
@@ -169,6 +170,18 @@ public class stagecriate : MonoBehaviour
                             startY - i * massHeighth, 0.0f), Quaternion.identity) as GameObject;
                         ow.name = warpout.name + warpin.name + warpoutcount;
                         warpoutcount++;
+                        break;
+
+                    case "e":
+                        Instantiate(BajiBlock, new Vector3(startX + j * massWidth,
+                            startY - i * massHeighth, 0.0f), Quaternion.identity);
+                        name = ""+bajicount;
+                        break;
+
+                    case "E":
+                        Instantiate(bajilisk, new Vector3(startX + j * massWidth,
+                            startY - i * massHeighth, 0.0f), Quaternion.identity);
+                        name = "bajirisk";
                         break;
                 }
                 /*if (stageCopy[i].Substring(j, 1) == "b")
