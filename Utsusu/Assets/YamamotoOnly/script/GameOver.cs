@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class GameOver : MonoBehaviour {
     //ゲームオーバーか、ゲームクリアーかどうかのBool変数
     bool Gameover = false, Clear = false;
+    int stageclear=0;
     public Canvas gameobera;
     public Image Clearimg, GameOverimg;
     private void Start()
@@ -34,10 +35,10 @@ public class GameOver : MonoBehaviour {
         GameOverimg.enabled = true;
     }
 
-    public void SetGameStert()//ゲームボーバーをオフにします
-    {
-        Gameover = false;
-    }
+    //public void SetGameStert()//ゲームボーバーをオフにします
+    //{
+    //    Gameover = false;
+    //}
 
 
     public bool GetClear()//ゲームクリアーしたかどうか調べます
@@ -51,8 +52,8 @@ public class GameOver : MonoBehaviour {
         Clearimg.enabled = true;
     }
 
-    public void ReSetClear()//ゲームクリアーをオフにします
-    {
-        Clear = false;
-    }
+    //public void ReSetClear()//ゲームクリアーをオフにします
+    //{
+    //    Clear = false;
+    //}
 }
