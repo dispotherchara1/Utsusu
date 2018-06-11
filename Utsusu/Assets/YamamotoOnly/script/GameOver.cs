@@ -5,22 +5,15 @@ using UnityEngine.UI;
 public class GameOver : MonoBehaviour {
     //ゲームオーバーか、ゲームクリアーかどうかのBool変数
     bool Gameover = false, Clear = false;
-    int stageclear=0;
-    public Canvas gameobera;
+    public Canvas GameOverCv;
     public Image Clearimg, GameOverimg;
+    public Button ClearButton;
     private void Start()
     {
-        gameobera.enabled = false;
+        GameOverCv.enabled = false;
         Clearimg.enabled = false;
         GameOverimg.enabled = false;
-        //gameobera.enabled = false;
-    }
-    private void Update()
-    {
-        if (Gameover == true||Clear==true)
-        {
-            gameobera.enabled = true;
-        }
+        ClearButton.enabled = false;
     }
     //////////////////////////////////////////////////////////////////////
 
@@ -32,26 +25,24 @@ public class GameOver : MonoBehaviour {
     public void SetGameOver()//ゲームオーバーをオンにします
     {
         Gameover = true;
+        GameOverCv.enabled = true;
+
         GameOverimg.enabled = true;
     }
-
     //public void SetGameStert()//ゲームボーバーをオフにします
     //{
     //    Gameover = false;
     //}
-
-
     public bool GetClear()//ゲームクリアーしたかどうか調べます
     {
         return Clear;
     }
-
     public void SetClear()//ゲームクリアーをオンにします
     {
         Clear = true;
+
         Clearimg.enabled = true;
     }
-
     //public void ReSetClear()//ゲームクリアーをオフにします
     //{
     //    Clear = false;

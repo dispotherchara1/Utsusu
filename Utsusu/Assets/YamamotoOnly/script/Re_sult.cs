@@ -3,7 +3,8 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 public class Re_sult : MonoBehaviour {
 
-    int a = stagecriate.RequestStageNum();
+    int stageclear = 0;
+    int Stagenum = stagecriate.RequestStageNum();
     public void turn()
     {
         SceneManager.LoadScene(3);//titleシーンに戻る
@@ -15,19 +16,19 @@ public class Re_sult : MonoBehaviour {
     }
     public void backstage()
     {
-        if (a > 1) {
+        if (Stagenum > 1) {
             SceneManager.LoadScene(4);
-            a--;
-            stagecriate.GetStageNum(a);
+            Stagenum--;
+            stagecriate.GetStageNum(Stagenum);
         }
     }
     public void nextstage()
     {
-        if (a < 8)
+        if (Stagenum < 8)
         {
             SceneManager.LoadScene(4);
-            a++;
-            stagecriate.GetStageNum(a);
+            Stagenum++;
+            stagecriate.GetStageNum(Stagenum);
         }
     }
 }
