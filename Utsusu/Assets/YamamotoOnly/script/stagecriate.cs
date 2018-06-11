@@ -99,7 +99,135 @@ public class stagecriate : MonoBehaviour
                         "ddd",
                         "dddBWBBBBBBBBBBBBBBB  BB  BB  BB  BB  Wccccccdddddd",
                         "dddddddddddddddddddddddddddddddddddddddddddddddddd"};
-        
+
+    string[] stage9 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage10 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage11 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage12 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage13 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage14 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage15 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage16 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage17 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage18 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage19 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage20 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage21 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage22 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage23 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage24 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
     string[] stageCopy = { "" };
 
     void Start()
@@ -129,6 +257,54 @@ public class stagecriate : MonoBehaviour
                 break;
             case 8:
                 stageCopy = stage8;
+                break;
+            case 9:
+                stageCopy = stage9;
+                break;
+            case 10:
+                stageCopy = stage10;
+                break;
+            case 11:
+                stageCopy = stage11;
+                break;
+            case 12:
+                stageCopy = stage12;
+                break;
+            case 13:
+                stageCopy = stage13;
+                break;
+            case 14:
+                stageCopy = stage14;
+                break;
+            case 15:
+                stageCopy = stage15;
+                break;
+            case 16:
+                stageCopy = stage16;
+                break;
+            case 17:
+                stageCopy = stage17;
+                break;
+            case 18:
+                stageCopy = stage18;
+                break;
+            case 19:
+                stageCopy = stage19;
+                break;
+            case 20:
+                stageCopy = stage20;
+                break;
+            case 21:
+                stageCopy = stage21;
+                break;
+            case 22:
+                stageCopy = stage22;
+                break;
+            case 23:
+                stageCopy = stage23;
+                break;
+            case 24:
+                stageCopy = stage24;
                 break;
         }
 
