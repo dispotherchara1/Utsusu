@@ -9,13 +9,10 @@ public class GameOver : MonoBehaviour {
     public Image Clearimg, GameOverimg;
     private void Start()
     {
-<<<<<<< HEAD
         gameobera.enabled = false;
         Clearimg.enabled = false;
         GameOverimg.enabled = false;
-=======
         //gameobera.enabled = false;
->>>>>>> origin/honjo
     }
     private void Update()
     {
