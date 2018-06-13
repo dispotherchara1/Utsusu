@@ -102,14 +102,14 @@ public class stagecriate : MonoBehaviour
                         "dddBWBBBBBBBBBBBBBBB  BB  BB  BB  BB  Wccccccdddddd",
                         "dddddddddddddddddddddddddddddddddddddddddddddddddd"};
 
-<<<<<<< HEAD
-    string[] stage9 ={  "  dd  dB d   bdddb b",
-                        "d bBd B bbbbdb b dbB",
-                        "ddbb B  Bbddb d BBB ",
-                        "bbdBbdddb d  bBBBBBB",
-                        "Bdb dd dB dbdbd  b b",
-                        "bbBBdddBbBbBB  d d d",
-                        "dBBbbbbdBdBbddbdBbbB"};
+//<<<<<<< HEAD
+    //string[] stage9 ={  "  dd  dB d   bdddb b",
+    //                    "d bBd B bbbbdb b dbB",
+    //                    "ddbb B  Bbddb d BBB ",
+    //                    "bbdBbdddb d  bBBBBBB",
+    //                    "Bdb dd dB dbdbd  b b",
+    //                    "bbBBdddBbBbBB  d d d",
+    //                    "dBBbbbbdBdBbddbdBbbB"};
 
     string[] stage10 ={ "E   ",
                         "   ebbbbbbcccdddd",
@@ -229,7 +229,7 @@ public class stagecriate : MonoBehaviour
                         "Bdb dd dB dbdbd  b b",
                         "bbBBdddBbBbBB  d d d",
                         "dBBbbbbdBdBbddbdBbbB"};
-=======
+//=======
     string[] stage9 = { "        ddd                                       ",
                         "BBBBBBwwddd                                       ",
                         "dddddddddddddddddddddddddddddddddddddddddddddddddd",
@@ -279,7 +279,7 @@ public class stagecriate : MonoBehaviour
                         "ddd   ddd   ddd   ddd   ddd   dddddd",
                         "dddWWWdddWWWdddWWWdddWWWdddWWWdddddd",
                         };
->>>>>>> origin/taniguti
+//>>>>>>> origin/taniguti
 
     string[] stageCopy = { "" };
 

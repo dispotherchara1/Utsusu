@@ -85,7 +85,6 @@
     <Compile Include="Assets\Scripts\SceneChange.cs" />
     <Compile Include="Assets\Scripts\Tutorial.cs" />
     <Compile Include="Assets\Scripts\Warp.cs" />
-    <Compile Include="Assets\Scripts\WarpOut.cs" />
     <Compile Include="Assets\Scripts\wana.cs" />
     <Compile Include="Assets\Scripts\wana2.cs" />
     <Compile Include="Assets\YamamotoOnly\script\GameOver.cs" />
