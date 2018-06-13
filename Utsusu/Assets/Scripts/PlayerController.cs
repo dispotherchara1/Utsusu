@@ -4,7 +4,7 @@ public class PlayerController : MonoBehaviour
 {
     public GameOver gameover;
     public GaugeController gaugeController;
-    Vector2 teleportation = new Vector2(50.0f, 0.0f);
+    Vector2 teleportation = new Vector2(75.0f, 0.0f);
     //Vector2 jamp = new Vector2(0.0f,200.0f);
     //重力加速度.
     private const float gravitationalAcceleration = -9.81f;
@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
 
         if (gameover.GetGameOver() == false && gameover.GetClear() == false)
         {
-            Button();//ボタンで移動距離が変わるメソッド
+           //Button();//ボタンで移動距離が変わるメソッド
             GoGauge();//ゲージ式
         }
     }

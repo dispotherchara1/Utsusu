@@ -137,32 +137,19 @@ public class stagecriate : MonoBehaviour
                         "bbBBdddBbBbBB  d d d",
                         "dBBbbbbdBdBbddbdBbbB"};
 
-<<<<<<< HEAD
     string[] stage10 ={ "E   ",
                         "   ebbbbbbcccdddd",
                         "ddddddddddddddddd" };
 
-    string[] stage11 ={  "  dd  dB d   bdddb b",
-=======
-    string[] stage10 ={ " bbBbdBBBBdBbdbdbBdB",
-                        "  bbdB ddbddddbBbbB ",
-                        " bb bb       dd BB b",
-                        "dB bBbbbbbbBwdBBdb b",
-                        "BBBBbB  b Bbbdb    B",
-                        " BBBd bbBBdbBBbWBccB",
-                        "bB  bBd  ddd       b",};
 
     string[] stage11 ={ "bbbww dB d   bWddb b",
->>>>>>> origin/honjo
                         "d bBd B bbbbdb b dbB",
                         "ddbb B  Bbddb d BBB ",
                         "bbdBbdddb d  bBBBBBB",
                         "Bdb dd dB dbdbd  b b",
-<<<<<<< HEAD
                         "bbBBdddBbBbBB  d d d",
-=======
+
                         "WWWW ddBbBbBB  d d d",
->>>>>>> origin/honjo
                         "dBBbbbbdBdBbddbdBbbB"};
 
     string[] stage12 ={  "  dd  dB d   bdddb b",
