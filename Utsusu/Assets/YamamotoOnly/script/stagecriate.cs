@@ -152,13 +152,13 @@ public class stagecriate : MonoBehaviour
                         "WWWW ddBbBbBB  d d d",
                         "dBBbbbbdBdBbddbdBbbB"};
 
-    string[] stage12 ={  "  dd  dB d   bdddb b",
-                        "d bBd B bbbbdb b dbB",
-                        "ddbb B  Bbddb d BBB ",
-                        "bbdBbdddb d  bBBBBBB",
-                        "Bdb dd dB dbdbd  b b",
-                        "bbBBdddBbBbBB  d d d",
-                        "dBBbbbbdBdBbddbdBbbB"};
+    string[] stage12 ={ "Wbbbbbbbbwbbbbbwbbbd",
+                        "                   d",
+                        "Wbbbbbbbbbbbbbbbbbwd",
+                        "                   d",
+                        "Wbbbbbbbbbbbbbbbbbwd",
+                        "                   d",
+                        "Wbbbbbbbbbbbbbbbcccd"};
 
     string[] stage13 ={  "  dd  dB d   bdddb b",
                         "d bBd B bbbbdb b dbB",
@@ -297,6 +297,7 @@ public class stagecriate : MonoBehaviour
                 break;
             case 12:
                 stageCopy = stage12;
+                
                 break;
             case 13:
                 stageCopy = stage13;
@@ -394,6 +395,7 @@ public class stagecriate : MonoBehaviour
     {
         stageNum = a;
     }
+
     public static int RequestStageNum()
     {
         return stageNum;
