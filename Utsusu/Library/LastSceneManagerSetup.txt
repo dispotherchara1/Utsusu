@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/GameScene.unity
+=======
+- path: Assets/Scene/title.unity
+>>>>>>> origin/taniguti
   isLoaded: 1
   isActive: 1
