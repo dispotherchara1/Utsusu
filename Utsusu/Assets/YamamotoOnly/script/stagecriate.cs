@@ -12,37 +12,10 @@ public class stagecriate : MonoBehaviour
     static int stageNum = 1;
 
     //string[] stage1 = { " b     b        ddddddd",
-    //"b   b    b      ddddddd",
-    //"bbbbbbbbbbbcccccddddddd",
-    //"ddddddddddddddddddddddd" };
-
-    string[] stage1 = { "        ddd                                       ",
-                        "BBBBBBwwddd                                       ",
-                        "dddddddddddddddddddddddddddddddddddddddddddddddddd",
-                        "        b     b     b     b     b     d       bbbb",
-                        "        b     b     b     b     d     d       bbbb",
-                        "       bdb   bdb   ddd   ddd   ddd   ddd      bbbb",
-                        "        b     d     b     d     d     d       bbbb",
-                        "                                              dbbb",
-                        " bWWbbb   bbb   bbb   bbb   bbb   bbb   bbb   dbbb",
-                        "      b   b b   b b   b b   b b   b b   b b   dbbd",
-                        "      b   b b   b b   b b   b b   b b   b b   dbbd", 
-                        "      b   b b   b b   b b   b b   b b   b b   bddb",
-                        "      b   b b   b b   b b   b b   b b   b b   bbbb",
-                        "      ddddd b   b ddddd b   b ddddd b   b dddddddd",
-                        "            b   b       b   b       b   b         ",
-                        "            b   b       b   b       b   b         ",
-                        "            b   b       b   b       b   b         ",
-                        "            b   b       b   b       b   b         ",
-                        "            b   b       b   b       b   b         ",
-                        "            b   b       b   b       b   b         ",
-                        "            ddddd       b   b       ddddd         ", 
-                        "                        b   b                     ",
-                        "                        b   b                     ",
-                        "                        b   b                     ",
-                        "                        b   b                     ",
-                        "                        ccccc                     ",
-                       };
+                        //"b   b    b      ddddddd",
+                        //"bbbbbbbbbbbcccccddddddd",
+                        //"ddddddddddddddddddddddd"
+                        //};
 
     string[] stage2 = { "          ",
                         "  bb  bbdb  b b            dddddd",
@@ -129,6 +102,7 @@ public class stagecriate : MonoBehaviour
                         "dddBWBBBBBBBBBBBBBBB  BB  BB  BB  BB  Wccccccdddddd",
                         "dddddddddddddddddddddddddddddddddddddddddddddddddd"};
 
+<<<<<<< HEAD
     string[] stage9 ={  "  dd  dB d   bdddb b",
                         "d bBd B bbbbdb b dbB",
                         "ddbb B  Bbddb d BBB ",
@@ -255,6 +229,57 @@ public class stagecriate : MonoBehaviour
                         "Bdb dd dB dbdbd  b b",
                         "bbBBdddBbBbBB  d d d",
                         "dBBbbbbdBdBbddbdBbbB"};
+=======
+    string[] stage9 = { "        ddd                                       ",
+                        "BBBBBBwwddd                                       ",
+                        "dddddddddddddddddddddddddddddddddddddddddddddddddd",
+                        "        b     b     b     b     b     d       bddd",
+                        "        b     b     b     b     d     d       bddd",
+                        "       bdb   bdb   ddd   ddd   ddd   ddd      bddd",
+                        "        b     d     b     d     d     d       bddd",
+                        "                                              bddd",
+                        "bbWWbbb   bbb   bbb   bbb   bbb   bbb   bbb   bddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddd",
+                        "ddddddddddddb   bdddddddb   bdddddddb   bddddddddd",
+                        "ddddddddddddb   bdddddddb   bdddddddb   bddddddddd",
+                        "ddddddddddddb   bdddddddb   bdddddddb   bddddddddd",
+                        "ddddddddddddb   bdddddddb   bdddddddb   bddddddddd",
+                        "ddddddddddddb   bdddddddb   bdddddddb   bddddddddd",
+                        "ddddddddddddb   bdddddddb   bdddddddb   bddddddddd",
+                        "ddddddddddddb   bdddddddb   bdddddddb   bddddddddd",
+                        "ddddddddddddddddddddddddb   bddddddddddddddddddddd",
+                        "ddddddddddddddddddddddddb   bddddddddddddddddddddd",
+                        "ddddddddddddddddddddddddb   bddddddddddddddddddddd",
+                        "ddddddddddddddddddddddddb   bddddddddddddddddddddd",
+                        "ddddddddddddddddddddddddb   bddddddddddddddddddddd",
+                        "ddddddddddddddddddddddddcccccddddddddddddddddddddd",
+                       };
+
+    string[] stage1 =  {"                              bddddd",
+                        "                              bddddd",
+                        "bbb                           bddddd",
+                        "bbb                           bddddd",
+                        "bbb                           bddddd",
+                        "bbb                           bddddd",
+                        "bbb                           bddddd",
+                        "bbb                           bddddd",
+                        "bbb                           bddddd",
+                        "bbb                           bddddd",
+                        "bbb                           bddddd",
+                        "bbb                           bddddd",
+                        "bbb                           bddddd",
+                        "bbb                           bddddd",
+                        "bbb                           bddddd",
+                        "bbb                           bddddd",
+                        "bbbwwwccbwwwccbwwwccbwwwccbwwwbddddd",
+                        "dddddddddddddddddddddddddddddddddddd",
+                        "ddd   ddd   ddd   ddd   ddd   dddddd",
+                        "dddWWWdddWWWdddWWWdddWWWdddWWWdddddd",
+                        };
+>>>>>>> origin/taniguti
 
     string[] stageCopy = { "" };
 
