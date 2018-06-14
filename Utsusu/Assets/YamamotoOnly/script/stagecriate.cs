@@ -112,7 +112,7 @@ public class stagecriate : MonoBehaviour
     //                    "dBBbbbbdBdBbddbdBbbB"};
 
     string[] stage10 ={ "E   ",
-                        "   ebbbbbbcccdddd",
+                        "   bbbbbbcccdddd",
                         "ddddddddddddddddd" };
 
 
@@ -401,16 +401,10 @@ public class stagecriate : MonoBehaviour
                         warpoutcount++;
                         break;
 
-                    case "e":
-                        var bajib = Instantiate(BajiBlock, new Vector3(startX + j * massWidth,
-                            startY - i * massHeighth, 0.0f), Quaternion.identity);
-                        bajib.name = ""+bajicount;
-                        break;
-
                     case "E":
                         var baji= Instantiate(bajilisk, new Vector3(startX + j * massWidth,
                             startY - i * massHeighth, 0.0f), Quaternion.identity);
-                        baji.name = "bajirisk"+bajicount;
+                        baji.name = ""+bajicount;
                         break;
                 }
             }

@@ -14,7 +14,8 @@ public class bajirisk : MonoBehaviour {
     GameObject baji;//バジリスクの数を好きな数だけ入れる
     GameOver gameover;
     float bajirun = 0.2f ;
-    bool bajicall = false;
+    //bool bajicall = false;
+    string calling = "baji";
     void Start () {
     
 	}
@@ -24,19 +25,19 @@ public class bajirisk : MonoBehaviour {
         //{
         //    baji_one.bajabaji;
         //    baji_two.transform.position += bajibaji();
-        if (bajicall==true)
+        if (calling==gameObject.name)
         {
+            gameObject.transform.position += new Vector3(bajirun, 0, 0);
+        }
+    }
+
             //        foreach (GameObject bajirisk in bajirisks)
             //        {
             //総てのバジリスクたちは進みだす
 
-            gameObject.transform.position += new Vector3(bajirun, 0, 0);
-        }
         //    }
         //}
         //one.Move(new Vector3(0.2f, 0, 0));//物体Xの速さはx軸に+0.2/
-    }
-
     /*Vector3 bajibaji()
      {
          return 
@@ -53,20 +54,22 @@ public class bajirisk : MonoBehaviour {
             //このbajiriskが生成された時点ではbajiriskが生成されていない可能性があるので
             //この中に入れておきます
             baji = GameObject.Find("bajirisk" + (gameObject.name));
-            bajicall = false;
+            //bajicall = false;
         }
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Player")
         {
-            baji = GameObject.Find("bajirisk" + (gameObject.name));
-            bajicall = true;
+            //baji = GameObject.Find("bajirisk" + (gameObject.name));
+            calling = gameObject.name;
+            //bajicall = true;
         }
     }
     public void misscalling()
     {
-        bajicall = false;
+        calling = "baji";
+        //bajicall = false;
     }
     //public void OKcalling()
     //{
