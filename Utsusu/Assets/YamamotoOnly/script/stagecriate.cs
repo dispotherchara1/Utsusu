@@ -18,21 +18,21 @@ public class stagecriate : MonoBehaviour
                         //};
 
     string[] stage2 = { "          ",
-                        "  bb  bbdb  b b            dddddd",
+                        "E  bb  bbdb  b b            dddddd",
                         "bdb dbbbbdb  b  bbb  bbbbbbdddddd",
                         "dddddddddddddddddddwwdddddddddddd",
                         "",
                         "",
                         "",
-                        "      d                                         ddd",
-                        "WWbbbb     dd                                W  ddd",
-                        "      bbbbbb      d                             ddd",
-                        "            bbbbbb     dd                       ddd",
-                        "                  bbbbbb      d                 ddd",
-                        "                        bbbbbb     dd           ddd",
-                        "                              bbbbbb B          ddd",
-                        "dddddddddddddddddddddddddddddddddddd    w       ddd",
-                        "                                    ddddddddddccddd"
+                        "E       d                                         ddd",
+                        "  WWbbbb     dd                                W  ddd",
+                        "       bbbbbb      d                             ddd",
+                        "             bbbbbb     dd                       ddd",
+                        "                  bbbbbb      d                  ddd",
+                        "                        bbbbbb      dd           ddd",
+                        "                              bbbbbb B           ddd",
+                        "dddddddddddddddddddddddddddddddddddd    w        ddd",
+                        "                                    ddddddddddcccddd"
                         };
 
     string[] stage3 = { " b     b    bb             dddddd",
@@ -41,11 +41,11 @@ public class stagecriate : MonoBehaviour
                         "ddddddddddddddddddddddddddddddddd" };
 
     string[] stage4 = { " b     b     b b b  b      bbbbdddd",
-                        "b   b    b         bb      bbbbdddd",
-                        "bbbbbb  bbbbbbb   b bbbbbbw     bbbdddd",
+                        "Eb   b    b         bb      bbbbdddd",
+                        " bbbbbb  bbbbbbb   b bbbbbbw     bbbdddd",
                         "      dd       b   b      ddddddddddddd",
                         "              bb   bb   bb   bbbb",
-                        "                           b   bb                   dddddd",
+                        "             E             b   bb                   dddddd",
                         "               Wbbb   bb            b               dddddd",
                         "WBB          ddd   bb bbbbbbbbbb bbb bbbb bbbwdddddddddddd",
                         "   BB      ddd       ddddddddddddddddddddddddddddddddddddd",

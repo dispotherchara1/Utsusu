@@ -13,7 +13,7 @@ using System.Collections;
 public class bajirisk : MonoBehaviour {
     GameObject baji;//バジリスクの数を好きな数だけ入れる
     GameOver gameover;
-    float bajirun = 0.2f ;
+    float bajirun = 0.1f ;
     //bool bajicall = false;
     string calling = "baji";
     void Start () {

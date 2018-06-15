@@ -24,7 +24,7 @@ public class Re_sult : MonoBehaviour {
     }
     public void nextstage()
     {
-        if (Stagenum < 8)
+        if (Stagenum < 24)
         {
             SceneManager.LoadScene(4);
             Stagenum++;
