@@ -4,17 +4,17 @@ using System.Collections;
 public class stagecriate : MonoBehaviour
 {
     Warp warp;
-<<<<<<< HEAD
+//<<<<<<< HEAD
 
     public GameObject block, ClearZone, deathzone, neadle,warpin,warpout,BB,
         BajiBlock,bajilisk;
     int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
     int warpincount = 0, warpoutcount = 0, bajicount = 0;
-=======
-    public GameObject block, ClearZone, deathzone, neadle,warpin,warpout,BB;
-    public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
-    int warpincount=0, warpoutcount=0;
->>>>>>> origin/honjo
+//=======
+    //public GameObject block, ClearZone, deathzone, neadle,warpin,warpout,BB;
+    //public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
+    //int warpincount=0, warpoutcount=0;
+//>>>>>>> origin/honjo
     static int stageNum = 1;
 
     //string[] stage1 = { " b     b        ddddddd",
@@ -117,20 +117,20 @@ public class stagecriate : MonoBehaviour
     //                    "bbBBdddBbBbBB  d d d",
     //                    "dBBbbbbdBdBbddbdBbbB"};
 
-    string[] stage10 ={ "E   ",
-                        "   bbbbbbcccdddd",
-                        "ddddddddddddddddd" };
+    //string[] stage10 ={ "E   ",
+    //                    "   bbbbbbcccdddd",
+    //                    "ddddddddddddddddd" };
 
 
-    string[] stage11 ={ "bbbww dB d   bWddb b",
-                        "d bBd B bbbbdb b dbB",
-                        "ddbb B  Bbddb d BBB ",
-                        "bbdBbdddb d  bBBBBBB",
-                        "Bdb dd dB dbdbd  b b",
-                        "bbBBdddBbBbBB  d d d",
+    //string[] stage11 ={ "bbbww dB d   bWddb b",
+    //                    "d bBd B bbbbdb b dbB",
+    //                    "ddbb B  Bbddb d BBB ",
+    //                    "bbdBbdddb d  bBBBBBB",
+    //                    "Bdb dd dB dbdbd  b b",
+    //                    "bbBBdddBbBbBB  d d d",
 
-                        "WWWW ddBbBbBB  d d d",
-                        "dBBbbbbdBdBbddbdBbbB"};
+    //                    "WWWW ddBbBbBB  d d d",
+    //                    "dBBbbbbdBdBbddbdBbbB"};
 
     string[] stage12 ={ "Wbbbbbbbbwbbbbbwbbbd",
                         "  dd   dd    dd    d",

@@ -29,7 +29,7 @@ public class bajirisk : MonoBehaviour {
         {
             gameObject.transform.position += new Vector3(bajirun, 0, 0);
         }
-        Debug.Log(calling);
+        //Debug.Log(calling);
     }
 
             //        foreach (GameObject bajirisk in bajirisks)

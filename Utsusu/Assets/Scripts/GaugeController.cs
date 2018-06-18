@@ -9,7 +9,7 @@ public class GaugeController : MonoBehaviour
     bool gauge = false;
     float timeCount = 0.0f;
     const float MAXVALUE = 1.0f;
-    const float MOVE = 15.0f;
+    const float MOVE = 13.0f;
 
     public bool GetGauge()
     {
@@ -47,7 +47,7 @@ public class GaugeController : MonoBehaviour
 
             if (gauge)
             {
-                timeCount +=  (.8f+Time.deltaTime)*Time.deltaTime;
+                timeCount += .9f * Time.deltaTime;//*Time.deltaTime;
                 if (timeCount >= MAXVALUE)//ゲージの最大値
                 {
                     timeCount = 0.0f;//ゼロに戻る
