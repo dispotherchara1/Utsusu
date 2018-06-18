@@ -4,7 +4,6 @@ using System.Collections;
 public class stagecriate : MonoBehaviour
 {
     Warp warp;
-
     public GameObject block, ClearZone, deathzone, neadle,warpin,warpout,BB;
     public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
     int warpincount=0, warpoutcount=0;

@@ -21,11 +21,6 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        /*if (Input.GetButtonDown(KeyCode.D))
-        {
-            gravitationalAcceleration * (-1);
-        }*/
-
         if (gameover.GetGameOver() == false && gameover.GetClear() == false)
         {
             Button();//ボタンで移動距離が変わるメソッド
