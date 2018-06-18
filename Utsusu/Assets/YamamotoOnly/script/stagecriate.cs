@@ -222,13 +222,7 @@ public class stagecriate : MonoBehaviour
                         "bbBBdddBbBbBB  d d d",
                         "dBBbbbbdBdBbddbdBbbB"};
 
-    string[] stage24 ={  "  dd  dB d   bdddb b",
-                        "d bBd B bbbbdb b dbB",
-                        "ddbb B  Bbddb d BBB ",
-                        "bbdBbdddb d  bBBBBBB",
-                        "Bdb dd dB dbdbd  b b",
-                        "bbBBdddBbBbBB  d d d",
-                        "dBBbbbbdBdBbddbdBbbB"};
+    string[] stage24 ={  "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccc"};
 //=======
     string[] stage9 = { "        ddd                                       ",
                         "BBBBBBwwddd                                       ",
