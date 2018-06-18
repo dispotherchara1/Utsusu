@@ -4,11 +4,17 @@ using System.Collections;
 public class stagecriate : MonoBehaviour
 {
     Warp warp;
+<<<<<<< HEAD
 
     public GameObject block, ClearZone, deathzone, neadle,warpin,warpout,BB,
         BajiBlock,bajilisk;
     int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
     int warpincount = 0, warpoutcount = 0, bajicount = 0;
+=======
+    public GameObject block, ClearZone, deathzone, neadle,warpin,warpout,BB;
+    public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
+    int warpincount=0, warpoutcount=0;
+>>>>>>> origin/honjo
     static int stageNum = 1;
 
     //string[] stage1 = { " b     b        ddddddd",
@@ -127,14 +133,14 @@ public class stagecriate : MonoBehaviour
                         "dBBbbbbdBdBbddbdBbbB"};
 
     string[] stage12 ={ "Wbbbbbbbbwbbbbbwbbbd",
-                        "                   d",
+                        "  dd   dd    dd    d",
+                        "Wbbbbbbbbbbbbbbbbccd",
+                        "  d    d   d   d   d",
                         "Wbbbbbbbbbbbbbbbbbwd",
-                        "                   d",
-                        "Wbbbbbbbbbbbbbbbbbwd",
-                        "                   d",
-                        "Wbbbbbbbbbbbbbbbcccd"};
+                        "  d    dd  d  dd   d",
+                        "Wbbbbbbbbbbbbbbbbbwd"};
 
-    string[] stage13 ={  "  dd  dB d   bdddb b",
+    string[] stage13 ={ "  dd  dB d   bdddb b",
                         "d bBd B bbbbdb b dbB",
                         "ddbb B  Bbddb d BBB ",
                         "bbdBbdddb d  bBBBBBB",
