@@ -399,6 +399,7 @@ public class stagecriate : MonoBehaviour
                         var baji= Instantiate(bajilisk, new Vector3(startX + j * massWidth,
                             startY - i * massHeighth, 0.0f), Quaternion.identity);
                         baji.name = ""+bajicount;
+                        bajicount++;
                         break;
                 }
             }

@@ -15,7 +15,7 @@ public class bajirisk : MonoBehaviour {
     GameOver gameover;
     float bajirun = 0.1f ;
     //bool bajicall = false;
-    string calling = "baji";
+    string calling = "bajilisk";
     void Start () {
     
 	}
@@ -25,10 +25,11 @@ public class bajirisk : MonoBehaviour {
         //{
         //    baji_one.bajabaji;
         //    baji_two.transform.position += bajibaji();
-        if (calling==gameObject.name)
+        if (calling == gameObject.name&&calling!="baji")
         {
             gameObject.transform.position += new Vector3(bajirun, 0, 0);
         }
+        Debug.Log(calling);
     }
 
             //        foreach (GameObject bajirisk in bajirisks)
@@ -68,7 +69,10 @@ public class bajirisk : MonoBehaviour {
     }
     public void misscalling()
     {
-        calling = "baji";
+        if (calling != "baji")
+        {
+            calling = "baji";
+        }
         //bajicall = false;
     }
     //public void OKcalling()
