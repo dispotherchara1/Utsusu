@@ -4,24 +4,24 @@ using System.Collections;
 public class stagecriate : MonoBehaviour
 {
     Warp warp;
-//<<<<<<< HEAD
 
-    public GameObject block, ClearZone, deathzone, neadle,warpin,warpout,BB,
-        BajiBlock,bajilisk;
+    public GameObject block, ClearZone, deathzone, neadle, warpin, warpout, BB,
+        BajiBlock, bajilisk;
     int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
     int warpincount = 0, warpoutcount = 0, bajicount = 0;
-//=======
-    //public GameObject block, ClearZone, deathzone, neadle,warpin,warpout,BB;
-    //public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
-    //int warpincount=0, warpoutcount=0;
-//>>>>>>> origin/honjo
     static int stageNum = 1;
 
-    //string[] stage1 = { " b     b        ddddddd",
-                        //"b   b    b      ddddddd",
-                        //"bbbbbbbbbbbcccccddddddd",
-                        //"ddddddddddddddddddddddd"
-                        //};
+    string[] stage1 = { "             dd   dd  ddd  dd   dddddddddddddddddddddd",
+                        "bbbbbbb   bbbbbbbbbbbbbbbbbbb       dddddddddddddddddd",
+                        "       b                     dBb      dd   ddddddddddd",
+                        "        b                    dddddBBbbdd    dddddddddd",
+                        "         b       dd          dddddddddddd   dd  dddddd",
+                        "          bbbbbbbbb        dd    ddddddddBBbbb   ddddd",
+                        "                   bbbddbbbbb    ddddddddddddd    dddd",
+                        "                                 dddddddddddddd    ddd",
+                        "                                 d    d    d   d      ",
+                        "                             dbbbdbbbbbbbbbbbbbdcccccc",
+                       };
 
     string[] stage2 = { "          ",
                         "E  bb  bbdb  b b            dddddd",
@@ -108,37 +108,80 @@ public class stagecriate : MonoBehaviour
                         "dddBWBBBBBBBBBBBBBBB  BB  BB  BB  BB  Wccccccdddddd",
                         "dddddddddddddddddddddddddddddddddddddddddddddddddd"};
 
-//<<<<<<< HEAD
-    //string[] stage9 ={  "  dd  dB d   bdddb b",
-    //                    "d bBd B bbbbdb b dbB",
-    //                    "ddbb B  Bbddb d BBB ",
-    //                    "bbdBbdddb d  bBBBBBB",
-    //                    "Bdb dd dB dbdbd  b b",
-    //                    "bbBBdddBbBbBB  d d d",
-    //                    "dBBbbbbdBdBbddbdBbbB"};
+    string[] stage9 = { "        ddd                                       ",
+                        "BBBBBBwwddd                                       ",
+                        "dddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+                        "        b     b     b     b     b     d       bddddddd",
+                        "        b     b     b     b     d     d       bddddddd",
+                        "       bdb   bdb   ddd   ddd   ddd   ddd      bddddddd",
+                        "        b     d     b     d     d     d       bddddddd",
+                        "                                              bddddddd",
+                        "bbWbbbb   bbb   bbb   bbb   bWb   bbb   bbb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddddddddddddddddddddbcccbddddddddddddddddddddddddd",
+                        "ddddddddddddddddddddddddbdddbddddddddddddddddddddddddd",
+                        "ddddddddddddddddddddddddbdddbddddddddddddddddddddddddd",
+                        "ddddddddddddddddddddddddbdddbddddddddddddddddddddddddd",
+                        "ddddddddddddddddddddddddbdddbddddddddddddddddddddddddd",
+                        "ddddddddddddddddddddddddcccccddddddddddddddddddddddddd",
+                       };
 
-    //string[] stage10 ={ "E   ",
-    //                    "   bbbbbbcccdddd",
-    //                    "ddddddddddddddddd" };
+    string[] stage10 =  {"                              bddddd",
+                         "                              bddddd",
+                         "bbb                           bddddd",
+                         "bbb                           bddddd",
+                         "bbb                           bddddd",
+                         "bbb                           bddddd",
+                         "bbb                           bddddd",
+                         "bbb                           bddddd",
+                         "bbb                           bddddd",
+                         "bbb                           bddddd",
+                         "bbb                           bddddd",
+                         "bbb                           bddddd",
+                         "bbb                           bddddd",
+                         "bbb                           bddddd",
+                         "bbb                           bddddd",
+                         "bbb                           bddddd",
+                         "bbb                           bddddd",
+                         "bbb                           bddddd",
+                         "bbbwwwccbwwwccbwwwccbwwwccbwwwbddddd",
+                         "dddddddddddddddddddddddddddddddddddd",
+                         "ddd   ddd   ddd   ddd   ddd   dddddd",
+                         "dddWWWdddWWWdddWWWdddWWWdddWWWdddddd",
+                        };
 
+    string[] stage11 = {"       d    d  　 dddddd                               ",
+                        "bbbbbbbbbbbbbBBwBdddddd                                ",
+                        "ddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+                        "ddddd       ddddd dddddd       ddddd dddddd       ddddd",
+                        "dddddbWbwbbwdddddWddddddbWbwbbwdddddWddddddbWbwbbwddddd",
+                        "d       ddddd dddddd dddddd       ddddd dd      d ddddd",
+                        "dbWbwBBwdddddWddddddWddddddbWbwBBwdddddWddBBBBBwdWddddd",
+                        "ddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+                        "                            d                          ",
+                        "                            d                          ",
+                        "                            dbWbbbcccccbbbbbbbbbbbbbbbb",
+                       };
 
-    //string[] stage11 ={ "bbbww dB d   bWddb b",
-    //                    "d bBd B bbbbdb b dbB",
-    //                    "ddbb B  Bbddb d BBB ",
-    //                    "bbdBbdddb d  bBBBBBB",
-    //                    "Bdb dd dB dbdbd  b b",
-    //                    "bbBBdddBbBbBB  d d d",
-
-    //                    "WWWW ddBbBbBB  d d d",
-    //                    "dBBbbbbdBdBbddbdBbbB"};
-
-    string[] stage12 ={ "Wbbbbbbbbwbbbbbwbbbd",
-                        "  dd   dd    dd    d",
-                        "Wbbbbbbbbbbbbbbbbccd",
-                        "  d    d   d   d   d",
-                        "Wbbbbbbbbbbbbbbbbbwd",
-                        "  d    dd  d  dd   d",
-                        "Wbbbbbbbbbbbbbbbbbwd"};
+    string[] stage12 ={ "                   dddddd",
+                        "Wbbbbbbbbwbbbbbwbbbddddddd",
+                        "  dd   dd    dd    ddddddd",
+                        "Wbbbbbbbbbbbbbbbbccddddddd",
+                        "  d    d   d   d   dddddd",
+                        "Wbbbbbbbbbbbbbbbbbwddddddd",
+                        "  d    dd  d  dd   ddddddd",
+                        "Wbbbbbbbbbbbbbbbbbwddddddd",
+                        "dddddddddddddddddddddddddd"};
 
     string[] stage13 ={ "  dd  dB d   bdddb b",
                         "d bBd B bbbbdb b dbB",
@@ -228,87 +271,11 @@ public class stagecriate : MonoBehaviour
                         "bbBBdddBbBbBB  d d d",
                         "dBBbbbbdBdBbddbdBbbB"};
 
-    string[] stage24 ={  "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccc"};
-//=======
-    string[] stage9 = { "        ddd                                       ",
-                        "BBBBBBwwddd                                       ",
-                        "dddddddddddddddddddddddddddddddddddddddddddddddddd",
-                        "        b     b     b     b     b     d       bddd",
-                        "        b     b     b     b     d     d       bddd",
-                        "       bdb   bdb   ddd   ddd   ddd   ddd      bddd",
-                        "        b     d     b     d     d     d       bddd",
-                        "                                              bddd",
-                        "bbWWbbb   bbb   bbb   bbb   bbb   bbb   bbb   bddd",
-                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddd",
-                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddd",
-                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddd",
-                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddd",
-                        "ddddddddddddb   bdddddddb   bdddddddb   bddddddddd",
-                        "ddddddddddddb   bdddddddb   bdddddddb   bddddddddd",
-                        "ddddddddddddb   bdddddddb   bdddddddb   bddddddddd",
-                        "ddddddddddddb   bdddddddb   bdddddddb   bddddddddd",
-                        "ddddddddddddb   bdddddddb   bdddddddb   bddddddddd",
-                        "ddddddddddddb   bdddddddb   bdddddddb   bddddddddd",
-                        "ddddddddddddb   bdddddddb   bdddddddb   bddddddddd",
-                        "ddddddddddddddddddddddddb   bddddddddddddddddddddd",
-                        "ddddddddddddddddddddddddb   bddddddddddddddddddddd",
-                        "ddddddddddddddddddddddddb   bddddddddddddddddddddd",
-                        "ddddddddddddddddddddddddb   bddddddddddddddddddddd",
-                        "ddddddddddddddddddddddddb   bddddddddddddddddddddd",
-                        "ddddddddddddddddddddddddcccccddddddddddddddddddddd",
-                       };
+    string[] stage24 = { "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccc" };
 
-    string[] stage10 =  {"                              bddddd",
-                         "                              bddddd",
-                         "bbb                           bddddd",
-                         "bbb                           bddddd",
-                         "bbb                           bddddd",
-                         "bbb                           bddddd",
-                         "bbb                           bddddd",
-                         "bbb                           bddddd",
-                         "bbb                           bddddd",
-                         "bbb                           bddddd",
-                         "bbb                           bddddd",
-                         "bbb                           bddddd",
-                         "bbb                           bddddd",
-                         "bbb                           bddddd",
-                         "bbb                           bddddd",
-                         "bbb                           bddddd",
-                         "bbb                           bddddd",
-                         "bbb                           bddddd",
-                         "bbbwwwccbwwwccbwwwccbwwwccbwwwbddddd",
-                         "dddddddddddddddddddddddddddddddddddd",
-                         "ddd   ddd   ddd   ddd   ddd   dddddd",
-                         "dddWWWdddWWWdddWWWdddWWWdddWWWdddddd",
-                        };
-//>>>>>>> origin/taniguti
 
-    string[] stage11 = { "       d    d  bdddd                                  ",
-                        "bbbbbbbbbbbbbBBwbdddd                                  ",
-                        "ddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
-                        "ddddd       ddddd dddddd       ddddd dddddd       ddddd",
-                        "dddddbWbwbbwdddddWddddddbWbwbbwdddddWddddddbWbwbbwddddd",
-                        "d       ddddd dddddd dddddd       ddddd dd      d ddddd",
-                        "dbWbwBBwdddddWddddddWddddddbWbwBBwdddddWddBBBBBwdWddddd",
-                        "ddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
-                        "                            d                          ",
-                        "                            d                          ",
-                        "                            dbWbbbcccccbbbbbbbbbbbbbbbb",
-                       };
 
-    string[] stage1 = { "             dd   dd  ddd  dd   dddddddddddddddddddddd",
-                        "bbbbbbb   bbbbbbbbbbbbbbbbbbb       dddddddddddddddddd",
-                        "       b                     dBb      dd   ddddddddddd",
-                        "        b                    dddddBBbbdd    dddddddddd",
-                        "         b       dd          dddddddddddd   dd  dddddd",
-                        "          bbbbbbbbb        dd    ddddddddBBbbb   ddddd",
-                        "                   bbbddbbbbb    ddddddddddddd    dddd",
-                        "                                 dddddddddddddd    ddd",
-                        "                                 d    d    d   d      ",
-                        "                             dbbbdbbbbbbbbbbbbbdcccccc",
-                       };
-
-   string[] stageCopy = { "" };
+    string[] stageCopy = { "" };
 
     void Start()
     {
@@ -349,7 +316,7 @@ public class stagecriate : MonoBehaviour
                 break;
             case 12:
                 stageCopy = stage12;
-                
+
                 break;
             case 13:
                 stageCopy = stage13;
@@ -393,45 +360,47 @@ public class stagecriate : MonoBehaviour
         {
             for (int j = 0; j < stageCopy[i].Length; j++)//横？
             {
-                switch (stageCopy[i].Substring(j, 1)) {
+                switch (stageCopy[i].Substring(j, 1))
+                {
 
-                    case "b": Instantiate(block, new Vector3(startX + j * massWidth,
-                    startY - i * massHeighth, 0.0f), Quaternion.identity);
+                    case "b":   //唯のブロック
+                        Instantiate(block, new Vector3(startX + j * massWidth,
+                                      startY - i * massHeighth, 0.0f), Quaternion.identity);
                         break;
 
-                    case "B":
+                    case "B":	//壊れる床
                         Instantiate(BB, new Vector3(startX + j * massWidth,
                             startY - i * massHeighth, 0.0f), Quaternion.identity);
                         break;
 
-                    case "c":
+                    case "c":	//クリアするブロック
                         Instantiate(ClearZone, new Vector3(startX + j * massWidth,
                             startY - i * massHeighth, 0.0f), Quaternion.identity);
                         break;
 
-                    case "d":
+                    case "d":	//死ぬブロック
                         Instantiate(deathzone, new Vector3(startX + j * massWidth,
                             startY - i * massHeighth, 0.0f), Quaternion.identity);
                         break;
 
-                    case "w":
+                    case "w":	//ワープイン
                         var iw = Instantiate(warpin, new Vector3(startX + j * massWidth,
                             startY - i * massHeighth, 0.0f), Quaternion.identity) as GameObject;
                         iw.name = warpin.name + warpincount;
                         warpincount++;
                         break;
 
-                    case "W":
+                    case "W":	//ワープアウト
                         var ow = Instantiate(warpout, new Vector3(startX + j * massWidth,
                             startY - i * massHeighth, 0.0f), Quaternion.identity) as GameObject;
                         ow.name = warpout.name + warpin.name + warpoutcount;
                         warpoutcount++;
                         break;
 
-                    case "E":
-                        var baji= Instantiate(bajilisk, new Vector3(startX + j * massWidth,
+                    case "E":	//バジリスク
+                        var baji = Instantiate(bajilisk, new Vector3(startX + j * massWidth,
                             startY - i * massHeighth, 0.0f), Quaternion.identity);
-                        baji.name = ""+bajicount;
+                        baji.name = "" + bajicount;
                         bajicount++;
                         break;
                 }
