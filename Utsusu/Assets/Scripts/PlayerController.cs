@@ -69,13 +69,13 @@ public class PlayerController : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "DeathZone")
-        {
-            gameover.SetGameOver();
-        }
-        if (col.gameObject.tag == "ClearZone")
+        if (gameover.GetGameOver()==false&&col.gameObject.tag == "ClearZone")
         {
             gameover.SetClear();
+        }
+        if (gameover.GetClear()==false&&col.gameObject.tag == "DeathZone")
+        {
+            gameover.SetGameOver();
         }
     }
 }
