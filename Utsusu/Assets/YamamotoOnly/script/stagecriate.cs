@@ -506,4 +506,18 @@ public class stagecriate : MonoBehaviour
     {
         return stageNum;
     }
+    /*
+    public static int SetStageNum0()
+    {
+        return stageNum = 0;
+    }
+    public static int SetStageNum8()
+    {
+        return stageNum = 8;
+    }
+    public static int SetStageNum16()
+    {
+        return stageNum = 16;
+    }
+    */
 }
