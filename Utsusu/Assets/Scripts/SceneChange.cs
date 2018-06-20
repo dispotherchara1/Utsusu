@@ -70,7 +70,7 @@ public class SceneChange : MonoBehaviour
     }
 
     SelectText selectText;
-    stagecriate stagecriate;//LoadScene(4)はゲームシーンに飛ぶよ。
+    stagecriate pubilc;//LoadScene(4)はゲームシーンに飛ぶよ。
     
     public void Select()
     {
