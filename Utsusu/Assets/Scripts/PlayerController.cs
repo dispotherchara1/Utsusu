@@ -4,7 +4,7 @@ public class PlayerController : MonoBehaviour
 {
     public GameOver gameover;
     public GaugeController gaugeController;
-    Vector2 teleportation = new Vector2(50.0f, 0.0f);
+    Vector2 teleportation = new Vector2(75.0f, 0.0f);
     //Vector2 jamp = new Vector2(0.0f,200.0f);
     //重力加速度.
     private const float gravitationalAcceleration = -9.81f;
@@ -21,14 +21,9 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        /*if (Input.GetButtonDown(KeyCode.D))
-        {
-            gravitationalAcceleration * (-1);
-        }*/
-
         if (gameover.GetGameOver() == false && gameover.GetClear() == false)
         {
-            Button();//ボタンで移動距離が変わるメソッド
+           //Button();//ボタンで移動距離が変わるメソッド
             GoGauge();//ゲージ式
         }
     }
@@ -74,13 +69,13 @@ public class PlayerController : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "DeathZone")
-        {
-            gameover.SetGameOver();
-        }
-        if (col.gameObject.tag == "ClearZone")
+        if (gameover.GetGameOver()==false&&col.gameObject.tag == "ClearZone")
         {
             gameover.SetClear();
+        }
+        if (gameover.GetClear()==false&&col.gameObject.tag == "DeathZone")
+        {
+            gameover.SetGameOver();
         }
     }
 }

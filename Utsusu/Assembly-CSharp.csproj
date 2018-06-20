@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\SceneChange.cs" />
      <Compile Include="Assets\Scripts\Tutorial.cs" />
      <Compile Include="Assets\Scripts\Warp.cs" />
+     <Compile Include="Assets\Scripts\player_tel.cs" />
      <Compile Include="Assets\Scripts\wana.cs" />
      <Compile Include="Assets\Scripts\wana2.cs" />
      <Compile Include="Assets\YamamotoOnly\script\GameOver.cs" />
@@ -62,6 +63,7 @@
      <Compile Include="Assets\YamamotoOnly\script\stagecriate.cs" />
      <Compile Include="Assets\YamamotoOnly\script\stagecriateTest.cs" />
      <Compile Include="Assets\YamamotoOnly\script\timer.cs" />
+     <Compile Include="Assets\pic\destroyblock.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

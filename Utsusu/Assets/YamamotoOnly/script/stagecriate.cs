@@ -5,34 +5,48 @@ public class stagecriate : MonoBehaviour
 {
     Warp warp;
 
-    public GameObject block, ClearZone, deathzone, neadle,warpin,warpout,BB,
-        BajiBlock,bajilisk;
+    public GameObject block, ClearZone, deathzone, neadle, warpin, warpout, BB,
+        BajiBlock, bajilisk;
     int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
     int warpincount = 0, warpoutcount = 0, bajicount = 0;
     static int stageNum = 1;
 
+<<<<<<< HEAD
     string[] stage1 = { " b     b        ddddddd",
                         "b   b    b      ddddddd",
                         "bbbbbbbbbbbcccccddddddd",
                         "ddddddddddddddddddddddd"
                         };
+=======
+    string[] stage1 = { "             dd   dd  ddd  dd   dddddddddddddddddddddd",
+                        "bbbbbbb   bbbbbbbbbbbbbbbbbbb       dddddddddddddddddd",
+                        "       b                     dBb      dd   ddddddddddd",
+                        "        b                    dddddBBbbdd    dddddddddd",
+                        "         b       dd          dddddddddddd   dd  dddddd",
+                        "          bbbbbbbbb        dd    ddddddddBBbbb   ddddd",
+                        "                   bbbddbbbbb    ddddddddddddd    dddd",
+                        "                                 dddddddddddddd    ddd",
+                        "                                 d    d    d   d      ",
+                        "                             dbbbdbbbbbbbbbbbbbdcccccc",
+                       };
+>>>>>>> origin/Yamamotorikiya
 
     string[] stage2 = { "          ",
-                        "  bb  bbdb  b b            dddddd",
+                        "E  bb  bbdb  b b            dddddd",
                         "bdb dbbbbdb  b  bbb  bbbbbbdddddd",
                         "dddddddddddddddddddwwdddddddddddd",
                         "",
                         "",
                         "",
-                        "      d                                         ddd",
-                        "WWbbbb     dd                                W  ddd",
-                        "      bbbbbb      d                             ddd",
-                        "            bbbbbb     dd                       ddd",
-                        "                  bbbbbb      d                 ddd",
-                        "                        bbbbbb     dd           ddd",
-                        "                              bbbbbb B          ddd",
-                        "dddddddddddddddddddddddddddddddddddd    w       ddd",
-                        "                                    ddddddddddccddd"
+                        "E       d                                         ddd",
+                        "  WWbbbb     dd                                W  ddd",
+                        "       bbbbbb      d                             ddd",
+                        "             bbbbbb     dd                       ddd",
+                        "                  bbbbbb      d                  ddd",
+                        "                        bbbbbb      dd           ddd",
+                        "                              bbbbbb B           ddd",
+                        "dddddddddddddddddddddddddddddddddddd    w        ddd",
+                        "                                    ddddddddddcccddd"
                         };
 
     string[] stage3 = { " b     b    bb             dddddd",
@@ -41,11 +55,11 @@ public class stagecriate : MonoBehaviour
                         "ddddddddddddddddddddddddddddddddd" };
 
     string[] stage4 = { " b     b     b b b  b      bbbbdddd",
-                        "b   b    b         bb      bbbbdddd",
-                        "bbbbbb  bbbbbbb   b bbbbbbw     bbbdddd",
+                        "Eb   b    b         bb      bbbbdddd",
+                        " bbbbbb  bbbbbbb   b bbbbbbw     bbbdddd",
                         "      dd       b   b      ddddddddddddd",
                         "              bb   bb   bb   bbbb",
-                        "                           b   bb                   dddddd",
+                        "             E             b   bb                   dddddd",
                         "               Wbbb   bb            b               dddddd",
                         "WBB          ddd   bb bbbbbbbbbb bbb bbbb bbbwdddddddddddd",
                         "   BB      ddd       ddddddddddddddddddddddddddddddddddddd",
@@ -102,6 +116,7 @@ public class stagecriate : MonoBehaviour
                         "dddBWBBBBBBBBBBBBBBB  BB  BB  BB  BB  Wccccccdddddd",
                         "dddddddddddddddddddddddddddddddddddddddddddddddddd"};
 
+<<<<<<< HEAD
     string[] stage9_T = { "       ddd                                                  ",
                         "BBBBBBwddd                                                  ",
                         "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
@@ -128,6 +143,34 @@ public class stagecriate : MonoBehaviour
                         "dddddddddddddddddddddddddddd   ddddddddddddddddddddddddddddd",
                         "dddddddddddddddddddddddddddd   ddddddddddddddddddddddddddddd",
                         "dddddddddddddddddddddddddddcccccdddddddddddddddddddddddddddd",
+=======
+    string[] stage9 = { "        ddd                                       ",
+                        "BBBBBBwwddd                                       ",
+                        "dddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+                        "        b     b     b     b     b     d       bddddddd",
+                        "        b     b     b     b     d     d       bddddddd",
+                        "       bdb   bdb   ddd   ddd   ddd   ddd      bddddddd",
+                        "        b     d     b     d     d     d       bddddddd",
+                        "                                              bddddddd",
+                        "bbWbbbb   bbb   bbb   bbb   bWb   bbb   bbb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddb   bdb   bdb   bdb   bdb   bdb   bdb   bddddddd",
+                        "ddddddddddddddddddddddddbcccbddddddddddddddddddddddddd",
+                        "ddddddddddddddddddddddddbdddbddddddddddddddddddddddddd",
+                        "ddddddddddddddddddddddddbdddbddddddddddddddddddddddddd",
+                        "ddddddddddddddddddddddddbdddbddddddddddddddddddddddddd",
+                        "ddddddddddddddddddddddddbdddbddddddddddddddddddddddddd",
+                        "ddddddddddddddddddddddddcccccddddddddddddddddddddddddd",
+>>>>>>> origin/Yamamotorikiya
                        };
 
     string[] stage10_T =  {"                              bddddd",
@@ -154,19 +197,25 @@ public class stagecriate : MonoBehaviour
                          "dddWWWdddWWWdddWWWdddWWWdddWWWdddddd",
                         };
 
+<<<<<<< HEAD
     string[] stage11_T = {"      d     d   bdddd                                  ",
                         "bbbbbbbbbbbbbBBwbdddd                                  ",
+=======
+    string[] stage11 = {"       d    d  　 dddddd                               ",
+                        "bbbbbbbbbbbbbBBwBdddddd                                ",
+>>>>>>> origin/Yamamotorikiya
                         "ddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
                         "ddddd       ddddd dddddd       ddddd dddddd       ddddd",
                         "dddddbWbwbbwdddddWddddddbWbwbbwdddddWddddddbWbwbbwddddd",
                         "d       ddddd dddddd dddddd       ddddd dd      d ddddd",
                         "dbWbwBBwdddddWddddddWddddddbWbwBBwdddddWddBBBBBwdWddddd",
                         "ddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
-                        "                             b                         ",
-                        "                             b                         ",
-                        "                             bWbbbccccccccccbbbbbbbbbbb",
+                        "                            d                          ",
+                        "                            d                          ",
+                        "                            dbWbbbcccccbbbbbbbbbbbbbbbb",
                        };
 
+<<<<<<< HEAD
     string[] stage12_T= {"             dd   dd  ddd  dd   dddddddddddddddddddddd",
                         "bbbbbbb   bbbbbbbbbbbbbbbbbbb       dddddddddddddddddd",
                         "       b                     dBb      dd   ddddddddddd",
@@ -212,8 +261,111 @@ public class stagecriate : MonoBehaviour
                        "ddddddddddddddddddddddddddddddddddddd                       ",
                        "dddddddddddddddddddddddddddddddddddddccccccccccccccccccccccc",
                        };
+=======
+    string[] stage12 ={ "                   dddddd",
+                        "Wbbbbbbbbwbbbbbwbbbddddddd",
+                        "  dd   dd    dd    ddddddd",
+                        "Wbbbbbbbbbbbbbbbbccddddddd",
+                        "  d    d   d   d   dddddd",
+                        "Wbbbbbbbbbbbbbbbbbwddddddd",
+                        "  d    dd  d  dd   ddddddd",
+                        "Wbbbbbbbbbbbbbbbbbwddddddd",
+                        "dddddddddddddddddddddddddd"};
 
-   string[] stageCopy = { "" };
+    string[] stage13 ={ "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage14 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage15 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage16 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage17 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage18 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage19 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage20 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage21 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage22 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage23 ={  "  dd  dB d   bdddb b",
+                        "d bBd B bbbbdb b dbB",
+                        "ddbb B  Bbddb d BBB ",
+                        "bbdBbdddb d  bBBBBBB",
+                        "Bdb dd dB dbdbd  b b",
+                        "bbBBdddBbBbBB  d d d",
+                        "dBBbbbbdBdBbddbdBbbB"};
+
+    string[] stage24 = { "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccc" };
+
+>>>>>>> origin/Yamamotorikiya
+
+
+    string[] stageCopy = { "" };
 
     void Start()
     {
@@ -243,75 +395,105 @@ public class stagecriate : MonoBehaviour
             case 8:
                 stageCopy = stage8;
                 break;
+            case 9:
+                stageCopy = stage9;
+                break;
+            case 10:
+                stageCopy = stage10;
+                break;
+            case 11:
+                stageCopy = stage11;
+                break;
+            case 12:
+                stageCopy = stage12;
+
+                break;
+            case 13:
+                stageCopy = stage13;
+                break;
+            case 14:
+                stageCopy = stage14;
+                break;
+            case 15:
+                stageCopy = stage15;
+                break;
+            case 16:
+                stageCopy = stage16;
+                break;
+            case 17:
+                stageCopy = stage17;
+                break;
+            case 18:
+                stageCopy = stage18;
+                break;
+            case 19:
+                stageCopy = stage19;
+                break;
+            case 20:
+                stageCopy = stage20;
+                break;
+            case 21:
+                stageCopy = stage21;
+                break;
+            case 22:
+                stageCopy = stage22;
+                break;
+            case 23:
+                stageCopy = stage23;
+                break;
+            case 24:
+                stageCopy = stage24;
+                break;
         }
 
         for (int i = 0; i < stageCopy.GetLength(0); i++)//stageCopyの文字数をカウントしその分だけ回す
         {
             for (int j = 0; j < stageCopy[i].Length; j++)//横？
             {
-                switch (stageCopy[i].Substring(j, 1)) {
+                switch (stageCopy[i].Substring(j, 1))
+                {
 
-                    case "b": Instantiate(block, new Vector3(startX + j * massWidth,
-                    startY - i * massHeighth, 0.0f), Quaternion.identity);
+                    case "b":   //唯のブロック
+                        Instantiate(block, new Vector3(startX + j * massWidth,
+                                      startY - i * massHeighth, 0.0f), Quaternion.identity);
                         break;
 
-                    case "B":
+                    case "B":	//壊れる床
                         Instantiate(BB, new Vector3(startX + j * massWidth,
                             startY - i * massHeighth, 0.0f), Quaternion.identity);
                         break;
 
-                    case "c":
+                    case "c":	//クリアするブロック
                         Instantiate(ClearZone, new Vector3(startX + j * massWidth,
                             startY - i * massHeighth, 0.0f), Quaternion.identity);
                         break;
 
-                    case "d":
+                    case "d":	//死ぬブロック
                         Instantiate(deathzone, new Vector3(startX + j * massWidth,
                             startY - i * massHeighth, 0.0f), Quaternion.identity);
                         break;
 
-                    case "w":
+                    case "w":	//ワープイン
                         var iw = Instantiate(warpin, new Vector3(startX + j * massWidth,
                             startY - i * massHeighth, 0.0f), Quaternion.identity) as GameObject;
                         iw.name = warpin.name + warpincount;
                         warpincount++;
                         break;
 
-                    case "W":
+                    case "W":	//ワープアウト
                         var ow = Instantiate(warpout, new Vector3(startX + j * massWidth,
                             startY - i * massHeighth, 0.0f), Quaternion.identity) as GameObject;
                         ow.name = warpout.name + warpin.name + warpoutcount;
                         warpoutcount++;
                         break;
 
-                    case "e":
-                        Instantiate(BajiBlock, new Vector3(startX + j * massWidth,
+                    case "E":	//バジリスク
+                        var baji = Instantiate(bajilisk, new Vector3(startX + j * massWidth,
                             startY - i * massHeighth, 0.0f), Quaternion.identity);
-                        name = ""+bajicount;
-                        break;
-
-                    case "E":
-                        Instantiate(bajilisk, new Vector3(startX + j * massWidth,
-                            startY - i * massHeighth, 0.0f), Quaternion.identity);
-                        name = "bajirisk";
+                        baji.name = "" + bajicount;
+                        bajicount++;
                         break;
                 }
-                /*if (stageCopy[i].Substring(j, 1) == "b")
-                {
-                }
-                if (stageCopy[i].Substring(j, 1) == "c")
-                {
-                }
-                if (stageCopy[i].Substring(j, 1) == "d")
-                {
-                }
-                if (stageCopy[i].Substring(j, 1) == "w")
-                {
-                    
-                }
-                if (stageCopy[i].Substring(j, 1) == "W")
-                {
-                }*/
             }
         }
     }
@@ -319,6 +501,7 @@ public class stagecriate : MonoBehaviour
     {
         stageNum = a;
     }
+
     public static int RequestStageNum()
     {
         return stageNum;
