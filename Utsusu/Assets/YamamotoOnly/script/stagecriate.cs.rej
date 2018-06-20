@@ -1,0 +1,9 @@
+diff a/Utsusu/Assets/YamamotoOnly/script/stagecriate.cs b/Utsusu/Assets/YamamotoOnly/script/stagecriate.cs	(rejected hunks)
+@@ -4,6 +4,7 @@
+ public class stagecriate : MonoBehaviour
+ {
+     Warp warp;
++<<<<<<< HEAD
+ 
+     public GameObject block, ClearZone, deathzone, neadle, warpin, warpout, BB,
+         BajiBlock, bajilisk;

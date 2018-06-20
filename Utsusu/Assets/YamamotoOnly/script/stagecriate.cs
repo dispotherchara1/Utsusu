@@ -9,6 +9,11 @@ public class stagecriate : MonoBehaviour
         BajiBlock, bajilisk;
     int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
     int warpincount = 0, warpoutcount = 0, bajicount = 0;
+=======
+    public GameObject block, ClearZone, deathzone, neadle, warpin, warpout, BB;
+    public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
+    int warpincount = 0, warpoutcount = 0;
+>>>>>>> origin/honjo
     static int stageNum = 1;
 
 
@@ -20,20 +25,20 @@ public class stagecriate : MonoBehaviour
 
     string[] stage2 = { "          ",
                         "E  bb  bbdb  b b            dddddd",
-                        "bdb dbbbbdb  b  bbb  bbbbbbdddddd",
-                        "dddddddddddddddddddwwdddddddddddd",
+                        "bbbdb dbbbbdb  b  bbb  bbbbbbdddddd",
+                        "bdddddddddddddddddddbwwdddddddddddd",
                         "",
                         "",
                         "",
                         "E       d                                         ddd",
-                        "  WWbbbb     dd                                W  ddd",
-                        "       bbbbbb      d                             ddd",
-                        "             bbbbbb     dd                       ddd",
-                        "                  bbbbbb      d                  ddd",
-                        "                        bbbbbb      dd           ddd",
-                        "                              bbbbbb B           ddd",
-                        "dddddddddddddddddddddddddddddddddddd    w        ddd",
-                        "                                    ddddddddddcccddd"
+                        "bbbWWbbbb    dd                                W  ddd",
+                        "         bbbbbb    d                              ddd",
+                        "              bbbbbb    dd                        ddd",
+                        "                    bbbbbb     d                  ddd",
+                        "                          bbbbbb      dd          ddd",
+                        "                                bbbbbb  BB        ddd",
+                        " dddddddddddddddddddddddddddddddddddd     w       ddd",
+                        "                                     ddddddddddcccddd"
                         };
 
     string[] stage3 = { " b     b    bb             dddddd",
@@ -43,10 +48,10 @@ public class stagecriate : MonoBehaviour
 
     string[] stage4 = { " b     b     b b b  b      bbbbdddd",
                         "Eb   b    b         bb      bbbbdddd",
-                        " bbbbbb  bbbbbbb   b bbbbbbw     bbbdddd",
+                        " bbbbbbb  bbbbbbb   b bbbbbbw     bbbdddd",
                         "      dd       b   b      ddddddddddddd",
                         "              bb   bb   bb   bbbb",
-                        "             E             b   bb                   dddddd",
+                        "          E                b   bb                   dddddd",
                         "               Wbbb   bb            b               dddddd",
                         "WBB          ddd   bb bbbbbbbbbb bbb bbbb bbbwdddddddddddd",
                         "   BB      ddd       ddddddddddddddddddddddddddddddddddddd",
@@ -436,9 +441,15 @@ public class stagecriate : MonoBehaviour
                 switch (stageCopy[i].Substring(j, 1))
                 {
 
+<<<<<<< HEAD
                     case "b":   //唯のブロック
                         Instantiate(block, new Vector3(startX + j * massWidth,
                                       startY - i * massHeighth, 0.0f), Quaternion.identity);
+=======
+                    case "b":
+                        Instantiate(block, new Vector3(startX + j * massWidth,
+              startY - i * massHeighth, 0.0f), Quaternion.identity);
+>>>>>>> origin/honjo
                         break;
 
                     case "B":	//壊れる床
@@ -489,18 +500,4 @@ public class stagecriate : MonoBehaviour
     {
         return stageNum;
     }
-    /*
-    public static int SetStageNum0()
-    {
-        return stageNum = 0;
-    }
-    public static int SetStageNum8()
-    {
-        return stageNum = 8;
-    }
-    public static int SetStageNum16()
-    {
-        return stageNum = 16;
-    }
-    */
 }

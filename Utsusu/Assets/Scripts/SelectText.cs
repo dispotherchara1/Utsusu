@@ -59,20 +59,7 @@ public class SelectText : MonoBehaviour
                 text8.text = "24";
                 break;
         }
-        Debug.Log(selectNum);
     }
-
-    /*
-    public int SetSelectNum(int a)
-    {
-        return selectNum = selectNum + a;
-    }
-    */
-    public void SetSelectNum(int a)
-    {
-        selectNum =  a;
-    }
-
 
     public void Next()
     {
