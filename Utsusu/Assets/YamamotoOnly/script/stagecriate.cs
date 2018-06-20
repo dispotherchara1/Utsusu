@@ -11,11 +11,11 @@ public class stagecriate : MonoBehaviour
     int warpincount = 0, warpoutcount = 0, bajicount = 0;
     static int stageNum = 1;
 
-    //string[] stage1 = { " b     b        ddddddd",
-                        //"b   b    b      ddddddd",
-                        //"bbbbbbbbbbbcccccddddddd",
-                        //"ddddddddddddddddddddddd"
-                        //};
+    string[] stage1 = { " b     b        ddddddd",
+                        "b   b    b      ddddddd",
+                        "bbbbbbbbbbbcccccddddddd",
+                        "ddddddddddddddddddddddd"
+                        };
 
     string[] stage2 = { "          ",
                         "  bb  bbdb  b b            dddddd",
@@ -102,7 +102,7 @@ public class stagecriate : MonoBehaviour
                         "dddBWBBBBBBBBBBBBBBB  BB  BB  BB  BB  Wccccccdddddd",
                         "dddddddddddddddddddddddddddddddddddddddddddddddddd"};
 
-    string[] stage9 = { "       ddd                                                  ",
+    string[] stage9_T = { "       ddd                                                  ",
                         "BBBBBBwddd                                                  ",
                         "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
                         "d       b      b      b      b      b      d      b     bddd",
@@ -130,7 +130,7 @@ public class stagecriate : MonoBehaviour
                         "dddddddddddddddddddddddddddcccccdddddddddddddddddddddddddddd",
                        };
 
-    string[] stage10 =  {"                              bddddd",
+    string[] stage10_T =  {"                              bddddd",
                          "                              bddddd",
                          "bbb                           bddddd",
                          "bbb                           bddddd",
@@ -154,7 +154,7 @@ public class stagecriate : MonoBehaviour
                          "dddWWWdddWWWdddWWWdddWWWdddWWWdddddd",
                         };
 
-    string[] stage11 = {"      d     d   bdddd                                  ",
+    string[] stage11_T = {"      d     d   bdddd                                  ",
                         "bbbbbbbbbbbbbBBwbdddd                                  ",
                         "ddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
                         "ddddd       ddddd dddddd       ddddd dddddd       ddddd",
@@ -167,7 +167,7 @@ public class stagecriate : MonoBehaviour
                         "                             bWbbbccccccccccbbbbbbbbbbb",
                        };
 
-    string[] stage12= {"             dd   dd  ddd  dd   dddddddddddddddddddddd",
+    string[] stage12_T= {"             dd   dd  ddd  dd   dddddddddddddddddddddd",
                         "bbbbbbb   bbbbbbbbbbbbbbbbbbb       dddddddddddddddddd",
                         "       b                     dBb      dd   ddddddddddd",
                         "        b                    dddddBBbbdd    dddddddddd",
@@ -179,7 +179,7 @@ public class stagecriate : MonoBehaviour
                         "                             dbbbdbbbbbbbbbbbbbdcccccc",
                        };
 
-    string[] stage13 = {"               ddd   ddd     ddddddddddddddddddddddddddddddddd",
+    string[] stage13_T = {"               ddd   ddd     ddddddddddddddddddddddddddddddddd",
                         "bWWWbbbbb   bbbbbbbbbbbbbbbbwddddddddddddddddddddddddddddddddd",
                         " d       b    ddd         dd   dd             ddd  ddd        ",
                         "  dd      b   ddd         dd   dd             ddd  ddd        ",
@@ -189,7 +189,7 @@ public class stagecriate : MonoBehaviour
                         "                      bbbbbbbbbbbbbwdddd  bbbbbbbbbbbbbbbwdddd",
                        };
 
-    string[] stage1 = {"       d   d    b     d   d     ddd      d  d  B  dddddddddw",
+    string[] stage14_T = {"       d   d    b     d   d     ddd      d  d  B  dddddddddw",
                        "             d          b     b        b         ddddddddddd",
                        "bbbbbbbb  bbbbbbBBBBbbbddbb  bbBBBBBbbbbbBBbbbbbwBBbbddddddd",
                        "dddddddddddddddd    ddddddddddd     dddddddddddddddddd      ",
