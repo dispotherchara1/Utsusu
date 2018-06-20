@@ -4,11 +4,17 @@ using System.Collections;
 public class stagecriate : MonoBehaviour
 {
     Warp warp;
+<<<<<<< HEAD
 
     public GameObject block, ClearZone, deathzone, neadle, warpin, warpout, BB,
         BajiBlock, bajilisk;
     int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
     int warpincount = 0, warpoutcount = 0, bajicount = 0;
+=======
+    public GameObject block, ClearZone, deathzone, neadle, warpin, warpout, BB;
+    public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
+    int warpincount = 0, warpoutcount = 0;
+>>>>>>> origin/honjo
     static int stageNum = 1;
 
 
@@ -436,9 +442,15 @@ public class stagecriate : MonoBehaviour
                 switch (stageCopy[i].Substring(j, 1))
                 {
 
+<<<<<<< HEAD
                     case "b":   //唯のブロック
                         Instantiate(block, new Vector3(startX + j * massWidth,
                                       startY - i * massHeighth, 0.0f), Quaternion.identity);
+=======
+                    case "b":
+                        Instantiate(block, new Vector3(startX + j * massWidth,
+              startY - i * massHeighth, 0.0f), Quaternion.identity);
+>>>>>>> origin/honjo
                         break;
 
                     case "B":	//壊れる床
@@ -489,18 +501,4 @@ public class stagecriate : MonoBehaviour
     {
         return stageNum;
     }
-    /*
-    public static int SetStageNum0()
-    {
-        return stageNum = 0;
-    }
-    public static int SetStageNum8()
-    {
-        return stageNum = 8;
-    }
-    public static int SetStageNum16()
-    {
-        return stageNum = 16;
-    }
-    */
 }
