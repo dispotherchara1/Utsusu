@@ -26,20 +26,20 @@ public class stagecriate : MonoBehaviour
 
     string[] stage2 = { "          ",
                         "E  bb  bbdb  b b            dddddd",
-                        "bdb dbbbbdb  b  bbb  bbbbbbdddddd",
-                        "dddddddddddddddddddwwdddddddddddd",
+                        "bbbdb dbbbbdb  b  bbb  bbbbbbdddddd",
+                        "bdddddddddddddddddddbwwdddddddddddd",
                         "",
                         "",
                         "",
                         "E       d                                         ddd",
-                        "  WWbbbb     dd                                W  ddd",
-                        "       bbbbbb      d                             ddd",
-                        "             bbbbbb     dd                       ddd",
-                        "                  bbbbbb      d                  ddd",
-                        "                        bbbbbb      dd           ddd",
-                        "                              bbbbbb B           ddd",
-                        "dddddddddddddddddddddddddddddddddddd    w        ddd",
-                        "                                    ddddddddddcccddd"
+                        "bbbWWbbbb    dd                                W  ddd",
+                        "         bbbbbb    d                              ddd",
+                        "              bbbbbb    dd                        ddd",
+                        "                    bbbbbb     d                  ddd",
+                        "                          bbbbbb      dd          ddd",
+                        "                                bbbbbb  BB        ddd",
+                        " dddddddddddddddddddddddddddddddddddd     w       ddd",
+                        "                                     ddddddddddcccddd"
                         };
 
     string[] stage3 = { " b     b    bb             dddddd",
@@ -49,10 +49,10 @@ public class stagecriate : MonoBehaviour
 
     string[] stage4 = { " b     b     b b b  b      bbbbdddd",
                         "Eb   b    b         bb      bbbbdddd",
-                        " bbbbbb  bbbbbbb   b bbbbbbw     bbbdddd",
+                        " bbbbbbb  bbbbbbb   b bbbbbbw     bbbdddd",
                         "      dd       b   b      ddddddddddddd",
                         "              bb   bb   bb   bbbb",
-                        "             E             b   bb                   dddddd",
+                        "          E                b   bb                   dddddd",
                         "               Wbbb   bb            b               dddddd",
                         "WBB          ddd   bb bbbbbbbbbb bbb bbbb bbbwdddddddddddd",
                         "   BB      ddd       ddddddddddddddddddddddddddddddddddddd",
