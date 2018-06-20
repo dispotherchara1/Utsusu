@@ -4,9 +4,9 @@ using System.Collections;
 public class stagecriate : MonoBehaviour
 {
     Warp warp;
-    public GameObject block, ClearZone, deathzone, neadle,warpin,warpout,BB;
+    public GameObject block, ClearZone, deathzone, neadle, warpin, warpout, BB;
     public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
-    int warpincount=0, warpoutcount=0;
+    int warpincount = 0, warpoutcount = 0;
     static int stageNum = 1;
 
     string[] stage1 = { " b     b        ddddddd",
@@ -268,7 +268,7 @@ public class stagecriate : MonoBehaviour
                 break;
             case 12:
                 stageCopy = stage12;
-                
+
                 break;
             case 13:
                 stageCopy = stage13;
@@ -312,10 +312,12 @@ public class stagecriate : MonoBehaviour
         {
             for (int j = 0; j < stageCopy[i].Length; j++)//横？
             {
-                switch (stageCopy[i].Substring(j, 1)) {
+                switch (stageCopy[i].Substring(j, 1))
+                {
 
-                    case "b": Instantiate(block, new Vector3(startX + j * massWidth,
-                    startY - i * massHeighth, 0.0f), Quaternion.identity);
+                    case "b":
+                        Instantiate(block, new Vector3(startX + j * massWidth,
+              startY - i * massHeighth, 0.0f), Quaternion.identity);
                         break;
 
                     case "B":
@@ -359,18 +361,4 @@ public class stagecriate : MonoBehaviour
     {
         return stageNum;
     }
-    /*
-    public static int SetStageNum0()
-    {
-        return stageNum = 0;
-    }
-    public static int SetStageNum8()
-    {
-        return stageNum = 8;
-    }
-    public static int SetStageNum16()
-    {
-        return stageNum = 16;
-    }
-    */
 }

@@ -26,7 +26,6 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene(4);
         stagecriate.GetStageNum(1 + SelectText.GetSelectNum());
-        selectText.SetSelectNum(1);
     }
 
     public void Stage2()
@@ -58,7 +57,7 @@ public class SceneChange : MonoBehaviour
         SceneManager.LoadScene(4);
         stagecriate.GetStageNum(6 + SelectText.GetSelectNum());
     }
-    
+
     public void Stage7()
     {
         SceneManager.LoadScene(4);
