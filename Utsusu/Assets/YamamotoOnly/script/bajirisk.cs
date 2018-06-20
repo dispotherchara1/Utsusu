@@ -13,6 +13,7 @@ using System.Collections;
 public class bajirisk : MonoBehaviour {
     GameObject baji;//バジリスクの数を好きな数だけ入れる
     GameOver gameover;
+    Animator animator;
     float bajirun = 0.1f ;
     //bool bajicall = false;
     string calling = "bajilisk";
@@ -27,6 +28,7 @@ public class bajirisk : MonoBehaviour {
         //    baji_two.transform.position += bajibaji();
         if (calling == gameObject.name&&calling!="baji")
         {
+            this.animator.SetTrigger("walktrigger");
             gameObject.transform.position += new Vector3(bajirun, 0, 0);
         }
         //Debug.Log(calling);
