@@ -86,6 +86,7 @@
     <Compile Include="Assets\Scripts\SelectText.cs" />
     <Compile Include="Assets\Scripts\Tutorial.cs" />
     <Compile Include="Assets\Scripts\Warp.cs" />
+    <Compile Include="Assets\Scripts\mynumber.cs" />
     <Compile Include="Assets\Scripts\player_tel.cs" />
     <Compile Include="Assets\Scripts\wana.cs" />
     <Compile Include="Assets\Scripts\wana2.cs" />

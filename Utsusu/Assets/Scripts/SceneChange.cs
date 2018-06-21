@@ -7,9 +7,11 @@ public class SceneChange : MonoBehaviour
     public Canvas select, title;
     bool onselect;
     stagecriate stagecriate;//LoadScene(4)はゲームシーンに飛ぶよ。
-    int selectNum = 0;
+    int selectNum = 1;
+    public Text[] text = { };
     public Text text1, text2, text3, text4,
                 text5, text6, text7, text8;
+    public mynumber MyNum;
     enum StageSelectType
     {
         Easy,
@@ -68,10 +70,23 @@ public class SceneChange : MonoBehaviour
                 break;
         }
     }
+    public void Next()
+    {
+        if (stageselectType < StageSelectType.Hard)
+        {
+            stageselectType++;
+        }
+    }
 
-    SelectText selectText;
-    stagecriate pubilc;//LoadScene(4)はゲームシーンに飛ぶよ。
-    
+    public void Back()
+    {
+        if (stageselectType > StageSelectType.Easy)
+        {
+            stageselectType--;
+        }
+    }
+
+    stagecriate StageCriate;//LoadScene(4)はゲームシーンに飛ぶよ。
     public void Select()
     {
         onselect = true;//セレクトをtrueに
@@ -90,48 +105,52 @@ public class SceneChange : MonoBehaviour
     public void Stage()
     {
         SceneManager.LoadScene(4);
-        stagecriate.GetStageNum(1 + SelectText.GetSelectNum());
+        MyNum.SetstageNum(+(selectNum + 1));
     }
 
     public void Stage2()
     {
         SceneManager.LoadScene(4);
-        stagecriate.GetStageNum(2 + SelectText.GetSelectNum());
+        MyNum.SetstageNum(+(selectNum + 2));
     }
 
     public void Stage3()
     {
         SceneManager.LoadScene(4);
-        stagecriate.GetStageNum(3 + SelectText.GetSelectNum());
+        MyNum.SetstageNum(+(selectNum + 3));
     }
 
     public void Stage4()
     {
         SceneManager.LoadScene(4);
-        stagecriate.GetStageNum(4 + SelectText.GetSelectNum());
+        MyNum.SetstageNum(+(selectNum + 4));
     }
 
     public void Stage5()
     {
-        SceneManager.LoadScene(4);
-        stagecriate.GetStageNum(5 + SelectText.GetSelectNum());
+       SceneManager.LoadScene(4);
+        MyNum.SetstageNum(+(selectNum + 5));
     }
 
     public void Stage6()
     {
         SceneManager.LoadScene(4);
-        stagecriate.GetStageNum(6 + SelectText.GetSelectNum());
+        MyNum.SetstageNum(+(selectNum + 6));
     }
 
     public void Stage7()
     {
         SceneManager.LoadScene(4);
-        stagecriate.GetStageNum(7 + SelectText.GetSelectNum());
+        MyNum.SetstageNum(+(selectNum + 7));
     }
 
     public void Stage8()
     {
         SceneManager.LoadScene(4);
-        stagecriate.GetStageNum(8 + SelectText.GetSelectNum());
+        MyNum.SetstageNum(+(selectNum + 8));
+    }
+    public int selectnumber()
+    {
+        return selectNum;
     }
 }

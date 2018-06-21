@@ -9,46 +9,41 @@ public class stagecriate : MonoBehaviour
         BajiBlock, bajilisk;
     int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
     int warpincount = 0, warpoutcount = 0, bajicount = 0;
-=======
-    public GameObject block, ClearZone, deathzone, neadle, warpin, warpout, BB;
-    public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
-    int warpincount = 0, warpoutcount = 0;
->>>>>>> origin/honjo
     static int stageNum = 1;
-
-
-    string[] stage1 = { " b     b        ddddddd",
-                        "b   b    b      ddddddd",
-                        "bbbbbbbbbbbcccccddddddd",
-                        "ddddddddddddddddddddddd"
+    public mynumber MyNum;
+    //左から６ブロック目がスライムの誕生地点です。
+    string[] stage1 = { "      b     b        ddddddd",
+                        "     b   b    b      ddddddd",
+                        "dddddbbbbbbbbbbbcccccddddddd",
+                        "dddddddddddddddddddddddddddd"
                         };
 
-    string[] stage2 = { "          ",
-                        "E  bb  bbdb  b b            dddddd",
-                        "bbbdb dbbbbdb  b  bbb  bbbbbbdddddd",
-                        "bdddddddddddddddddddbwwdddddddddddd",
+    string[] stage2 = { "",
+                        "E        bb  bbdb  b b            dddddddddddddddddddddddddd",
+                        "     bbbdb dbbbbdb  b  bbb  bbbbbbdddddddddddddddddddddddddd",
+                        "     bdddddddddddddddddddbwwdddddddddddddddddddddddddddddddd",
                         "",
                         "",
                         "",
-                        "E       d                                         ddd",
-                        "bbbWWbbbb    dd                                W  ddd",
-                        "         bbbbbb    d                              ddd",
-                        "              bbbbbb    dd                        ddd",
-                        "                    bbbbbb     d                  ddd",
-                        "                          bbbbbb      dd          ddd",
-                        "                                bbbbbb  BB        ddd",
-                        " dddddddddddddddddddddddddddddddddddd     w       ddd",
-                        "                                     ddddddddddcccddd"
+                        "   E         d                                     dddddddd",
+                        "     bbbWWbbbb    dd                          W    dddddddd",
+                        "              bbbbbb    d                          dddddddd",
+                        "                   bbbbbb    dd                    dddddddd",
+                        "                         bbbbbb     d              dddddddd",
+                        "                               bbbbbb    dd        dddddddd",
+                        "                                     bbbbbb  BB    dddddddd",
+                        " ddddddddddddddddddddddddddddddddddddddddddw       dddddddd",
+                        "dddddddddddddddddddddddddddddddddddddddddddddddcccddddddddd"
                         };
 
-    string[] stage3 = { " b     b    bb             dddddd",
-                        "b   b    b b  b bb         dddddd",
-                        "bbbb   bbbbbb  b  bbbbcccccdddddd",
-                        "ddddddddddddddddddddddddddddddddd" };
+    string[] stage3 = { "      b     b    bb             dddddd",
+                        "     b   b    b b  b bb         dddddd",
+                        "dddddbbbb   bbbbbb  b  bbbbcccccdddddd",
+                        "dddddddddddddddddddddddddddddddddddddd" };
 
-    string[] stage4 = { " b     b     b b b  b      bbbbdddd",
-                        "Eb   b    b         bb      bbbbdddd",
-                        " bbbbbbb  bbbbbbb   b bbbbbbw     bbbdddd",
+    string[] stage4 = { "      b     b     b b b  b      bbbbdddd",
+                        "E    b   b    b         bb      bbbbdddd",
+                        "    bbbbbbbbb  bbbbbbb   b bbbbbbw     bbbdddd",
                         "      dd       b   b      ddddddddddddd",
                         "              bb   bb   bb   bbbb",
                         "          E                b   bb                   dddddd",
@@ -63,19 +58,19 @@ public class stagecriate : MonoBehaviour
                         "bbbbbbbbbbbw       bbb      Wbbbbbcccccdddddd",
                         "ddddddddddddddddddddddddddddddddddddddddddddd"};
 
-    string[] stage6 = {" bW    b     b b bdddd",
-                        "b   b    b      bbdddd",
-                        "bbbbbbbbbbbbbb  bdddd",
-                        "          dddd  ddddd",
-                        "          dddd  ddddd",
-                        "          dddd  ddddd",
-                        "          dddd  ddddd",
-                        "          dddd  ddddd",
-                        "            dd  dddd",
-                        "",
-                        "                d        dddddd",
-                        "           W  bb wwccccccdddddd",
-                        "dddddddddddddddddddddddddddddd"};
+    string[] stage6 = {" bW    b     b b bdddddddddddd",
+                        "b   b    b      bbddddddddddd",
+                        "bbbbbbbbbbbbbb  bdddddddddddd",
+                        "          dddd  ddddddddddddd",
+                        "          dddd  ddddddddddddd",
+                        "          dddd  ddddddddddddd",
+                        "          dddd  dddddddddddd",
+                        "          dddd  dddddddddd",
+                        "            dd  ddddddd",
+                        "W",
+                        "  BB            d        dddddddddddddddddd",
+                        "     E     W  bb wwwcccccdddddddddddddddddd",
+                        "ddddddddddddddddddddddddddddddddddddddddddd"};
 
     string[] stage7 = { "        ddddddddddddddddddddddddddddddddddd",
                         "              dddddbbbb   bb     db           ddddddddd",
@@ -93,20 +88,20 @@ public class stagecriate : MonoBehaviour
                         "Wbbbbbccccccdddddd",
                         "dddddddddddddddddd"};
 
-    string[] stage8 = { "       dd    d    d  d   dddd         dd  W    dd",
-                        "bbbbbbbbbbbBBBWBBBBbbbwbbdddd         dd    w  dd",
-                        "bbbbbbbbbbbddddddddbbbbbbdddd         dd      wdd",
-                        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbb         ddddddddddd",
-                        "d    dd                               ddddddddddd",
-                        "dWBBBddbw                                   ",
-                        "ddd  dd                                   ",
-                        "ddd  dd",
-                        "ddd  dd",
-                        "ddd  dd",
-                        "ddd  dd",
-                        "ddd",
-                        "dddBWBBBBBBBBBBBBBBB  BB  BB  BB  BB  Wccccccdddddd",
-                        "dddddddddddddddddddddddddddddddddddddddddddddddddd"
+    string[] stage8 = { "       dd    d    d  d   ddddddddddddddd  W    dddddddddddddd",
+                        "bbbbbbbbbbbBBBWBBBBbbbwbbddddddddddddddd    w  dddddddddddddd",
+                        "bbbbbbbbbbbddddddddbbbbbbddddddddddddddd      wdddddddddddddd",
+                        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbdddddddddddddddddddddddddddddddd",
+                        "d    dd                               ddddddddddddddddddddddd",
+                        "dWBBBddbwBBB                                 dddddddddddddddd",
+                        "ddd  dd     ddd                              dddddddddddddddd",
+                        "ddd  dd  ddd                                 dddddddddddddddd",
+                        "ddd  dd                                      dddddddddddddddd",
+                        "ddd  dd                                      dddddddddddddddd",
+                        "ddd  dd                                      dddddddddddddddd",
+                        "ddd                                          dddddddddddddddd",
+                        "EddBWBBBBBBBBBBBBBBB  BB  BB  BB  BB  Wccccccdddddddddddddddd",
+                        "ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
     };
 
     string[] stage9_T ={"       ddd                                                  ",
@@ -354,10 +349,10 @@ public class stagecriate : MonoBehaviour
 
 
     string[] stageCopy = { "" };
-
     void Start()
     {
-        switch (stageNum)//stageを判別、ステージ番と同じコードのStringをStageCopyにコピペする。
+        //Debug.Log("今" + MyNum.GetstageNum() + "ステージ");
+        switch (MyNum.GetstageNum()/*stageNum*/)//stageを判別、ステージ番と同じコードのStringをStageCopyにコピペする。
         {
             case 1:
                 stageCopy = stage1;
@@ -441,15 +436,9 @@ public class stagecriate : MonoBehaviour
                 switch (stageCopy[i].Substring(j, 1))
                 {
 
-<<<<<<< HEAD
                     case "b":   //唯のブロック
                         Instantiate(block, new Vector3(startX + j * massWidth,
                                       startY - i * massHeighth, 0.0f), Quaternion.identity);
-=======
-                    case "b":
-                        Instantiate(block, new Vector3(startX + j * massWidth,
-              startY - i * massHeighth, 0.0f), Quaternion.identity);
->>>>>>> origin/honjo
                         break;
 
                     case "B":	//壊れる床

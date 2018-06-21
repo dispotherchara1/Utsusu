@@ -2,9 +2,13 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 public class Re_sult : MonoBehaviour {
-
+    public mynumber MyNum;
     int stageclear = 0;
-    int Stagenum = stagecriate.RequestStageNum();
+    int Stagenum;
+    private void Start()
+    {
+        Stagenum = MyNum.GetstageNum();
+    }
     public void turn()
     {
         SceneManager.LoadScene(0);//titleシーンに戻る
@@ -14,21 +18,23 @@ public class Re_sult : MonoBehaviour {
     {
         SceneManager.LoadScene(4);//GameSceneシーンを再度呼び込む
     }
+
     public void backstage()
-    {
+    {//カウントが１以上なら前のステージに戻れる
         if (Stagenum > 1) {
             SceneManager.LoadScene(4);
             Stagenum--;
-            stagecriate.GetStageNum(Stagenum);
+            MyNum.SetstageNum(Stagenum);
         }
     }
+
     public void nextstage()
-    {
+    {//〃２４以内なら次ステージに行ける。
         if (Stagenum < 24)
         {
             SceneManager.LoadScene(4);
             Stagenum++;
-            stagecriate.GetStageNum(Stagenum);
+            MyNum.SetstageNum(Stagenum);
         }
     }
 }
