@@ -16,7 +16,7 @@ public class Warp : MonoBehaviour
             //Vector3 pos = player.transform.position;
             switch (stagecriate.RequestStageNum())//stageを判別
             { 
-                case 12:
+                case 9:
                     if (gameObject.name == warpNum[0])
                     {
                         warpout = GameObject.Find(warpOutNum[2]);
