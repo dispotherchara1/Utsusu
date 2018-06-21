@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scene\GameObjectID.cs" />
      <Compile Include="Assets\Scripts\GaugeController.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Result.cs" />
@@ -52,6 +53,7 @@
      <Compile Include="Assets\Scripts\SelectText.cs" />
      <Compile Include="Assets\Scripts\Tutorial.cs" />
      <Compile Include="Assets\Scripts\Warp.cs" />
+     <Compile Include="Assets\Scripts\mynumber.cs" />
      <Compile Include="Assets\Scripts\player_tel.cs" />
      <Compile Include="Assets\Scripts\wana.cs" />
      <Compile Include="Assets\Scripts\wana2.cs" />
