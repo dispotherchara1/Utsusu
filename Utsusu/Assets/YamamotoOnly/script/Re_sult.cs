@@ -15,8 +15,11 @@ public class Re_sult : MonoBehaviour {
     }
 
     public void reload()
-    {
-        SceneManager.LoadScene(4);//GameSceneシーンを再度呼び込む
+    {// 現在のScene名を取得する
+        Scene loadScene = SceneManager.GetActiveScene();
+        // Sceneの読み直し
+        SceneManager.LoadScene(loadScene.name);
+
     }
 
     public void backstage()
