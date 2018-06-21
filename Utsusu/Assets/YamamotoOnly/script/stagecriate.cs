@@ -104,7 +104,7 @@ public class stagecriate : MonoBehaviour
                         "ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
     };
 
-    string[] stage9 =  {"E            bbbdddd                                         ",
+    string[] stage9 =  {"E             bbbdddd                                         ",
                         "  BBBBBBBBBBBwbbbdddd                                         ",
                         "  dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
                         "  d       b      b      b      b      b      d      b     bddd",
@@ -157,7 +157,7 @@ public class stagecriate : MonoBehaviour
                         };
 
 
-    string[] stage11 = {"       d    d  　bdddd                               ",
+    string[] stage11 = {"       d    d  　bdddd                                 ",
                         "bbbbbbbbbbbbbBBBwbddddd                                ",
                         "ddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
                         "ddddd       bdddb dddddd       bdddb dddddd       bdddd",
