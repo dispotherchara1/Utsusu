@@ -10,16 +10,16 @@ public class Tutorial : MonoBehaviour
     int warpincount = 0, warpoutcount = 0;
 
     string[] tutorialstage = {
-                        "                                              b",
-                        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbwb",
-                        "                                               ",
-                        "                                               ",
-                        "                                               ",
-                        "                                               ",
-                        "                                               ",
-                        "                                               ",
-                        "WBBBBBBBBBBBBBBBBBBBBB     d                   ",
-                        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcccccc"
+                        "                                              bddddddddddddd",
+                        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbwbddb   ddddddd",
+                        "                                           ddddddb   ddddddd",
+                        "                                           ddddddbW  ddddddd",
+                        "                                           dddddddBBBddddddd",
+                        "                                           dddddddBBBddddddd",
+                        "                                           dddddddBBBddddddd",
+                        "                                           dddddddBBBddddddd",
+                        "WWWBBBBBBBBBBBBBBBBBB     d                dddddddBBBddddddd",
+                        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccccccdddddddwwwddddddd"
 
     };
 
