@@ -79,11 +79,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scene\GameObjectID.cs" />
+    <Compile Include="Assets\Scripts\BGPmanagemant.cs" />
     <Compile Include="Assets\Scripts\GaugeController.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Result.cs" />
     <Compile Include="Assets\Scripts\SceneChange.cs" />
-    <Compile Include="Assets\Scripts\SelectText.cs" />
     <Compile Include="Assets\Scripts\Tutorial.cs" />
     <Compile Include="Assets\Scripts\Warp.cs" />
     <Compile Include="Assets\Scripts\mynumber.cs" />
