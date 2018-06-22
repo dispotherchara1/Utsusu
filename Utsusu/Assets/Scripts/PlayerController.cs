@@ -5,8 +5,6 @@ public class PlayerController : MonoBehaviour
     public GameOver gameover;
     public GaugeController gaugeController;
     Vector2 teleportation = new Vector2(75.0f, 0.0f);
-    //Vector2 jamp = new Vector2(0.0f,200.0f);
-    //重力加速度.
     private const float gravitationalAcceleration = -9.81f;
 
     /// <summary>
@@ -25,14 +23,18 @@ public class PlayerController : MonoBehaviour
         {
            //Button();//ボタンで移動距離が変わるメソッド
             GoGauge();//ゲージ式
+            if (gaugeController.GetParticle())
+            {
+                GetComponent<ParticleSystem>().Play();//パーティクル
+            }
         }
     }
+
     private void Awake()
     {
         //Startが実行される前に初期重力を設定する.(Startないけど)
         Physics2D.gravity = Vector3.up * gravitationalAcceleration;
     }
-
 
     void Button() // ボタンで移動距離が違う
     {
@@ -67,6 +69,7 @@ public class PlayerController : MonoBehaviour
         }
         transform.position = pos; //現在の位置にteleportationの移動距離を加算
     }
+
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (gameover.GetGameOver()==false&&col.gameObject.tag == "ClearZone")

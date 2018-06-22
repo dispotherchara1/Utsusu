@@ -7,9 +7,16 @@ public class GaugeController : MonoBehaviour
     public GameOver gameover;
     Slider gaugeSlider;
     bool gauge = false;
+    bool particle = false;
     float timeCount = 0.0f;
+    float particleCount = 0.2f;
     const float MAXVALUE = 2.0f;
     const float MOVE = 11.5f;
+
+    public bool GetParticle()
+    {
+        return particle;
+    }
 
     public bool GetGauge()
     {
@@ -39,10 +46,22 @@ public class GaugeController : MonoBehaviour
             if (Input.GetKey(KeyCode.Space))
             {
                 gauge = true;
+                particle = false;
+                particleCount = 0.0f;//リセット
             }
             else
             {
                 gauge = false;//押してないときfalse
+                //trueになってパーティクルを呼び、falseにする
+                if (particleCount < 0.1f)
+                {
+                    particle = true;
+                    particleCount += Time.deltaTime;
+                }
+                else
+                {
+                    particle = false;
+                }
             }
 
             if (gauge)
@@ -54,6 +73,8 @@ public class GaugeController : MonoBehaviour
                 }
             }
             gaugeSlider.value = timeCount;
+            Debug.Log(particle);
+            Debug.Log(particleCount);
         }
     }
 }
