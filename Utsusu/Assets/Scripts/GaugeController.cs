@@ -46,14 +46,13 @@ public class GaugeController : MonoBehaviour
             if (Input.GetKey(KeyCode.Space))
             {
                 gauge = true;
-                particle = false;
                 particleCount = 0.0f;//リセット
             }
             else
             {
                 gauge = false;//押してないときfalse
                 //trueになってパーティクルを呼び、falseにする
-                if (particleCount < 0.1f)
+                if (particleCount < 0.01f)
                 {
                     particle = true;
                     particleCount += Time.deltaTime;
@@ -73,8 +72,6 @@ public class GaugeController : MonoBehaviour
                 }
             }
             gaugeSlider.value = timeCount;
-            Debug.Log(particle);
-            Debug.Log(particleCount);
         }
     }
 }
