@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scene/select.unity
-=======
-- path: Assets/GameScene.unity
->>>>>>> origin/honjo
   isLoaded: 1
   isActive: 1

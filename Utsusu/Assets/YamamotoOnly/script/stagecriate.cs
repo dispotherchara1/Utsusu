@@ -257,8 +257,25 @@ public class stagecriate : MonoBehaviour
                        "dddddddddddddddddddddddb      bbbbbbb     bdddddddddddddddd",
                        "ddddddddddddddddddddddd        bbbbb       dddddddddddddddd",
                        "ddddddddddddddddddddddd        bbbbb       dddddddddddddddd",
+                       "ddddddddddddddddddddddd        bbbbb       dddddddddddddddd",
+                       "dddddddddddddddddddddddccccccccdddddddddddddddddddddddddddd",
+                       "",
+                       "",
+                       "",
+                       "",
+                       "",
+                       "",
+                       "E            d    dd        d      d              bdddddddd",
+                       "bbbbbWbbbbBBbbbBBbbbbbbBBbbddBBbbbbbddBBbbbddbbbwbddddddddd",
+                       "ddddddddddddddddddddddd        bdddb       dddddddddddddddd",
+                       "dddddddddddddddddddddddb      bbbbbbb     bdddddddddddddddd",
+                       "ddddddddddddddddddddddd        bbbbb       dddddddddddddddd",
+                       "ddddddddddddddddddddddd        bbbbb       dddddddddddddddd",
                        "ddddddddddddddddddddddd        bbbbb       dddddddddddd   d",
-                       "dddddddddddddddddddddddccccccccddddddddddddddddddddddddbWbd",
+                       "ddddddddddddddddddddddddddddddddddddcccccccddddddddddddbWbd",
+                       };
+
+    string[] stage16 ={"",
                        };
 
   /*  string[] stage9 ={ "                   dddddd",
@@ -323,7 +340,7 @@ public class stagecriate : MonoBehaviour
                         "Bdb dd dB dbdbd  b b",
                         "bbBBdddBbBbBB  d d d",
                         "dBBbbbbdBdBbddbdBbbB"};
-*/
+
     string[] stage16 ={  "  dd  dB d   bdddb b",
                         "d bBd B bbbbdb b dbB",
                         "ddbb B  Bbddb d BBB ",
@@ -331,7 +348,7 @@ public class stagecriate : MonoBehaviour
                         "Bdb dd dB dbdbd  b b",
                         "bbBBdddBbBbBB  d d d",
                         "dBBbbbbdBdBbddbdBbbB"};
-
+*/
     string[] stage17 ={  "  dd  dB d   bdddb b",
                         "d bBd B bbbbdb b dbB",
                         "ddbb B  Bbddb d BBB ",
