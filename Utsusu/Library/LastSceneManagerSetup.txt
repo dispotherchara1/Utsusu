@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scene/select.unity
-=======
-- path: Assets/GameScene.unity
->>>>>>> origin/Yamamotorikiya
   isLoaded: 1
   isActive: 1
