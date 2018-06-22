@@ -5,21 +5,21 @@ using UnityEngine.UI;
 public class Tutorial : MonoBehaviour
 {
     Warp warp;
-    public GameObject block, ClearZone, deathzone, neadle, warpin, warpout, BB;
+    public GameObject block, ClearZone, deathzone, neadle, warpin, warpout, BB,baji;
     public int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
     int warpincount = 0, warpoutcount = 0;
 
     string[] tutorialstage = {
-                        "                                              b",
-                        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbwb",
-                        "                                               ",
-                        "                                               ",
-                        "                                               ",
-                        "                                               ",
-                        "                                               ",
-                        "                                               ",
-                        "WBBBBBBBBBBBBBBBBBBBBB     d                   ",
-                        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcccccc"
+                        "                                              bddddddddddddddddddd",
+                        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbwbddb         dddddd",
+                        "                                              ddddddb     ddddddd",
+                        "                                              ddddddbW   ddddddd",
+                        "                                              dddddddBBBddddddd",
+                        "                                              dddddddBBBddddddd",
+                        "                                              dddddddBBBddddddd",
+                        "                                              dddddddBBBddddddd",
+                        "E  WWWBBBBBBBBBBBBBBBBBB     d                dddddddBBBddddddd",
+                        "   bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccccccdddddddwwwddddddd"
 
     };
 
@@ -65,6 +65,11 @@ public class Tutorial : MonoBehaviour
                             startY - i * massHeighth, 0.0f), Quaternion.identity) as GameObject;
                         ow.name = warpout.name + warpin.name + warpoutcount;
                         warpoutcount++;
+                        break;
+                    case "E":
+                        var bajilisk = Instantiate(baji, new Vector3(startX + j * massWidth,
+                            startY - i * massHeighth, 0.0f), Quaternion.identity) as GameObject;
+                        bajilisk.name = "bajibaji";
                         break;
                 }
             }

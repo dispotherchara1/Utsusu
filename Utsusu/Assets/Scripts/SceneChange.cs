@@ -9,8 +9,6 @@ public class SceneChange : MonoBehaviour
     stagecriate stagecriate;//LoadScene(4)はゲームシーンに飛ぶよ。
     int selectNum = 1;
     public Text[] text = { };
-    public Text text1, text2, text3, text4,
-                text5, text6, text7, text8;
     public mynumber MyNum;
     enum StageSelectType
     {
@@ -35,38 +33,38 @@ public class SceneChange : MonoBehaviour
         {
             case StageSelectType.Easy:
                 selectNum = 0;
-                text1.text = "1";
-                text2.text = "2";
-                text3.text = "3";
-                text4.text = "4";
-                text5.text = "5";
-                text6.text = "6";
-                text7.text = "7";
-                text8.text = "8";
+                text[0].text = "1";
+                text[1].text = "2";
+                text[2].text = "3";
+                text[3].text = "4";
+                text[4].text = "5";
+                text[5].text = "6";
+                text[6].text = "7";
+                text[7].text = "8";
                 break;
 
             case StageSelectType.Normal:
                 selectNum = 8;
-                text1.text = "9";
-                text2.text = "10";
-                text3.text = "11";
-                text4.text = "12";
-                text5.text = "13";
-                text6.text = "14";
-                text7.text = "15";
-                text8.text = "16";
+                text[0].text = "9";
+                text[1].text = "10";
+                text[2].text = "11";
+                text[3].text = "12";
+                text[4].text = "13";
+                text[5].text = "14";
+                text[6].text = "15";
+                text[7].text = "16";
                 break;
 
             case StageSelectType.Hard:
                 selectNum = 16;
-                text1.text = "17";
-                text2.text = "18";
-                text3.text = "19";
-                text4.text = "20";
-                text5.text = "21";
-                text6.text = "22";
-                text7.text = "23";
-                text8.text = "24";
+                text[0].text = "17";
+                text[1].text = "18";
+                text[2].text = "19";
+                text[3].text = "20";
+                text[4].text = "21";
+                text[5].text = "22";
+                text[6].text = "23";
+                text[7].text = "24";
                 break;
         }
     }
