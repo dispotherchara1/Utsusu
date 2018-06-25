@@ -1,0 +1,119 @@
+string[] stage1 ={
+"                       ddddddddddddddddddddd",
+"      dd  dd           ddddddddddddddddddddd",
+"Wbbbbbbbbbbbbbwbbbbbwbdddddddddddddddddddddd",
+"          ddddddddddd                  ddddd",
+"  dd      ddddddddddd                  ddddd",
+"  dd      ddddddddddd                  ddddd",
+"WbbbbbbbwbbbbbbbbbbbbBWBBBBBBBBBBccccccddddd",
+"                 ddddddddddddddddddddddddddd",
+"                 ddddddddddddddddddddddddddd",
+"                 ddddddddddddddddddddddddddd",
+"WBBBBBBBBBBBBBBwBddddddddddddddddddddddddddd",
+"dddddddddddddddddddddddddddddddddddddddddddd",
+}                                               
+                case 1://honjo.memo１つ目のステージです。
+                    if (gameObject.name == warpNum[2])
+                    {
+                        warpout = GameObject.Find(warpOutNum[3]);
+                    }
+                    if (gameObject.name == warpNum[3])
+                    {
+                        warpout = GameObject.Find(warpOutNum[2]);
+                    }
+                    break;
+
+    string[] stage2 = { "           dd    dd       d          ddddddd",
+                        "           dd    dd       d          ddddddd",
+                        "WBbBBbbBBbbBBbBBbBBBbBBwBbBBBbBbBbBwBddddddd",
+                        "dddddddddddddddddddddddddddddddddddddddddddd",
+                        "                                     ddddddd",
+                        "  d  d   d   d  d   d  d   d     d   ddddddd",
+                        "WBBbbBBbBBBbBBbbBBbbBBbBBbBBbBwbBBBwBddddddd",
+                        "dddddddddddddddddddddddddddddddddddddddddddd",
+                        "                                     ddddddd",
+                        "                                     ddddddd",
+                        "  d  d  d   d d                      ddddddd",
+                        "Wbbbbbbbbbbbbbbbcccccccccccccccccccccddddddd",
+                      };
+
+                case 2://honjo.memo2つ目のステージです。
+                    if (gameObject.name == warpNum[2])
+                    {
+                        warpout = GameObject.Find(warpOutNum[1]);
+                    }
+                    if (gameObject.name == warpNum[3])
+                    {
+                        warpout = GameObject.Find(warpOutNum[2]);
+                    }
+                    break;
+
+    string[] stage3 = { "  dd     dd   dddddddddddd     ddddddddddddd",
+                        "  dd     dd   dddddddddddd     ddddddddddddd",
+                        "WbbbbbbwbbbbwbbbbbbbbbbbbbbWbwbbbddddddddddd",
+                        "          ddddddddddd                  ddddd",
+                        "  dd      ddddddddddd                  ddddd",
+                        "  dd      ddddddddddd   d  ddd         ddddd",
+                        "WbbbbbbbwbbbbbbbbbbbbBWBBbBBBBbbbccccccddddd",
+                        "                 d  dddddd dddd dddddddddddd",
+                        "                 dWBddddddWddddwdddddddddddd",
+                        "                 ddBdddddddddddddddddddddddd",
+                        "WbbbbbbbbbbbbbbwbddB  dddddddddddddddddddddd",
+                        "dddddddddddddddddddbbwdddddddddddddddddddddd",
+                            };
+                case 3://honjo.memo3つ目のステージです。
+                    if (gameObject.name == warpNum[0])
+                    {
+                        warpout = GameObject.Find(warpOutNum[2]);
+                    }
+                    if (gameObject.name == warpNum[1])
+                    {
+                        warpout = GameObject.Find(warpOutNum[6]);
+                    }
+                    if (gameObject.name == warpNum[2])
+                    {
+                        warpout = GameObject.Find(warpOutNum[0]);
+                    }
+                    if (gameObject.name == warpNum[3])
+                    {
+                        warpout = GameObject.Find(warpOutNum[1]);
+                    }
+                    if (gameObject.name == warpNum[4])
+                    {
+                        warpout = GameObject.Find(warpOutNum[3]);
+                    }
+                    if (gameObject.name == warpNum[5])
+                    {
+                        warpout = GameObject.Find(warpOutNum[4]);
+                    }
+                    if (gameObject.name == warpNum[6])
+                    {
+                        warpout = GameObject.Find(warpOutNum[5]);
+                    }
+                    break;
+    string[] stage4 = { "ddd    d d d  ddddddddd",
+                        "dddWwbbdwdWdbwddddddddd",
+                        "ddddddddddddddddddddddd",
+                        "d d  d d  ddddddddddddd",
+                        "dWdbwdWdbwddddddddddddd",
+                        "dd d  dd d dd  dddddddd",
+                        "ddWdbwddWddddbwdddddddd",
+                        "ddddddddddddddddddddddd",
+                        "ddddddddddddddddddddddd",
+                        "d ddddd  dd d  dddddddd",
+                        "dWdddddbwddWdccdddddddd",
+                        "ddddddddddddddddddddddd",
+                            };
+
+
+
+
+
+
+
+
+                                               
+                                               
+                                               
+                                               
+
