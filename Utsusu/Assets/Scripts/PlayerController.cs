@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     {
         //引数のVecotr2を単位ベクトルに正規化し重力加速度を掛ける.
         Physics2D.gravity = direction.normalized * gravitationalAcceleration;
-        Debug.Log(Physics2D.gravity);
+        //Debug.Log(Physics2D.gravity);
     }
     void Update()
     {
@@ -23,16 +23,18 @@ public class PlayerController : MonoBehaviour
         {
            //Button();//ボタンで移動距離が変わるメソッド
             GoGauge();//ゲージ式
+            //gaugeControllerのGetParticleがtrueの時のみおｋ
             if (gaugeController.GetParticle())
             {
+                //パーティクルシステムが発動
                 GetComponent<ParticleSystem>().Play();//パーティクル
             }
         }
     }
-
+    //AwakeはStartが実行される前に初期重力を設定する(Startないけど)
     private void Awake()
     {
-        //Startが実行される前に初期重力を設定する.(Startないけど)
+        
         Physics2D.gravity = Vector3.up * gravitationalAcceleration;
     }
 
