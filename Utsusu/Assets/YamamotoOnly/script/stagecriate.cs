@@ -16,7 +16,7 @@ public class stagecriate : MonoBehaviour
                         "     b   b    b      ddddddd",
                         "dddddbbbbbbbbbbbcccccddddddd",
                         "dddddddddddddddddddddddddddd"
-                        };
+                        }; 
 
     string[] stage2 = { "",
                         "E        bb  bbdb  b b            dddddd                                ",
