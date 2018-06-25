@@ -331,7 +331,7 @@ public class stagecriate : MonoBehaviour
                          "bbWWWbbbbbbbbbbbbbbbbbbbbbbbbbWWWbbbbbbbbbbbbbbbbbbbbbWWWbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccc",
                        };
 
-    string[] stage19_T = {"E                             bdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    string[] stage19_T={"E                             bdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
                         "bbbbbbbBBBbbbBBBbbbbbBBBbbb   bdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd         d",
                         "bbbbbbbBBBbbbBBBbbbbbBBBbbb   bdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd         d",
                         "bbbbbbbbbbbbbwwwbbbbbbbbbbb   bdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd   WWW   d",
