@@ -52,13 +52,16 @@ public class GaugeController : MonoBehaviour
             {
                 gauge = false;//押してないときfalse
                 //trueになってパーティクルを呼び、falseにする
+                //particleCountが0になるとパーティクルシステムが作動
                 if (particleCount < 0.01f)
                 {
                     particle = true;
-                    particleCount += Time.deltaTime;
+                    particleCount = 2;
                 }
                 else
                 {
+                    //particleがfalseでもパーティクルシステムは作動しないようになっているので
+                    //ここに計算式を描く必要はない。
                     particle = false;
                 }
             }
