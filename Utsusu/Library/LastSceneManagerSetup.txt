@@ -1,12 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scene/select.unity
-=======
-<<<<<<< HEAD
-- path: Assets/Scene/select.unity
-=======
-- path: Assets/tutorial.unity
->>>>>>> master
->>>>>>> origin/taniguti
+- path: Assets/GameScene.unity
   isLoaded: 1
   isActive: 1
