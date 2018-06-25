@@ -1,5 +1,9 @@
 sceneSetups:
 - path: Assets/GameScene.unity
 - path: Assets/Scene/select.unity
+- path: Assets/Scene/select.unity
+- path: Assets/Scene/select.unity
+- path: Assets/Scene/select.unity
+- path: Assets/tutorial.unity
   isLoaded: 1
   isActive: 1
