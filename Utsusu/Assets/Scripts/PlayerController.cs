@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
     public GaugeController gaugeController;
     Vector2 teleportation = new Vector2(75.0f, 0.0f);
     private const float gravitationalAcceleration = -9.81f;
-
+    public AudioSource[] sources;
     /// <summary>
     /// 重力方向を変更する.
     /// </summary>
@@ -28,13 +28,14 @@ public class PlayerController : MonoBehaviour
             {
                 //パーティクルシステムが発動
                 GetComponent<ParticleSystem>().Play();//パーティクル
+                sources[0].Play();//音
             }
         }
     }
     //AwakeはStartが実行される前に初期重力を設定する(Startないけど)
-    private void Awake()
+    void Awake()
     {
-        
+        //sources = gameObject.GetComponents<AudioSource>();
         Physics2D.gravity = Vector3.up * gravitationalAcceleration;
     }
 
