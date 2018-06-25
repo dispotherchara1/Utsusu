@@ -3,9 +3,12 @@ using System.Collections;
 
 public class Warp : MonoBehaviour
 {
-    string[] warpNum    = { "warpBlock0", "warpBlock1", "warpBlock2", "warpBlock3" };
-    string[] warpOutNum = { "warpoutBlockwarpBlock0", "warpoutBlockwarpBlock1",
-                            "warpoutBlockwarpBlock2", "warpoutBlockwarpBlock3" };
+    string[] warpNum = { "warpinBlock0", "warpinBlock1", "warpinBlock2", "warpinBlock3", "warpinBlock4",
+                         "warpinBlock5", "warpinBlock6", "warpinBlock7", "warpinBlock8", "warpinBlock9" };
+    string[] warpOutNum = { "warpoutBlockwarpinBlock0", "warpoutBlockwarpinBlock1", "warpoutBlockwarpinBlock2",
+                            "warpoutBlockwarpinBlock3", "warpoutBlockwarpinBlock4", "warpoutBlockwarpinBlock5",
+                            "warpoutBlockwarpinBlock6", "warpoutBlockwarpinBlock7", "warpoutBlockwarpinBlock8",
+                            "warpoutBlockwarpinBlock9" };
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Player")
@@ -15,7 +18,7 @@ public class Warp : MonoBehaviour
             GameObject warpout =GameObject.Find("warpoutBlock" + (gameObject.name));
             //Vector3 pos = player.transform.position;
             switch (stagecriate.RequestStageNum())//stageを判別
-            { 
+            {
                 case 9:
                     if (gameObject.name == warpNum[0])
                     {
