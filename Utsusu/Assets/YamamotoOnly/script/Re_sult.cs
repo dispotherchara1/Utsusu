@@ -2,16 +2,17 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 public class Re_sult : MonoBehaviour {
-    public mynumber MyNum;
+    public SceneChange MyNum;
     int stageclear = 0;
     int Stagenum;
     private void Start()
     {
-        Stagenum = MyNum.GetstageNum();
+        Stagenum = MyNum.GetOrigin();
     }
     public void turn()
     {
         SceneManager.LoadScene(0);//titleシーンに戻る
+        MyNum.SetOrigin(0);
     }
 
     public void reload()
@@ -19,7 +20,6 @@ public class Re_sult : MonoBehaviour {
         Scene loadScene = SceneManager.GetActiveScene();
         // Sceneの読み直し
         SceneManager.LoadScene(loadScene.name);
-
     }
 
     public void backstage()
@@ -27,7 +27,7 @@ public class Re_sult : MonoBehaviour {
         if (Stagenum > 1) {
             SceneManager.LoadScene(4);
             Stagenum--;
-            MyNum.SetstageNum(Stagenum);
+            MyNum.SetOrigin(Stagenum);
         }
     }
 
@@ -37,7 +37,7 @@ public class Re_sult : MonoBehaviour {
         {
             SceneManager.LoadScene(4);
             Stagenum++;
-            MyNum.SetstageNum(Stagenum);
+            MyNum.SetOrigin(Stagenum);
         }
     }
 }

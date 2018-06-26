@@ -10,7 +10,7 @@ public class stagecriate : MonoBehaviour
     int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
     int warpincount = 0, warpoutcount = 0, bajicount = 0;
     static int stageNum = 1;
-    public mynumber MyNum;
+    public SceneChange MyNum;
     //左から６ブロック目がスライムの誕生地点です。
     string[] stage1 = { "      b     b        ddddddd",
                         "     b   b    b      ddddddd",
@@ -514,7 +514,7 @@ public class stagecriate : MonoBehaviour
     void Start()
     {
         //Debug.Log("今" + MyNum.GetstageNum() + "ステージ");
-        switch (MyNum.GetstageNum()/*stageNum*/)//stageを判別、ステージ番と同じコードのStringをStageCopyにコピペする。
+        switch (MyNum.GetOrigin()/*stageNum*/)//stageを判別、ステージ番と同じコードのStringをStageCopyにコピペする。
         {
             case 1:
                 stageCopy = stage1;
