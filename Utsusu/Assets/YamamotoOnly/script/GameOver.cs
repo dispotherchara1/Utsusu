@@ -24,7 +24,7 @@ public class GameOver : MonoBehaviour {
 
     public void SetGameOver()//ゲームオーバーをオンにします
     {
-        //baji.misscalling();
+        baji.misscalling();
         Gameover = true;
         GameOverCv.enabled = true;
         GameOverimg.enabled = true;
@@ -35,7 +35,7 @@ public class GameOver : MonoBehaviour {
     }
     public void SetClear()//ゲームクリアーをオンにします
     {
-        //baji.misscalling();
+        baji.misscalling();
         Clear = true;
         GameOverCv.enabled = true;
         ClearButton.enabled = true;

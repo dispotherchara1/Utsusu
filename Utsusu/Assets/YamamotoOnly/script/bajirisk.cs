@@ -31,7 +31,10 @@ public class bajirisk : MonoBehaviour {
             //this.animator.SetTrigger("walktrigger");
             gameObject.transform.position += new Vector3(bajirun, 0, 0);
         }
-        //Debug.Log(calling);
+        else
+        {
+            gameObject.transform.position += new Vector3(0, 0, 0);
+        }
     }
 
             //        foreach (GameObject bajirisk in bajirisks)
@@ -73,7 +76,7 @@ public class bajirisk : MonoBehaviour {
     {
         if (calling != "baji")
         {
-            calling = "baji";
+            gameObject.name = "baji";
         }
         //bajicall = false;
     }
