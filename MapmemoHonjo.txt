@@ -104,6 +104,36 @@ string[] stage1 ={
                         "dWdddddbwddWdccdddddddd",
                         "ddddddddddddddddddddddd",
                             };
+    string[] stage5 = { "                                     ddddddd",
+                        "  d     d   d   dddd d   dd   d   d  ddddddd",
+                        "WBBBbBBBBBbBBBbBBbBBBBbBbBBBbBBBwBBBwddddddd",
+                        "dddddddddddddddddddddddddddddddddddddddddddd",
+                        "      d     dddddd  ddddddddd     dddddddddd",
+                        "Wb    d     dddddd  ddddddddd     d d  ddddd",
+                        "ddbb    WbbbbbbbbbbwdddddddddWccccdWdBwddddd",
+                        "ddddbb                            dddddddddd",
+                        "ddddddbb                              dddddd",
+                        " dddddddbb                            dddddd",
+                        "WdddddddddbbBwBBbBBBBbBBBBbBBBBbBBBwbwdddddd",
+                        "dddddddddddddddddddddddddddddddddddddddddddd",
+                        };             
+                case 5://honjo.memo5つ目のステージです。
+                    if (gameObject.name == warpNum[2])
+                    {
+                        warpout = GameObject.Find(warpOutNum[3]);
+                    }
+                    if (gameObject.name == warpNum[3])
+                    {
+                        warpout = GameObject.Find(warpOutNum[1]);
+                    }
+                    if (gameObject.name == warpNum[6])
+                    {
+                        warpout = GameObject.Find(warpOutNum[2]);
+                    }
+                    break;
+
+
+
 
 
 
