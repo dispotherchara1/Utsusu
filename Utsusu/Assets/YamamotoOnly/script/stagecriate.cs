@@ -378,7 +378,7 @@ public class stagecriate : MonoBehaviour
                         "                                                                                                  ccccccccccccccccccccccccccc",
                         };
 
-    string[] stage21 ={"E       dd   bbb     bbbbbbbbbbbbbbbbb                     bbbbbbbbbb                   bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdddddddddd",
+    string[] stage21 ={"E       dd   BBB     bbbbbbbbbbbbbbbbb                     bbbbbbbbbb                   bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdddddddddd",
                        "WbbbbbbbbbbbbBBB     bbbbbbbbbbbbbbbbb                     bbbbbbbbbb                   bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdddddddddd",
                        "bbbbbbbbbbbbbbbbbbwbbbbbbbbbbbbbbbbbbb                     bbbbbbbbbb                   bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdddddddddd",
                        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb      ddd            bbbbbbbbbb                   bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdddddddddd",
