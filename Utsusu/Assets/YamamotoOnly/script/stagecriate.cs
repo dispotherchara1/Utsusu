@@ -56,7 +56,8 @@ public class stagecriate : MonoBehaviour
 
     string[] stage5 = { "   bbb       bbbw      Wbbbb           dddddd",
                         "bbbbbbbbbbbw       bbb      Wbbbbbcccccdddddd",
-                        "ddddddddddddddddddddddddddddddddddddddddddddd"};
+                        "ddddddddddddddddddddddddddddddddddddddddddddd"
+                            };
 
     string[] stage6 = {" bW    b     b b bdddddddddddd",
                         "b   b    b      bbddddddddddd",
