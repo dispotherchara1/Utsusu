@@ -1,12 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-<<<<<<< HEAD
-- path: Assets/Scene/select.unity
-=======
 - path: Assets/GameScene.unity
->>>>>>> origin/honjo
-=======
-- path: Assets/Scene/select.unity
->>>>>>> origin/taniguti
   isLoaded: 1
   isActive: 1
