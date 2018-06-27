@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AudioMastally.cs" />
     <Compile Include="Assets\Scripts\BGPmanagemant.cs" />
     <Compile Include="Assets\Scripts\GameObjectID.cs" />
     <Compile Include="Assets\Scripts\GaugeController.cs" />
