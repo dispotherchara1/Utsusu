@@ -613,6 +613,7 @@ public class stagecriate : MonoBehaviour
             }
         }
     }
+    
     public static void GetStageNum(int a)//staticをつけてシーンを移動しても保存できる
     {
         stageNum = a;

@@ -9,16 +9,16 @@ public class Warp : MonoBehaviour
                             "warpoutBlockwarpinBlock3", "warpoutBlockwarpinBlock4", "warpoutBlockwarpinBlock5",
                             "warpoutBlockwarpinBlock6", "warpoutBlockwarpinBlock7", "warpoutBlockwarpinBlock8",
                             "warpoutBlockwarpinBlock9" };
+    mynumber myNum;
+
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Player")
-        {   
-            //このwarpBlockが生成された時点ではwarpoutが生成されていない可能性があるので
-            //この中に入れておきます
-            GameObject warpout =GameObject.Find("warpoutBlock" + (gameObject.name));
-            //Vector3 pos = player.transform.position;
+        {
+            //このwarpBlockが生成された時点ではwarpoutが生成されていない可能性があるのでこの中に入れておきます
+            GameObject warpout = GameObject.Find("warpoutBlock" + (gameObject.name));
             switch (stagecriate.RequestStageNum())//stageを判別
-            {
+            {//ワープを変えたいステージがある時はそれに合わせて変更してください。
                 case 9:
                     if (gameObject.name == warpNum[0])
                     {
@@ -37,7 +37,7 @@ public class Warp : MonoBehaviour
                         warpout = GameObject.Find(warpOutNum[1]);
                     }
                     break;
-            }
+            } 
             //他のgameobjectがこのgameobjectと当たって、そのgameobjectのタグがPlayerだった場合
             //otherとし条件式に当てはめ、位置を与える.
             other.gameObject.transform.position = warpout.transform.position

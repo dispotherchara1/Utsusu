@@ -131,6 +131,54 @@ string[] stage1 ={
                         warpout = GameObject.Find(warpOutNum[2]);
                     }
                     break;
+    string[] stage6 = { " d  d ddddddddd      ddddddddd",
+                        "WbbwdBdddddddddWBBBBwddddddddd",
+                        " dd dBdddddddddddddddddddddddd",
+                        " d  dBddddddddd      ddddddddd",
+                        "WbbwdBdddddddddWBBBBBddddddddd",
+                        " dd dBdddddddddd     ddddddddd",
+                        " d  dBddddddddddbBBBwddddddddd",
+                        "WbbwdBdddddddddddddddddddddddd",
+                        "    d                ddddddddd",
+                        "WcccdWBBBbBBBbwbbwbbwddddddddd",
+                        "dddddddddddddddddddddddddddddd"
+                        }; 
+                case 6://honjo.memo6つ目のステージです
+                    if (gameObject.name == warpNum[0])
+                    {
+                        warpout = GameObject.Find(warpOutNum[2]);
+                    }
+                    if (gameObject.name == warpNum[1])
+                    {
+                        warpout = GameObject.Find(warpOutNum[3]);
+                    }
+                    if (gameObject.name == warpNum[2])
+                    {
+                        warpout = GameObject.Find(warpOutNum[4]);
+                    }
+                    if (gameObject.name == warpNum[3])
+                    {
+                        warpout = GameObject.Find(warpOutNum[6]);
+                    }
+                    if (gameObject.name == warpNum[4])
+                    {
+                        warpout = GameObject.Find(warpOutNum[5]);
+                    }
+                    if (gameObject.name == warpNum[5])
+                    {
+                        warpout = GameObject.Find(warpOutNum[3]);
+                    }
+                    if (gameObject.name == warpNum[6])
+                    {
+                        warpout = GameObject.Find(warpOutNum[0]);
+                    }
+                    if (gameObject.name == warpNum[7])
+                    {
+                        warpout = GameObject.Find(warpOutNum[1]);
+                    }
+                    break;
+
+
 
 
 
