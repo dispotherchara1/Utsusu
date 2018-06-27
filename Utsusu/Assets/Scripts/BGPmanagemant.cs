@@ -3,9 +3,8 @@ using System.Collections;
 using UnityEngine.UI;
 public class BGPmanagemant : MonoBehaviour
 {
-
+    public SceneChange MyNum;
     public GameObject[] BGP;
-    public mynumber MyNum;
 
     private void Start()
     {
@@ -15,18 +14,17 @@ public class BGPmanagemant : MonoBehaviour
     }
     private void Update()
     {
-        if (MyNum.GetstageNum() < 9)
+        if (MyNum.GetOrigin() < 9)
         {
             BGP[0].SetActive(true);
         }
-        else if (MyNum.GetstageNum() > 8&&MyNum.GetstageNum()<17)
+        else if (MyNum.GetOrigin() > 8&&MyNum.GetOrigin()<17)
         {
             BGP[1].SetActive(true);
         }
-        else if (MyNum.GetstageNum() > 16 && MyNum.GetstageNum() < 25)
+        else if (MyNum.GetOrigin() > 16 && MyNum.GetOrigin() < 25)
         {
             BGP[2].SetActive(true);
         }
-
     }
 }
