@@ -419,12 +419,23 @@ public class stagecriate : MonoBehaviour
                        "bbbbbbbbbbbbbbbbbbbbbbbbb    ddd              dd   dd           ddd   dd    dddd   dddd    ddd   dd   dd     dddddddddd",
                        "bbbbbbbbbbbbbbbbbbbbbbbbb    ddd              dd   dd           ddd   dd    dddd   dddd    ddd   dd   dd     dddddddddd",
                        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb    bbbbbbbbbbbbbbbb    bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdddddddddd",
-                       "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb     dd  dd    bddbb    ddd   ddd    bddddddddddddd                    dddddddddd",
-                       "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb     dd  dd    bddbb    ddd   ddd    bddddddddddddd                    dddddddddd",
+                       "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb    ddd  ddd   bddbb    ddd   ddd    bddddddddddddd                    dddddddddd",
+                       "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb    ddd  ddd   bddbb    ddd   ddd    bddddddddddddd                    dddddddddd",
                        "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbwddddbbbbbbbbbbbbbbbbbwbdddddddddddddbWWWbbbbbcccccccccccdddddddddd",
                        };
 
-    string[] stage24 = {"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccc" };
+    string[] stage24 = {"          dd   dd  ddd  dd   dd   dd  dd  ddddddddddddddddddddddddddddddddddddd",
+                        "          dd   dd  ddd  dd   dd   dd  dd  dd   dddddddddddddddddddddddddddddddd",
+                        "bbbbbbbbbbbbbbbbbbbbbbbbbbBBBBBBBBBBBBBBBBBB      ddddddddddddddddddddddddddddd",
+                        "ddddddddddddddddddddddddddddddddddddddddddddd      ddd   dddddddddddddddddddddd",
+                        "                                           ddddBBBBddd    ddddddddddddddddddddd",
+                        "                                           dddddddddddd    dd  dddddddddddddddd",
+                        "                                                ddddddddBBBdd   ddddddddddddddd",
+                        "                                                dddddddddddddd   dddddddddddddd",
+                        "                                                dddddddddddddd    ddddddddddddd",
+                        "                                                            ddd    dddddddddddd",
+                        "                                                            ddddcccdddddddddddd",
+                        };
     
 
 
