@@ -7,7 +7,7 @@ public class AudioMastally : MonoBehaviour {
     // Use this for initialization
     void Start () {
         sources[0].Play();//音1
-        sources[1].Play();//音2
+        //sources[1].Play();//音2
     }
 	
 	// Update is called once per frame
