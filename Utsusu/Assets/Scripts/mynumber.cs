@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class mynumber : MonoBehaviour {
-    public static int stageNum=0;
+    public static int stageNum = 0;
 
     public int GetstageNum()
     {

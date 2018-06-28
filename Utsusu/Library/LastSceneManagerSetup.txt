@@ -1,4 +1,12 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scene/select.unity
+=======
+<<<<<<< HEAD
+- path: Assets/GameScene.unity
+=======
+- path: Assets/Scene/tutorial.unity
+>>>>>>> origin/Yamamotorikiya
+>>>>>>> origin/honjo
   isLoaded: 1
   isActive: 1
