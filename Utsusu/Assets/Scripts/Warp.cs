@@ -9,8 +9,7 @@ public class Warp : MonoBehaviour
                             "warpoutBlockwarpinBlock3", "warpoutBlockwarpinBlock4", "warpoutBlockwarpinBlock5",
                             "warpoutBlockwarpinBlock6", "warpoutBlockwarpinBlock7", "warpoutBlockwarpinBlock8",
                             "warpoutBlockwarpinBlock9" };
-    SceneChange sceneChange;
-
+    
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Player")
