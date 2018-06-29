@@ -7,12 +7,6 @@ public class SceneChange : MonoBehaviour
     stagecriate stagecriate;//LoadScene(4)はゲームシーンに飛ぶよ。
     int selectNum = 1;
     static int StageofOrigen = 0;
-    private void Start()
-    {
-    }
-    void Update()
-    {
-    }
     public void Title()
     {
         SceneManager.LoadScene(0);//セレクトを再読み込み
