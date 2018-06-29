@@ -87,7 +87,7 @@ public class stagecriate : MonoBehaviour
                         "",
                         "",
                         "",
-                        "           dddddd",
+                        "            dddddd",
                         "Wbbbbbccccccdddddd",
                         "dddddddddddddddddd"};
 
@@ -299,7 +299,7 @@ public class stagecriate : MonoBehaviour
                        "                                     b         b    d   d   d    BBB   BBB   BBB   BBB   BBB   BBB   dddddddddd",
                        "                                     b         b     d  d  d        BBB   BBB   BBB   BBB   BBB   BBBdddddddddd",
                        "            E           bb     d     b         b    d   d   d    BBB   BBB   BBB   BBB   BBB   BBB   dddddddddd",
-                       "bbbbbbbbbbbbbbbbbbbbbbbb  bbbb   BBBBdBBBBBBBBBbbbbdBBBBBBBbddbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcccccccccdddddddddd",
+                       "bbbbbbbbbbbbbbbbbbbbbbbb  bbbb   BBBBdBBBBBBBBBbbbbdBBBBBBBBBdbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcccccccccdddddddddd",
                        "ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
                        };
 
@@ -384,26 +384,26 @@ public class stagecriate : MonoBehaviour
                         "",
                         "",
                         "                                                                             ddddddddddddddddddddddddddddddddd",
-                        "                                                                                  dddddddddddddddddddddddddddd    ",
-                        "                                                                                  dddddddddddddddddddddddddddd   ",
+                        "                                                                                  dddddddddddddddddddddddddddd",
+                        "                                                                                  dddddddddddddddddddddddddddd",
                         "                                                                     dd    dd     ddddddddddddd   dddddddddddd",
-                        "                      ddd     ddd   ddd                  BBBBBBBBBBBBbbbbbbbb     ddddddddddddd   dddddddddddd  ",
-                        "                bbbbbbbbbbbbbb                                                    dddddddddddddWWWdddddddddddd  ",
-                        "                                                                             d                 ddddddddddddddddd", 
-                        "                                                                                    d          ddddddddddddddddd",
-                        "                                                                              d                    dddddddddddddddd",
-                        "                                                                                       d              dddddddddddddddd",
-                        "                                                                                                         ddddddddddddddd",
-                        "",
-                        "",
-                        "                                         ddd                                    d                                 dddddddddddd",
-                        "                                    BBBBBBBBBbbbbbwww                             dBBBBBbbbbbwwwdd                dddddddddddd",
-                        "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd                dddddddddddd",
-                        "                                                                                                                  dddddddddddd",
-                        "                                                                                                                  dddddddddddd",
-                        "                                                                                                                  dddddddddddd",
-                        "                                                                                                                  dddddddddddd",
-                        "                                                                                                  ccccccccccccccccccccccccccc",
+                        "                      ddd     ddd   ddd                  BBBBBBBBBBBBbbbbbbbb     ddddddddddddd   dddddddddddd",
+                        "                bbbbbbbbbbbbbb                                              d     dddddddddddddWWWdddddddddddd",
+                        "                                                                             d     ddddddddddddddddddddddddddd", 
+                        "                                                                             d      dddddddddddddddddddddddddd",
+                        "                                                                              d      ddddddddddddddddddddddddd",
+                        "                                                                              d        ddddddddddddddddddddddd",
+                        "                                                                               d       ddddddddddddddddddddddd",
+                        "                                                                               d",
+                        "                                                                                d",
+                        "                                         ddd                                    d                                 ",
+                        "                                    BBBBBBBBBbbbbbwww                            ddBBBBBbbbbbwwwdd                ",
+                        "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd               ",
+                        "                                                                                                                 ",
+                        "                                                                                                                 ",
+                        "                                                                                                                 ",
+                        "                                                                                                                 ",
+                        "                                                                                                   cccccccccc",
                         };
 
     string[] stage21 ={"E       dd   BBB     bbbbbbbbbbbbbbbbb                     bbbbbbbbbb                   bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdddddddddd",
@@ -426,7 +426,6 @@ public class stagecriate : MonoBehaviour
 
     string[] stage22 ={"E      BB                                                                       EEdddddddddddddddddddddddddddddddddd",
                        "bbbbbBBBBBBbbdd                                                                 EEE                       dddddddddd",
-<<<<<<< HEAD
                        "ddddddddddddddd                                                                 EEbbbbWbbbbbbbbbbbbbbbbcccdddddddddd",
                        "            E            dd   dd                                                          d               dddddddddd",
                        "           bbbbbbbbbbbBBBBBBBBBBBBBbbbbb                                                  d               dddddddddd",
@@ -435,21 +434,8 @@ public class stagecriate : MonoBehaviour
                        "                                  bbbbbbbbbbbBBBBBBBBBBBBBB                              ddd              dddddddddd",
                        "                                  ddddddddddddddddddddddddd                               d               dddddddddd",
                        "                                                        E         d    d    d      d                      dddddddddd",
-                       "                                                     bbbbbbBBBBBBBBBBBBBBBBBBBBBBBBBBBbbbbwbbbbbbbbbbbbbbbbbbbbbbbbb",
+                       "                                                     bbbbbbBBBBBBBBBBBBBBBBBBBBBBBBBBBbbbbwbbbbbbbbbbbbbbbdddddddddd",
                        "                                                     ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
-=======
-                       "ddddddddddddddd                                                                 EEddddWbbbbbbbbbbbbbbbbbbbdddddddddd",
-                       "            E            dd   dd                                                                          dddddddddd",
-                       "           bbbbbbbbbbbBBBBBBBBBBBBBbbbbb                                                                  dddddddddd",
-                       "           ddddddddddddddddddddddddddddd                                                                  dddddddddd",
-                       "                                     E         dd  dd  dd                                                 dddddddddd",
-                       "                                  bbbbbbbbbbbBBBBBBBBBBBBBB                                               dddddddddd",
-                       "                                  ddddddddddddddddddddddddd                                               dddddddddd",
-                       "                                                        E         d    d    d      d                      d    d   d",
-                       "                                                     bbbbbbBBBBBBBBBBBBBBBBBBBBBBBBBBBBBbbwbbbbbbbbbbbbbbbbbbbbbbbbb",
-                       "                                                     dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddbbbbbbbbb",
-                       "                                                                                                                             cccccccc",
->>>>>>> origin/Yamamotorikiya
                        };
 
     string[] stage23 ={"E                  dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
@@ -466,22 +452,19 @@ public class stagecriate : MonoBehaviour
                        };
 
     string[] stage24 = {"          dd   dd  ddd  dd   dd   dd  dd  ddddddddddddddddddddddddddddddddddddd",
-                        "E         dd   dd  ddd  dd   dd   dd  dd   dd    dddddddddddddddddddddddddddddddd",
-                        "bbbbbbbbbbbbbbbbbbbbbbbbbbBBBBBBBBBBBBBBBBBBd      ddddddddddddddddddddddddddddd",
-                        "ddddddddddddddddddddddddddddddddddddddddddddd       ddd    dddddddddddddddddddddd",
-                        "                                           ddBBBBBBdddd    ddddddddddddddddddddd",
-                        "                                         E dddddddddddd    dd    dddddddddddddddd",
-                        "                                                dddddddBBBBdd    ddddddddddddddd",
-                        "                                                dddEdddddddddd    dddddddddddddd",
-                        "                                                dddddddddddddd     ddddddddddddd",
-                        "                                                            ddd    dddddddddddd",
-                        "                                                            ddddcccdddddddddddd",
+                        "          dd   dd  ddd  dd   dd   dd  dd  dd   dddddddddddddddddddddddddddddddd",
+                        "bbbbbbbbbbbbbbbbbbbbbbbbbbBBBBBBBBBBBBBBBBdd    ddddddddddddddddddddddddddddddd",
+                        "ddddddddddddddddddddddddddddddddddddddddddddd     ddd   ddddddddddddddddddddddd",
+                        "                                          ddddBBBBddd    dddddddddddddddddddddd",
+                        "                                          dddddddddddd    dd  ddddddddddddddddd",
+                        "                                               ddddddddBBBdd   dddddddddddddddd",
+                        "                                               ddddddddddddd    ddddddddddddddd",
+                        "                                               dddddddddddddd    dddddddddddddd",
+                        "                                                           ddd    ddddddddddddd",
+                        "                                                           ddddcccddddddddddddd",
                         };
-<<<<<<< HEAD
-=======
 
 
->>>>>>> origin/Yamamotorikiya
 
     string[] stageCopy = { "" };
     void Start()
