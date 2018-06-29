@@ -11,6 +11,8 @@ public class stagecriate : MonoBehaviour
     int warpincount = 0, warpoutcount = 0, bajicount = 0;
     static int stageNum = 1;
     public SceneChange MyNum;
+
+
     //左から６ブロック目がスライムの誕生地点です。
     string[] stage1 = { "      b     b        ddddddd",
                         "     b   b    b      ddddddd",
@@ -424,6 +426,7 @@ public class stagecriate : MonoBehaviour
 
     string[] stage22 ={"E      BB                                                                       EEdddddddddddddddddddddddddddddddddd",
                        "bbbbbBBBBBBbbdd                                                                 EEE                       dddddddddd",
+<<<<<<< HEAD
                        "ddddddddddddddd                                                                 EEbbbbWbbbbbbbbbbbbbbbbcccdddddddddd",
                        "            E            dd   dd                                                          d               dddddddddd",
                        "           bbbbbbbbbbbBBBBBBBBBBBBBbbbbb                                                  d               dddddddddd",
@@ -434,6 +437,19 @@ public class stagecriate : MonoBehaviour
                        "                                                        E         d    d    d      d                      dddddddddd",
                        "                                                     bbbbbbBBBBBBBBBBBBBBBBBBBBBBBBBBBbbbbwbbbbbbbbbbbbbbbbbbbbbbbbb",
                        "                                                     ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+=======
+                       "ddddddddddddddd                                                                 EEddddWbbbbbbbbbbbbbbbbbbbdddddddddd",
+                       "            E            dd   dd                                                                          dddddddddd",
+                       "           bbbbbbbbbbbBBBBBBBBBBBBBbbbbb                                                                  dddddddddd",
+                       "           ddddddddddddddddddddddddddddd                                                                  dddddddddd",
+                       "                                     E         dd  dd  dd                                                 dddddddddd",
+                       "                                  bbbbbbbbbbbBBBBBBBBBBBBBB                                               dddddddddd",
+                       "                                  ddddddddddddddddddddddddd                                               dddddddddd",
+                       "                                                        E         d    d    d      d                      d    d   d",
+                       "                                                     bbbbbbBBBBBBBBBBBBBBBBBBBBBBBBBBBBBbbwbbbbbbbbbbbbbbbbbbbbbbbbb",
+                       "                                                     dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddbbbbbbbbb",
+                       "                                                                                                                             cccccccc",
+>>>>>>> origin/Yamamotorikiya
                        };
 
     string[] stage23 ={"E                  dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
@@ -450,21 +466,27 @@ public class stagecriate : MonoBehaviour
                        };
 
     string[] stage24 = {"          dd   dd  ddd  dd   dd   dd  dd  ddddddddddddddddddddddddddddddddddddd",
-                        "          dd   dd  ddd  dd   dd   dd  dd  dd   dddddddddddddddddddddddddddddddd",
-                        "bbbbbbbbbbbbbbbbbbbbbbbbbbBBBBBBBBBBBBBBBBBB      ddddddddddddddddddddddddddddd",
-                        "ddddddddddddddddddddddddddddddddddddddddddddd      ddd   dddddddddddddddddddddd",
-                        "                                           ddddBBBBddd    ddddddddddddddddddddd",
-                        "                                           dddddddddddd    dd  dddddddddddddddd",
-                        "                                                ddddddddBBBdd   ddddddddddddddd",
-                        "                                                dddddddddddddd   dddddddddddddd",
-                        "                                                dddddddddddddd    ddddddddddddd",
+                        "E         dd   dd  ddd  dd   dd   dd  dd   dd    dddddddddddddddddddddddddddddddd",
+                        "bbbbbbbbbbbbbbbbbbbbbbbbbbBBBBBBBBBBBBBBBBBBd      ddddddddddddddddddddddddddddd",
+                        "ddddddddddddddddddddddddddddddddddddddddddddd       ddd    dddddddddddddddddddddd",
+                        "                                           ddBBBBBBdddd    ddddddddddddddddddddd",
+                        "                                         E dddddddddddd    dd    dddddddddddddddd",
+                        "                                                dddddddBBBBdd    ddddddddddddddd",
+                        "                                                dddEdddddddddd    dddddddddddddd",
+                        "                                                dddddddddddddd     ddddddddddddd",
                         "                                                            ddd    dddddddddddd",
                         "                                                            ddddcccdddddddddddd",
                         };
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/Yamamotorikiya
 
     string[] stageCopy = { "" };
     void Start()
     {
+        Debug.Log(MyNum.GetOrigin());
         //Debug.Log("今" + MyNum.GetstageNum() + "ステージ");
         switch (MyNum.GetOrigin()/*stageNum*/)//stageを判別、ステージ番と同じコードのStringをStageCopyにコピペする。
         {
