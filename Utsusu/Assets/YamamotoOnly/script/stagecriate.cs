@@ -11,6 +11,8 @@ public class stagecriate : MonoBehaviour
     int warpincount = 0, warpoutcount = 0, bajicount = 0;
     static int stageNum = 1;
     public SceneChange MyNum;
+
+
     //左から６ブロック目がスライムの誕生地点です。
     string[] stage1 = { "      b     b        ddddddd",
                         "     b   b    b      ddddddd",
@@ -399,12 +401,12 @@ public class stagecriate : MonoBehaviour
     string[] stage22 ={"E      BB                                                                       EEdddddddddddddddddddddddddddddddddd",
                        "bbbbbBBBBBBbbdd                                                                 EEE                       dddddddddd",
                        "ddddddddddddddd                                                                 EEddddWbbbbbbbbbbbbbbbbbbbdddddddddd",
-                       "            E            dd   dd                                                          d               dddddddddd",
-                       "           bbbbbbbbbbbBBBBBBBBBBBBBbbbbb                                                  d               dddddddddd",
-                       "           ddddddddddddddddddddddddddddd                                               d  d  d            dddddddddd",
-                       "                                     E         dd  dd  dd                               d d d             dddddddddd",
-                       "                                  bbbbbbbbbbbBBBBBBBBBBBBBB                              ddd              dddddddddd",
-                       "                                  ddddddddddddddddddddddddd                               d               dddddddddd",
+                       "            E            dd   dd                                                                          dddddddddd",
+                       "           bbbbbbbbbbbBBBBBBBBBBBBBbbbbb                                                                  dddddddddd",
+                       "           ddddddddddddddddddddddddddddd                                                                  dddddddddd",
+                       "                                     E         dd  dd  dd                                                 dddddddddd",
+                       "                                  bbbbbbbbbbbBBBBBBBBBBBBBB                                               dddddddddd",
+                       "                                  ddddddddddddddddddddddddd                                               dddddddddd",
                        "                                                        E         d    d    d      d                      d    d   d",
                        "                                                     bbbbbbBBBBBBBBBBBBBBBBBBBBBBBBBBBBBbbwbbbbbbbbbbbbbbbbbbbbbbbbb",
                        "                                                     dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddbbbbbbbbb",
@@ -425,61 +427,24 @@ public class stagecriate : MonoBehaviour
                        };
 
     string[] stage24 = {"          dd   dd  ddd  dd   dd   dd  dd  ddddddddddddddddddddddddddddddddddddd",
-                        "          dd   dd  ddd  dd   dd   dd  dd  dd   dddddddddddddddddddddddddddddddd",
-                        "bbbbbbbbbbbbbbbbbbbbbbbbbbBBBBBBBBBBBBBBBBBB      ddddddddddddddddddddddddddddd",
-                        "ddddddddddddddddddddddddddddddddddddddddddddd      ddd   dddddddddddddddddddddd",
-                        "                                           ddddBBBBddd    ddddddddddddddddddddd",
-                        "                                           dddddddddddd    dd  dddddddddddddddd",
-                        "                                                ddddddddBBBdd   ddddddddddddddd",
-                        "                                                dddddddddddddd   dddddddddddddd",
-                        "                                                dddddddddddddd    ddddddddddddd",
+                        "E         dd   dd  ddd  dd   dd   dd  dd   dd    dddddddddddddddddddddddddddddddd",
+                        "bbbbbbbbbbbbbbbbbbbbbbbbbbBBBBBBBBBBBBBBBBBBd      ddddddddddddddddddddddddddddd",
+                        "ddddddddddddddddddddddddddddddddddddddddddddd       ddd    dddddddddddddddddddddd",
+                        "                                           ddBBBBBBdddd    ddddddddddddddddddddd",
+                        "                                         E dddddddddddd    dd    dddddddddddddddd",
+                        "                                                dddddddBBBBdd    ddddddddddddddd",
+                        "                                                dddEdddddddddd    dddddddddddddd",
+                        "                                                dddddddddddddd     ddddddddddddd",
                         "                                                            ddd    dddddddddddd",
                         "                                                            ddddcccdddddddddddd",
                         };
-    string[] stage22 ={ "      ddddddddWWdWWdd",
-                        "      ddddddddddddddd",
-                        "      ddddddddddddddd          ddddddddddd",
-                        "                   dd          ddddddddddd",
-                        "BBBBBBBBBBBBBBBBBBwdd          ddddddddddd",
-                        "      ddddddddddddddd  B       ddddddddddd",
-                        "      ddddddddddddddd   B      ddddddddddd",
-                        "      ddddddddddddddd    B     ddddddddddd",
-                        "                   dd     BBBBwddddddddddd",
-                        "BBBBBBBBBBBBBBBBBBwdd          ddddddddddd",
-                        "      ddddddddddddddd  B       ddddddddddd",
-                        "      ddddddddddddddd   B      ddddddddddd",
-                        "      ddddddddddddddd    B     ddddddddddd",
-                        "                          BBbbwddddddddddd",
-                        "BBBBBBBBBBBBBBBBBBBBBccccccccccddddddddddd",
-                        "dddddddddddddddddddddddddddddddddddddddddd" };
-
-    string[] stage23 ={ "b        b   b     b         ",
-                        "bb       b   b    b        bbb",
-                        "b b      b   b   b        b   b",
-                        "b  b     b   b  b        b     b",
-                        "b   b    b   b b        b",
-                        "b    b   b   bb        b",
-                        "b     b  b   b b        b       b",
-                        "b      b b   b  b        b     b",
-                        "b       bb   b   b        b   b",
-                        "b        b   b    b        bbb         cccccc",
-                        "ddddddddddddddddddddddddddddddddddddddddddddd"};
-
-    string[] stage24 = {"WcccBB     dd",
-                        "EdddddBB   dd",
-                        "d          dd     ddddddddddddddddddddd",
-                        "d        BBdd     ddddd   ddddddddddddd",
-                        "ddddddddddddd     ddddd   ddddddddddddd",
-                        "                  ddddd   ddddddddddddd",
-                        "            bbbbbbbbbbbdwbddddddddddddd",
-                        "ddddddddddddddddddddddddddddddddddddddd" };
-    
 
 
 
     string[] stageCopy = { "" };
     void Start()
     {
+        Debug.Log(MyNum.GetOrigin());
         //Debug.Log("今" + MyNum.GetstageNum() + "ステージ");
         switch (MyNum.GetOrigin()/*stageNum*/)//stageを判別、ステージ番と同じコードのStringをStageCopyにコピペする。
         {
