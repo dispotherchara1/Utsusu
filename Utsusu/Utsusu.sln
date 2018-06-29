@@ -1,7 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{1D55AE88-6E66-6144-2756-2F2DE07D3D2D}") = "Utsusu", "Assembly-CSharp.csproj", "{5606DFEE-BA81-A70A-23F1-07072FC0F72E}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utsusu", "Utsusu.csproj", "{30C4CAB7-A8C1-ABA5-85D8-286D32AEC15F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5606DFEE-BA81-A70A-23F1-07072FC0F72E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5606DFEE-BA81-A70A-23F1-07072FC0F72E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5606DFEE-BA81-A70A-23F1-07072FC0F72E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5606DFEE-BA81-A70A-23F1-07072FC0F72E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30C4CAB7-A8C1-ABA5-85D8-286D32AEC15F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30C4CAB7-A8C1-ABA5-85D8-286D32AEC15F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30C4CAB7-A8C1-ABA5-85D8-286D32AEC15F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30C4CAB7-A8C1-ABA5-85D8-286D32AEC15F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

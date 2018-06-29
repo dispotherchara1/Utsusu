@@ -5,8 +5,9 @@ using UnityEngine.UI;
 public class GameOver : MonoBehaviour {
     //ゲームオーバーか、ゲームクリアーかどうかのBool変数
     public bajirisk baji;
+    public SceneChange MyNum;
     bool Gameover = false, Clear = false;
-    public Canvas GameOverCv,ClearButton;
+    public Canvas GameOverCv,ClearButton,turncv;
     public Image Clearimg, GameOverimg;
     private void Start()
     {
@@ -14,6 +15,7 @@ public class GameOver : MonoBehaviour {
         Clearimg.enabled = false;
         GameOverimg.enabled = false;
         ClearButton.enabled = false;
+        turncv.enabled = false;
     }
     //////////////////////////////////////////////////////////////////////
 
@@ -24,10 +26,14 @@ public class GameOver : MonoBehaviour {
 
     public void SetGameOver()//ゲームオーバーをオンにします
     {
-        baji.misscalling();
+        //baji.misscalling();
         Gameover = true;
         GameOverCv.enabled = true;
         GameOverimg.enabled = true;
+        if (MyNum.GetOrigin() > 1)
+        {
+            turncv.enabled = true;
+        }
     }
     public bool GetClear()//ゲームクリアーしたかどうか調べます
     {
@@ -35,10 +41,14 @@ public class GameOver : MonoBehaviour {
     }
     public void SetClear()//ゲームクリアーをオンにします
     {
-        baji.misscalling();
-        Clear = true;
+        
+            //baji.misscalling();
+            Clear = true;
+        if (MyNum.GetOrigin()!=24)
+        { ClearButton.enabled = true;}
+        if (MyNum.GetOrigin() > 1)
+        { turncv.enabled = true; }
         GameOverCv.enabled = true;
-        ClearButton.enabled = true;
-        Clearimg.enabled = true;
-    }
+            Clearimg.enabled = true;
+        }
 }
