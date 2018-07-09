@@ -21,7 +21,6 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene(4);
         StageofOrigen+=(selectNum + 1);
-        //Debug.Log(selectNum);
     }
 
     public void Stage2()

@@ -13,6 +13,6 @@ public class GameObjectID : MonoBehaviour {
 	void Update () {
         Debug.Log(GetInstanceID());
         
-        gameObject.name = ""+GetInstanceID();
+        gameObject.name = "" + GetInstanceID();
     }
 }
