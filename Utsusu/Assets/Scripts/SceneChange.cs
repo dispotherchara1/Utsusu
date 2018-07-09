@@ -21,7 +21,6 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene(4);
         StageofOrigen+=(selectNum + 1);
-        //Debug.Log(selectNum);
     }
 
     public void Stage2()
@@ -71,7 +70,7 @@ public class SceneChange : MonoBehaviour
     }
     public void Setselectnumber(int a)
     {
-        selectNum=a;
+        selectNum = a;
     }
     public int GetOrigin()
     {
