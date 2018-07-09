@@ -4,14 +4,12 @@ using System.Collections;
 public class stagecriate : MonoBehaviour
 {
     Warp warp;
-
     public GameObject block, ClearZone, deathzone, neadle, warpin, warpout, BB,
-        BajiBlock, bajilisk;
+                      BajiBlock, bajilisk;
     int startX = 3, startY = 3, massWidth = 3, massHeighth = 3;
     int warpincount = 0, warpoutcount = 0, bajicount = 0;
     static int stageNum = 1;
     public SceneChange MyNum;
-
 
     //左から６ブロック目がスライムの誕生地点です。
     string[] stage1 = { "      b     b        ddddddd",
@@ -438,14 +436,11 @@ public class stagecriate : MonoBehaviour
                         "                                                            ddd    dddddddddddd",
                         "                                                            ddddcccdddddddddddd",
                         };
-
-
-
+    
     string[] stageCopy = { "" };
     void Start()
     {
-        Debug.Log(MyNum.GetOrigin());
-        //Debug.Log("今" + MyNum.GetstageNum() + "ステージ");
+        //Debug.Log(MyNum.GetOrigin());
         switch (MyNum.GetOrigin()/*stageNum*/)//stageを判別、ステージ番と同じコードのStringをStageCopyにコピペする。
         {
             case 1:

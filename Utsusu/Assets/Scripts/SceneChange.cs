@@ -70,7 +70,7 @@ public class SceneChange : MonoBehaviour
     }
     public void Setselectnumber(int a)
     {
-        selectNum=a;
+        selectNum = a;
     }
     public int GetOrigin()
     {

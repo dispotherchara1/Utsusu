@@ -40,7 +40,7 @@ public class GaugeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameover.GetGameOver() == false && gameover.GetClear() == false)
+        if (!gameover.GetGameOver() && !gameover.GetClear())
         {
             //スペースボタンを押している間ゲージがtrue(ゲージが動く)
             if (Input.GetKey(KeyCode.Space))

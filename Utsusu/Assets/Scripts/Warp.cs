@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Warp : MonoBehaviour
 {
+    public SceneChange myNum;
     string[] warpNum = { "warpinBlock0", "warpinBlock1", "warpinBlock2", "warpinBlock3", "warpinBlock4",
                          "warpinBlock5", "warpinBlock6", "warpinBlock7", "warpinBlock8", "warpinBlock9" };
     string[] warpOutNum = { "warpoutBlockwarpinBlock0", "warpoutBlockwarpinBlock1", "warpoutBlockwarpinBlock2",
@@ -16,7 +17,8 @@ public class Warp : MonoBehaviour
         {
             //このwarpBlockが生成された時点ではwarpoutが生成されていない可能性があるのでこの中に入れておきます
             GameObject warpout = GameObject.Find("warpoutBlock" + (gameObject.name));
-            switch (stagecriate.RequestStageNum())//stageを判別
+            /*
+            switch (myNum.GetOrigin() /*stagecriate.RequestStageNum())//stageを判別
             {//ワープを変えたいステージがある時はそれに合わせて変更してください。
                 case 9:
                     if (gameObject.name == warpNum[0])
@@ -36,15 +38,11 @@ public class Warp : MonoBehaviour
                         warpout = GameObject.Find(warpOutNum[1]);
                     }
                     break;
-            } 
+            }*/
             //他のgameobjectがこのgameobjectと当たって、そのgameobjectのタグがPlayerだった場合
             //otherとし条件式に当てはめ、位置を与える.
             other.gameObject.transform.position = warpout.transform.position
             + new Vector3(0.0f, 2.0f, 0.0f);
-
-            //↓対応させました
-            /*現在このコードは複数のワープエリアに対応しておりません。
-            入口が複数あり出口がひとつというパターンは対応されています。*/    
         } 
     }
 }
