@@ -26,7 +26,6 @@ public class GameOver : MonoBehaviour {
 
     public void SetGameOver()//ゲームオーバーをオンにします
     {
-        //baji.misscalling();
         Gameover = true;
         GameOverCv.enabled = true;
         GameOverimg.enabled = true;
@@ -41,14 +40,10 @@ public class GameOver : MonoBehaviour {
     }
     public void SetClear()//ゲームクリアーをオンにします
     {
-        
-            //baji.misscalling();
-            Clear = true;
-        if (MyNum.GetOrigin()!=24)
-        { ClearButton.enabled = true;}
-        if (MyNum.GetOrigin() > 1)
-        { turncv.enabled = true; }
+        Clear = true;
+        if (MyNum.GetOrigin()!=24) { ClearButton.enabled = true; }
+        if (MyNum.GetOrigin() > 1) { turncv.enabled = true; }
         GameOverCv.enabled = true;
-            Clearimg.enabled = true;
+        Clearimg.enabled = true;
         }
 }
