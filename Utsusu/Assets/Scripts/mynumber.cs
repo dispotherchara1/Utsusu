@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class mynumber : MonoBehaviour {
+public class mynumber : MonoBehaviour
+{/*
     public static int stageNum = 0;
 
     public int GetstageNum()
@@ -12,5 +13,5 @@ public class mynumber : MonoBehaviour {
     public void SetstageNum(int a)
     {
         stageNum = a;
-    }
+    }*/
 }

@@ -2,7 +2,8 @@
 using System.Collections;
 using UnityEngine.UI; 
 
-public class UIinfo : MonoBehaviour {
+public class UIinfo : MonoBehaviour
+{
     public SceneChange scenechange;
     public Canvas select, title;
     bool onselect;
@@ -15,8 +16,8 @@ public class UIinfo : MonoBehaviour {
     };
     StageSelectType stageselectType;
     // Use this for initialization
-    void Start () {
-
+    void Start ()
+    {
         select.enabled = false;
         onselect = false;
     }

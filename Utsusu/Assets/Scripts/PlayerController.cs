@@ -19,11 +19,10 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        if (gameover.GetGameOver() == false && gameover.GetClear() == false)
+        if (!gameover.GetGameOver() && !gameover.GetClear())
         {
            //Button();//ボタンで移動距離が変わるメソッド
             GoGauge();//ゲージ式
-            //gaugeControllerのGetParticleがtrueの時のみおｋ
             if (gaugeController.GetParticle())
             {
                 //パーティクルシステムが発動
@@ -75,11 +74,11 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (gameover.GetGameOver()==false&&col.gameObject.tag == "ClearZone")
+        if (!gameover.GetGameOver() && col.gameObject.tag == "ClearZone")
         {
             gameover.SetClear();
         }
-        if (gameover.GetClear()==false&&col.gameObject.tag == "DeathZone")
+        if (!gameover.GetClear() && col.gameObject.tag == "DeathZone")
         {
             gameover.SetGameOver();
         }
