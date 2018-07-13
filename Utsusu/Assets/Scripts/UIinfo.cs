@@ -84,7 +84,7 @@ public class UIinfo : MonoBehaviour
         }
     }
 
-    stagecriate StageCriate;//LoadScene(4)はゲームシーンに飛ぶよ。
+    stagecriate StageCriate;//LoadScene(2)はゲームシーンに飛ぶよ。
     public void Select()
     {
         onselect = true;//セレクトをtrueに
