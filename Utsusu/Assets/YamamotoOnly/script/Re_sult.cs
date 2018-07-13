@@ -25,9 +25,9 @@ public class Re_sult : MonoBehaviour {
     public void backstage()
     {//カウントが１以上なら前のステージに戻れる
         if (Stagenum > 1) {
-            SceneManager.LoadScene(4);
             Stagenum--;
             MyNum.SetOrigin(Stagenum);
+            SceneManager.LoadScene(2);
         }
     }
 
@@ -35,9 +35,9 @@ public class Re_sult : MonoBehaviour {
     {//〃２４以内なら次ステージに行ける。
         if (Stagenum < 24)
         {
-            SceneManager.LoadScene(4);
             Stagenum++;
             MyNum.SetOrigin(Stagenum);
+            SceneManager.LoadScene(2);
         }
     }
 }
