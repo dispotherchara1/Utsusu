@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
         }
         transform.position = pos; //現在の位置にteleportationの移動距離を加算
 
-        if (test.gameObject.tag == "DeathZone"&&Item.getitem()) { Item.Outitem(); }
+        //if (test.gameObject.tag == "DeathZone"&&Item.getitem()) { Item.Outitem(); }
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
         {
             gameover.SetClear();
         }
-        if (!gameover.GetClear() && col.gameObject.tag == "DeathZone"&&!Item.getitem())
+        if (!gameover.GetClear() && col.gameObject.tag == "DeathZone" && !Item.getitem())
         {
             gameover.SetGameOver();
         }
