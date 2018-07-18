@@ -498,6 +498,7 @@ public class stagecriate : MonoBehaviour
                         "                                                            ddd    dddddddddddd",
                         "                                                            ddddcccdddddddddddd",
                         };
+
     
     string[] stageCopy = { "" };
     void Start()
