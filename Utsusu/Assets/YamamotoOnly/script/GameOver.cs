@@ -38,7 +38,6 @@ public class GameOver : MonoBehaviour {
     }
     public bool GetClear()//ゲームクリアーしたかどうか調べます
     {
-        MyNum.Setflg(a+1);
         return Clear;
     }
     public void SetClear()//ゲームクリアーをオンにします

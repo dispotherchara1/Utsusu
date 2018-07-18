@@ -44,7 +44,7 @@ public class SceneChange : MonoBehaviour
             SceneManager.LoadScene(2);
             StageofOrigen = a;// (selectNum + 2);
         }
-        //else { SceneManager.LoadScene(0); }
+        //else { highiliet }
     }
 
     public void Stage3()

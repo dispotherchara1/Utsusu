@@ -2,6 +2,7 @@
 using System.Collections;
 public class PlayerController : MonoBehaviour
 {
+    public SceneChange MyNum;
     public item Item;
     public GameOver gameover;
     public GaugeController gaugeController;
@@ -11,6 +12,7 @@ public class PlayerController : MonoBehaviour
     Collision2D it;
     public Collider2D test;
     bool hit = false;
+    int a;
     /// <summary>
     /// 重力方向を変更する.
     /// </summary>
@@ -36,10 +38,11 @@ public class PlayerController : MonoBehaviour
         }
     }
     //AwakeはStartが実行される前に初期重力を設定する(Startないけど)
-    void Awake()
+    void Start()
     {
         //sources = gameObject.GetComponents<AudioSource>();
         Physics2D.gravity = Vector3.up * gravitationalAcceleration;
+        a = MyNum.GetOrigin();
     }
 
     void Button() // ボタンで移動距離が違う
@@ -87,6 +90,7 @@ public class PlayerController : MonoBehaviour
     {
         if (!gameover.GetGameOver() && col.gameObject.tag == "ClearZone")
         {
+            MyNum.Setflg(a + 1);
             gameover.SetClear();
         }
         if (!gameover.GetClear() && col.gameObject.tag == "DeathZone" /*&& !Item.getitem()*/)
