@@ -3,14 +3,14 @@ using System.Collections;
 
 public class Warp : MonoBehaviour
 {
-    public SceneChange myNum;
+    /*
     string[] warpNum = { "warpinBlock0", "warpinBlock1", "warpinBlock2", "warpinBlock3", "warpinBlock4",
                          "warpinBlock5", "warpinBlock6", "warpinBlock7", "warpinBlock8", "warpinBlock9" };
     string[] warpOutNum = { "warpoutBlockwarpinBlock0", "warpoutBlockwarpinBlock1", "warpoutBlockwarpinBlock2",
                             "warpoutBlockwarpinBlock3", "warpoutBlockwarpinBlock4", "warpoutBlockwarpinBlock5",
                             "warpoutBlockwarpinBlock6", "warpoutBlockwarpinBlock7", "warpoutBlockwarpinBlock8",
                             "warpoutBlockwarpinBlock9" };
-    
+                            */
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Player")
