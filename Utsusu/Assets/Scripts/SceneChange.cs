@@ -8,7 +8,12 @@ public class SceneChange : MonoBehaviour
     int selectNum = 0;                      //何だっけ
     static int StageofOrigen = 0;           //今なんステージか
     static string[] flg = new string[24];   //そのステージをクリアしたかのフラグだよ
-
+    int a = StageofOrigen;
+    private void Start()
+    {
+        flg[0] = "crear";
+        flg[1] = "crear";
+    }
     public void Title()
     {
         SceneManager.LoadScene(0);//セレクトを再読み込み
@@ -20,31 +25,33 @@ public class SceneChange : MonoBehaviour
     }
 
     public void Stage()
-    { int a = StageofOrigen += (selectNum +1 );
-        if (flg[a] == "crear" || a == 1)
+    {
+        int b = a + 1;
+        a =(a+=selectNum+1) ;
+        if (flg[a] != null) //flg[a] == "crear" || a == 1)
         {
             SceneManager.LoadScene(2);
             StageofOrigen = a;//+= (selectNum + 1);
         }
-        
-        //Debug.Log(selectNum);
+        else { a = b; }
     }
 
     public void Stage2()
     {
-        int a = StageofOrigen += (selectNum + 2);
-        if (flg[a] == "crear")
+        int b = a + 2;
+          a=(a+=selectNum+ 2);
+        if (flg[a] != null) //flg[a] == "crear" || a == 1)
         {
             SceneManager.LoadScene(2);
             StageofOrigen = a;// (selectNum + 2);
         }
-        
+        else { a = b; }
     }
 
     public void Stage3()
     {
-        int a = StageofOrigen += (selectNum + 3);
-        if (flg[a] == "crear")
+         a =(a +=selectNum+ 3);
+        if (flg[a] != null)
         {
             SceneManager.LoadScene(2);
             StageofOrigen = a;// (selectNum + 3);
@@ -54,8 +61,8 @@ public class SceneChange : MonoBehaviour
 
     public void Stage4()
     {
-        int a = StageofOrigen += (selectNum + 4);
-        if (flg[a] == "crear")
+         a =(a+= 4);
+        if (flg[a] != null)
         {
             SceneManager.LoadScene(2);
             StageofOrigen = a;// (selectNum + 4);
@@ -65,8 +72,8 @@ public class SceneChange : MonoBehaviour
 
     public void Stage5()
     {
-        int a = StageofOrigen += (selectNum + 5);
-        if (flg[a] == "crear")
+         a =(a+= 5);
+        if (flg[a] != null)
         {
             SceneManager.LoadScene(2);
             StageofOrigen = a;// (selectNum + 5);
@@ -76,8 +83,8 @@ public class SceneChange : MonoBehaviour
 
     public void Stage6()
     {
-        int a = StageofOrigen += (selectNum + 6);
-        if (flg[a] == "crear")
+         a=(a + 6);
+        if (flg[a] != null)
         {
             SceneManager.LoadScene(2);
             StageofOrigen = a;// (selectNum + 6);
@@ -87,8 +94,8 @@ public class SceneChange : MonoBehaviour
 
     public void Stage7()
     {
-        int a = StageofOrigen += (selectNum + 7);
-        if (flg[a] == "crear")
+        a=(a  + 7);
+        if (flg[a] != null)
         {
             SceneManager.LoadScene(2);
             StageofOrigen = a;// (selectNum + 7);
@@ -98,8 +105,8 @@ public class SceneChange : MonoBehaviour
 
     public void Stage8()
     {
-        int a = StageofOrigen += (selectNum + 8);
-        if (flg[a] == "crear")
+         a=(a + 8);
+        if (flg[a] != null)
         {
             SceneManager.LoadScene(2);
             StageofOrigen = a;// (selectNum + 8);

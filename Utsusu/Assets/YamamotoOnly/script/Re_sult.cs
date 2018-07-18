@@ -8,7 +8,7 @@ public class Re_sult : MonoBehaviour {
     private void Start()
     {
         Stagenum = MyNum.GetOrigin();
-        Debug.Log(Stagenum);
+       // Debug.Log(Stagenum);
     }
     public void turn()
     {
@@ -36,11 +36,9 @@ public class Re_sult : MonoBehaviour {
     {//〃２４以内なら次ステージに行ける。
         if (Stagenum < 24)
         {
-            MyNum.Setflg(Stagenum);
+            //MyNum.Setflg(Stagenum);
             Stagenum++;
-            Debug.Log(Stagenum);
             MyNum.SetOrigin(Stagenum);
-            Debug.Log(Stagenum);
             SceneManager.LoadScene(2);
         }
     }

@@ -9,8 +9,10 @@ public class GameOver : MonoBehaviour {
     bool Gameover = false, Clear = false;
     public Canvas GameOverCv,ClearButton,turncv;
     public Image Clearimg, GameOverimg;
+    int a;
     private void Start()
     {
+        a = MyNum.GetOrigin();
         GameOverCv.enabled = false;
         Clearimg.enabled = false;
         GameOverimg.enabled = false;
@@ -36,6 +38,7 @@ public class GameOver : MonoBehaviour {
     }
     public bool GetClear()//ゲームクリアーしたかどうか調べます
     {
+        MyNum.Setflg(a+1);
         return Clear;
     }
     public void SetClear()//ゲームクリアーをオンにします
