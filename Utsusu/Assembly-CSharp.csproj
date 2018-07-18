@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Tutorial.cs" />
      <Compile Include="Assets\Scripts\UIinfo.cs" />
      <Compile Include="Assets\Scripts\Warp.cs" />
+     <Compile Include="Assets\Scripts\item.cs" />
      <Compile Include="Assets\Scripts\mynumber.cs" />
      <Compile Include="Assets\Scripts\player_tel.cs" />
      <Compile Include="Assets\Scripts\wana.cs" />

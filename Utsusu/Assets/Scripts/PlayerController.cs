@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource[] sources;
     Collision2D it;
     public Collider2D test;
+    bool hit = false;
     /// <summary>
     /// 重力方向を変更する.
     /// </summary>
@@ -71,10 +72,15 @@ public class PlayerController : MonoBehaviour
             //移動計算式
             pos += teleportation * gaugeController.GetTime() * Time.deltaTime;
             gaugeController.GetResetTime();
+
+            if (hit)
+            {
+                Item.Outitem();
+            }
         }
         transform.position = pos; //現在の位置にteleportationの移動距離を加算
 
-        if (test.gameObject.tag == "DeathZone"&&Item.getitem()) { Item.Outitem(); }
+        //if (test.gameObject.tag == "DeathZone"&&Item.getitem()) { Item.Outitem(); }
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -83,9 +89,13 @@ public class PlayerController : MonoBehaviour
         {
             gameover.SetClear();
         }
-        if (!gameover.GetClear() && col.gameObject.tag == "DeathZone"&&!Item.getitem())
+        if (!gameover.GetClear() && col.gameObject.tag == "DeathZone" /*&& !Item.getitem()*/)
         {
-            gameover.SetGameOver();
+            if (Item.getitem())//無敵状態になっていたら
+            {
+                hit = true;
+            }
+            else { gameover.SetGameOver(); }
         }
     }
 }
