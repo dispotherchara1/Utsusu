@@ -7,7 +7,7 @@ public class SceneChange : MonoBehaviour
     stagecriate stagecriate;                //LoadScene(4)はゲームシーンに飛ぶよ。
     int selectNum = 0;                      //何だっけ
     static int StageofOrigen = 0;           //今なんステージか
-    static string[] flg = new string[25];   //そのステージをクリアしたかのフラグだよ
+    static string[] flg = new string[2024];   //そのステージをクリアしたかのフラグだよ
     int a = StageofOrigen;
     private void Start()
     {
@@ -118,10 +118,10 @@ public class SceneChange : MonoBehaviour
         }
         
     }
-    //public int selectnumber()
-    //{
-    //    return selectNum;
-    //}
+    public int selectnumber()
+    {
+        return selectNum;
+    }
     public void Setselectnumber(int a)
     {
         selectNum=a;

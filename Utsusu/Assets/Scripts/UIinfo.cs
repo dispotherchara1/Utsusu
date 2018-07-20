@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class UIinfo : MonoBehaviour
 {
+    int stage,selectstg;
     public SceneChange scenechange;
     public Canvas select, title;
     bool onselect;
@@ -20,6 +21,7 @@ public class UIinfo : MonoBehaviour
     {
         select.enabled = false;
         onselect = false;
+        selectstg = scenechange.selectnumber();
     }
 	
 	// Update is called once per frame
@@ -45,7 +47,7 @@ public class UIinfo : MonoBehaviour
                 text[7].text = "8";
                 for (int i = 0; i < 8; i++)
                 {
-                    if (scenechange.Getflg(i + 1) == null) { text[i].enabled = false; }
+                    if (scenechange.Getflg(i + scenechange.selectnumber()+1) == null) { text[i].enabled = false; }
                 }
                 break;
 
@@ -61,7 +63,7 @@ public class UIinfo : MonoBehaviour
                 text[7].text = "16";
                 for (int i = 0; i < 8; i++)
                 {
-                    if (scenechange.Getflg(i + 8) == null) { text[i].enabled = false; }
+                    if (scenechange.Getflg(i + scenechange.selectnumber()+1) == null) { text[i].enabled = false; }
                 }
                 break;
 
@@ -77,10 +79,18 @@ public class UIinfo : MonoBehaviour
                 text[7].text = "24";
                 for (int i = 0; i < 8; i++)
                 {
-                    if (scenechange.Getflg(i + 16) == null) { text[i].enabled = false; }
+                    if (scenechange.Getflg(i + scenechange.selectnumber()) == null) { text[i].enabled = false; }
                 }
                 break;
         }
+        //if (scenechange.selectnumber() != selectstg)
+        //{
+        //    selectstg = scenechange.selectnumber();
+        //    for (int i = 0; i < 8; i++)
+        //    {
+        //        if (scenechange.Getflg(i + scenechange.selectnumber()) == null) { text[i].enabled = false; }
+        //    }
+        //}
     }
     public void Next()
     {
