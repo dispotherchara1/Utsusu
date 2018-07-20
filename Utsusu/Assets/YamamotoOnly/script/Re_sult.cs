@@ -2,17 +2,18 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 public class Re_sult : MonoBehaviour {
-    public SceneChange MyNum;
-    int stageclear = 0;
-    int Stagenum;
+    public SceneChange MyNum;   //SceneChangeをMynumという名で使用。主にステージのナンバー
+    //int stageclear = 0;       //なんぞこれ
+    int Stagenum;               //今なんステージ？
     private void Start()
     {
         Stagenum = MyNum.GetOrigin();
+       // Debug.Log(Stagenum);
     }
     public void turn()
     {
-        SceneManager.LoadScene(0);//titleシーンに戻る
-        MyNum.SetOrigin(0);
+        SceneManager.LoadScene(0);  //titleシーンに戻る
+        MyNum.SetOrigin(0);         //
     }
 
     public void reload()
@@ -35,6 +36,7 @@ public class Re_sult : MonoBehaviour {
     {//〃２４以内なら次ステージに行ける。
         if (Stagenum < 24)
         {
+            //MyNum.Setflg(Stagenum);
             Stagenum++;
             MyNum.SetOrigin(Stagenum);
             SceneManager.LoadScene(2);

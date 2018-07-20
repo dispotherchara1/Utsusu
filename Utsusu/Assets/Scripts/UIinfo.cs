@@ -29,6 +29,8 @@ public class UIinfo : MonoBehaviour
         if (onselect == true)
         { select.enabled = true; title.enabled = false; }
 
+
+
         switch (stageselectType)
         {
             case StageSelectType.Easy:
@@ -41,6 +43,10 @@ public class UIinfo : MonoBehaviour
                 text[5].text = "6";
                 text[6].text = "7";
                 text[7].text = "8";
+                for (int i = 0; i < 8; i++)
+                {
+                    if (scenechange.Getflg(i + 1) == null) { text[i].enabled = false; }
+                }
                 break;
 
             case StageSelectType.Normal:
@@ -53,6 +59,10 @@ public class UIinfo : MonoBehaviour
                 text[5].text = "14";
                 text[6].text = "15";
                 text[7].text = "16";
+                for (int i = 0; i < 8; i++)
+                {
+                    if (scenechange.Getflg(i + 8) == null) { text[i].enabled = false; }
+                }
                 break;
 
             case StageSelectType.Hard:
@@ -65,6 +75,10 @@ public class UIinfo : MonoBehaviour
                 text[5].text = "22";
                 text[6].text = "23";
                 text[7].text = "24";
+                for (int i = 0; i < 8; i++)
+                {
+                    if (scenechange.Getflg(i + 16) == null) { text[i].enabled = false; }
+                }
                 break;
         }
     }
@@ -84,7 +98,7 @@ public class UIinfo : MonoBehaviour
         }
     }
 
-    stagecriate StageCriate;//LoadScene(4)はゲームシーンに飛ぶよ。
+    stagecriate StageCriate;//LoadScene(2)はゲームシーンに飛ぶよ。
     public void Select()
     {
         onselect = true;//セレクトをtrueに
