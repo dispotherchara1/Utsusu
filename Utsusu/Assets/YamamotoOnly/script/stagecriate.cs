@@ -12,7 +12,7 @@ public class stagecriate : MonoBehaviour
     public SceneChange MyNum;
 
     //左から６ブロック目がスライムの誕生地点です。
-    string[] stage1 = { "      b     b        ddddddd",
+     string[] stage1 = { "      b     b        ddddddd",
                         "     b   b    b      ddddddd",
                         "dddddbbbbbbbbbbbcccccddddddd",
                         "dddddddddddddddddddddddddddd"
