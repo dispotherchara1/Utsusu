@@ -503,6 +503,7 @@ public class stagecriate : MonoBehaviour
     string[] stageCopy = { "" };
     void Start()
     {
+        //Debug.Log(flg[20]);
         //Debug.Log(MyNum.GetOrigin());
         switch (MyNum.GetOrigin()/*stageNum*/)//stageを判別、ステージ番と同じコードのStringをStageCopyにコピペする。
         {
